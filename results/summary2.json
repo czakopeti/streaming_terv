@@ -1,0 +1,411 @@
+{
+ "rtl_plus": {
+  "program_sitemap_status": 200,
+  "programs": 449,
+  "program_sample": [
+   "https://www.rtlplusz.hu/kagylo-es-sult-krumpli-p_28501",
+   "https://www.rtlplusz.hu/kameleon-p_12095",
+   "https://www.rtlplusz.hu/alarcos-enekes-p_16217",
+   "https://www.rtlplusz.hu/kalandozz-d-nagy-orsival-p_27350",
+   "https://www.rtlplusz.hu/metamorfozis-p_28509",
+   "https://www.rtlplusz.hu/az-arulok-gyilkossag-a-kastelyban-p_24843",
+   "https://www.rtlplusz.hu/donal-csaladi-receptjei-p_28454",
+   "https://www.rtlplusz.hu/zuckerberg-a-metaverzum-kiralya-p_28478",
+   "https://www.rtlplusz.hu/sose-halunk-meg-p_28498",
+   "https://www.rtlplusz.hu/cobra-11-p_8143",
+   "https://www.rtlplusz.hu/pancelba-zart-szellem-p_28340",
+   "https://www.rtlplusz.hu/muanyag-egbolt-p_25479",
+   "https://www.rtlplusz.hu/szaffi-p_28500",
+   "https://www.rtlplusz.hu/hotel-bloff-p_28588",
+   "https://www.rtlplusz.hu/aglaja-p_12587"
+  ],
+  "program_pages": [
+   {
+    "url": "https://www.rtlplusz.hu/kagylo-es-sult-krumpli-p_28501",
+    "status": 200,
+    "title": "Kagyló és sült krumpli | RTL+",
+    "og_title": "Kagyló és sült krumpli | RTL+",
+    "og_desc": "Még több Kagyló és sült krumpli az RTL+ kínálatában - teljes adások, emlékezetes pillanatok, extra videók!",
+    "jsonld_types": [
+     "BreadcrumbList",
+     "ListItem",
+     "ListItem",
+     "WebPage",
+     "WebSite",
+     "Organization",
+     "ImageObject"
+    ],
+    "premium_words": [
+     "előfizetnem",
+     "előfizetés",
+     "előfizetésed",
+     "előfizetéseddel",
+     "előfizetési",
+     "előfizetéssel",
+     "free",
+     "premium"
+    ],
+    "bytes": 406340
+   },
+   {
+    "url": "https://www.rtlplusz.hu/kameleon-p_12095",
+    "status": 200,
+    "title": "Kaméleon | Streameld az RTL+ Premiumon!",
+    "og_title": "Kaméleon | Streameld az RTL+ Premiumon!",
+    "og_desc": "Nagy Ervin főszereplésével egy fordulatokban gazdag történet a manipulációról, a szerelemről és a megtévesztésről. Nézd online az RTL+ Premiumon!",
+    "jsonld_types": [
+     "BreadcrumbList",
+     "ListItem",
+     "ListItem",
+     "WebPage",
+     "WebSite",
+     "Organization",
+     "ImageObject"
+    ],
+    "premium_words": [
+     "előfizetnem",
+     "előfizetés",
+     "előfizetésed",
+     "előfizetéseddel",
+     "előfizetési",
+     "előfizetéssel",
+     "free",
+     "premium"
+    ],
+    "bytes": 445922
+   },
+   {
+    "url": "https://www.rtlplusz.hu/alarcos-enekes-p_16217",
+    "status": 200,
+    "title": "Álarcos énekes | RTL+",
+    "og_title": "Álarcos énekes | Nézd az új évadot az RTL+ Premiumon!",
+    "og_desc": "Új maszkok, új nyomozócsapat és izgalmas leleplezések várnak az Álarcos énekes legújabb évadában! Streameld október 11-től az RTL+ Premiumon!",
+    "jsonld_types": [
+     "BreadcrumbList",
+     "ListItem",
+     "ListItem",
+     "WebPage",
+     "WebSite",
+     "Organization",
+     "ImageObject"
+    ],
+    "premium_words": [
+     "előfizetnem",
+     "előfizetés",
+     "előfizetésed",
+     "előfizetéseddel",
+     "előfizetési",
+     "előfizetéssel",
+     "free",
+     "premium"
+    ],
+    "bytes": 983176
+   },
+   {
+    "url": "https://www.rtlplusz.hu/kalandozz-d-nagy-orsival-p_27350",
+    "status": 200,
+    "title": "Kalandozz! D. Nagy Orsival | RTL+",
+    "og_title": "Kalandozz! D. Nagy Orsival | RTL+",
+    "og_desc": "Még több Kalandozz! D. Nagy Orsival az RTL+ kínálatában - teljes adások, emlékezetes pillanatok, extra videók!",
+    "jsonld_types": [
+     "BreadcrumbList",
+     "ListItem",
+     "ListItem",
+     "WebPage",
+     "WebSite",
+     "Organization",
+     "ImageObject"
+    ],
+    "premium_words": [
+     "előfizetnem",
+     "előfizetés",
+     "előfizetésed",
+     "előfizetéseddel",
+     "előfizetési",
+     "előfizetéssel",
+     "free",
+     "premium"
+    ],
+    "bytes": 969066
+   }
+  ]
+ },
+ "tv2_play": {
+  "sitemaps": 21,
+  "video_urls": 299924,
+  "unique_shows": 5127,
+  "top_shows": [
+   [
+    "mokka",
+    54628
+   ],
+   [
+    "aktiv",
+    21921
+   ],
+   [
+    "exatlon",
+    20522
+   ],
+   [
+    "fem3_cafe",
+    18814
+   ],
+   [
+    "celebszemle",
+    9876
+   ],
+   [
+    "joban_rosszban",
+    8507
+   ],
+   [
+    "la_liga",
+    8479
+   ],
+   [
+    "premier_league",
+    8100
+   ],
+   [
+    "azsia_expressz",
+    6806
+   ],
+   [
+    "szerencsekerek",
+    6233
+   ],
+   [
+    "sztarban_sztar",
+    5904
+   ],
+   [
+    "megasztar",
+    5235
+   ],
+   [
+    "farm_vip",
+    5137
+   ],
+   [
+    "tobb_mint_testor",
+    5049
+   ],
+   [
+    "hal_a_tortan",
+    4973
+   ],
+   [
+    "dancing",
+    4965
+   ],
+   [
+    "sefek_sefe",
+    4807
+   ],
+   [
+    "sztarban_sztar_leszek",
+    3855
+   ],
+   [
+    "hazassag_elso_latasra",
+    3620
+   ],
+   [
+    "a_nagy_duett",
+    3283
+   ],
+   [
+    "kincsvadaszok",
+    2780
+   ],
+   [
+    "zenebutik",
+    2676
+   ],
+   [
+    "mintaapak",
+    2640
+   ],
+   [
+    "power_of_love",
+    2431
+   ],
+   [
+    "hirado",
+    2346
+   ],
+   [
+    "naplo",
+    2250
+   ],
+   [
+    "a_nagy_o",
+    2142
+   ],
+   [
+    "ujratervezes",
+    2128
+   ],
+   [
+    "akisertes",
+    1822
+   ],
+   [
+    "parharc",
+    1683
+   ],
+   [
+    "money_or_love",
+    1610
+   ],
+   [
+    "zsakbamacska",
+    1535
+   ],
+   [
+    "edes_elet",
+    1513
+   ],
+   [
+    "ninja_warrior",
+    1499
+   ],
+   [
+    "fuss_csalad_fuss",
+    1265
+   ],
+   [
+    "stahl_konyhaja",
+    1230
+   ],
+   [
+    "legyen_on_is_milliomos",
+    1191
+   ],
+   [
+    "frizbi_hajdu_peterrel",
+    1187
+   ],
+   [
+    "kogazdag_fiatalok",
+    1175
+   ],
+   [
+    "ezek_megorultek",
+    1152
+   ]
+  ],
+  "show_pages": [
+   {
+    "slug": "mokka",
+    "status": 200,
+    "title": "TV2 Play",
+    "og_title": null,
+    "og_desc": null,
+    "jsonld_types": [],
+    "premium_words": [],
+    "bytes": 6032
+   },
+   {
+    "slug": "kincsvadaszok",
+    "status": 200,
+    "title": "TV2 Play",
+    "og_title": null,
+    "og_desc": null,
+    "jsonld_types": [],
+    "premium_words": [],
+    "bytes": 6032
+   },
+   {
+    "slug": "doktor_balaton",
+    "status": 200,
+    "title": "TV2 Play",
+    "og_title": null,
+    "og_desc": null,
+    "jsonld_types": [],
+    "premium_words": [],
+    "bytes": 6032
+   }
+  ],
+  "googlebot_view": {
+   "status": 200,
+   "title": "TV2 Play",
+   "og_title": null,
+   "og_desc": null,
+   "jsonld_types": [],
+   "premium_words": [],
+   "bytes": 6032
+  }
+ },
+ "filmio": {
+  "tls_chain": " 0 s:CN=*.filmio.hu\n   i:C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV R36\n 1 s:CN=*.filmio.hu\n   i:C=GB, O=Sectigo Limited, CN=Sectigo Public Server Authentication CA DV R36\nVerify return code: 21 (unable to verify the first certificate)\n",
+  "https://www.filmio.hu": "SSLError(MaxRetryError(\"HTTPSConnectionPool(host='www.filmio.hu', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationE",
+  "http://filmio.hu": "SSLError(MaxRetryError(\"HTTPSConnectionPool(host='filmio.hu', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError",
+  "home_unverified": {
+   "status": 200,
+   "final": "https://filmio.hu/",
+   "title": "Filmio - Magyar filmek és sorozatok online",
+   "og_title": "Filmio - Magyar filmek és sorozatok online",
+   "og_desc": "A Filmio a magyar filmek streaming otthona: klasszikusok, kortárs alkotások és sorozatok egy helyen. Nézd bármikor, bármilyen eszközön.",
+   "jsonld_types": [],
+   "premium_words": [],
+   "bytes": 5273
+  },
+  "/robots.txt": {
+   "status": 404,
+   "head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /robots.txt</pre>\n</body>\n</html>\n",
+   "locs": 0
+  },
+  "/sitemap.xml": {
+   "status": 404,
+   "head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /sitemap.xml</pre>\n</body>\n</html>\n",
+   "locs": 0
+  },
+  "api_hints": []
+ },
+ "justwatch_hu_lang": {
+  "Netflix": {
+   "checked": 300,
+   "hu_audio": 0,
+   "hu_subs": 0,
+   "has_end_date": 0
+  },
+  "HBO Max": {
+   "checked": 300,
+   "hu_audio": 276,
+   "hu_subs": 283,
+   "has_end_date": 133
+  },
+  "Disney+": {
+   "checked": 300,
+   "hu_audio": 203,
+   "hu_subs": 278,
+   "has_end_date": 30
+  },
+  "Prime Video": {
+   "checked": 300,
+   "hu_audio": 110,
+   "hu_subs": 242,
+   "has_end_date": 78
+  },
+  "SkyShowtime": {
+   "checked": 300,
+   "hu_audio": 0,
+   "hu_subs": 0,
+   "has_end_date": 249
+  },
+  "Apple TV+": {
+   "checked": 300,
+   "hu_audio": 1,
+   "hu_subs": 283,
+   "has_end_date": 0
+  },
+  "FilmBox+": {
+   "checked": 300,
+   "hu_audio": 291,
+   "hu_subs": 114,
+   "has_end_date": 0
+  }
+ }
+}

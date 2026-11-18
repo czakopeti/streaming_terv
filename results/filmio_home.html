@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!-- <meta name="description" content="FILMIO, magyar filmek minden mennyiségben"> -->
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="FILMIO">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- OG Meta tags -->
+  <meta name="description" content="A Filmio a magyar filmek streaming otthona: klasszikusok, kortárs alkotások és sorozatok egy helyen. Nézd bármikor, bármilyen eszközön." />
+  <meta property="og:title" content="Filmio - Magyar filmek és sorozatok online" />
+  <meta property="og:description" content="A Filmio a magyar filmek streaming otthona: klasszikusok, kortárs alkotások és sorozatok egy helyen. Nézd bármikor, bármilyen eszközön." />
+  <meta property="og:image" content="https://filmio.hu/src/assets/images/nfi_db.png" />
+  <meta property="og:image:alt" content="A Filmio a magyar filmek streaming otthona: klasszikusok, kortárs alkotások és sorozatok egy helyen. Nézd bármikor, bármilyen eszközön." />
+  <meta property="og:url" content="http://filmio.hu/" />
+
+  <!-- Disable indexing -->
+  <!-- <meta name="robots" content="noindex, nofollow"> -->
+
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="syMXeroEAi6Q_Rskl8gGa2f5oTxCDeEnmKkhsMieiDA" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png?v=v2" />
+
+  <title>Filmio - Magyar filmek és sorozatok online</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html,
+    body {
+      overscroll-behavior-x: none;
+      /* A lejátszás idejére a Flutter háttere átlátszóvá válik (a film egy
+         iframe-ben megy a vászon mögött), ezért a lap saját háttere sem lehet
+         fehér. Egyben a betöltés előtti fehér villanást is megszünteti. */
+      background-color: #023047;
+    }
+  </style>
+  <!-- JW Player SDK -->
+  <!-- <script src="https://cdn.jwplayer.com/libraries/5FzQEFyK.js"></script> -->
+  <!-- <script src="https://cdn.jwplayer.com/libraries/O6ChwgnH.js"></script> -->
+
+  <!-- Google Cast SDK -->
+  <script type="text/javascript"
+    src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+
+  <!-- Chromecast JavaScript Interop -->
+  <script src="chromecast_interop.js" defer></script>
+
+  <!-- Apple ID login -->
+  <script type="text/javascript"
+    src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+  <script>
+    // Cast configuration
+    window['__onGCastApiAvailable'] = function (isAvailable) {
+      if (isAvailable) {
+        console.log('Cast API is available');
+
+        // Initialize Cast API
+        cast.framework.CastContext.getInstance().setOptions({
+          receiverApplicationId: '0F0D853B',
+          // receiverApplicationId: '01DBBAFD',
+          autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
+        });
+      }
+    };
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TDK42442');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Begin GEMIUS -->
+  <!-- (C)2000-2026 Gemius SA - gemiusPrism  / Wezel zbiorczy filmio.hu/Strona glowna serwisu -->
+  <script type="text/javascript">
+    // var pp_gemius_identifier = 'd7A1jwMoAakNYMmlgTiLYnYZ.jzB227GqZQbH_KZFTD.M7';
+    // var pp_gemius_get_title = true;
+    // var pp_gemius_use_cmp = true;
+    // var pp_gemius_cmp_timeout = Infinity;
+
+    // lines below shouldn't be edited
+    function gemius_pending(i) { window[i] = window[i] || function () { var x = window[i + '_pdata'] = window[i + '_pdata'] || []; x[x.length] = Array.prototype.slice.call(arguments, 0); }; };
+    (function (cmds) { var c; while (c = cmds.pop()) gemius_pending(c) })(['gemius_cmd', 'gemius_hit', 'gemius_event', 'gemius_init', 'pp_gemius_hit', 'pp_gemius_event', 'pp_gemius_init']);
+    window.pp_gemius_cmd = window.pp_gemius_cmd || window.gemius_cmd;
+    (function (d, t) {
+      try {
+        var gt = d.createElement(t), s = d.getElementsByTagName(t)[0], l = 'http' + ((location.protocol == 'https:') ? 's' : ''); gt.setAttribute('async', 'async');
+        gt.setAttribute('defer', 'defer'); gt.src = l + '://gahu.hit.gemius.pl/xgemius.min.js'; s.parentNode.insertBefore(gt, s);
+      } catch (e) { }
+    })(document, 'script');
+  </script>
+
+  <!-- End GEMIUS -->
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDK42442" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>
