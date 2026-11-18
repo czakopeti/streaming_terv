@@ -48,7 +48,8 @@ PIDX = {c: i for i, (c, _) in enumerate(PLATFORMS)}
 
 CONTENT_FIELDS = ["title", "originalTitle", "originalReleaseYear", "shortDescription",
                   "runtime", "ageCertification", "genres { shortName }",
-                  "scoring { imdbScore }", "fullPath"]
+                  "scoring { imdbScore }", "fullPath", "posterUrl",
+                  "backdrops { backdropUrl }"]
 OFFER_FIELDS = ["monetizationType", "audioLanguages", "subtitleLanguages",
                 "availableToTime", "availableFromTime", "standardWebURL"]
 
@@ -140,6 +141,14 @@ def resolve_fields():
     return cf, of
 
 
+def img_key(url):
+    """'/poster/306213318/{profile}/the-white-lotus.{format}' -> '306213318/the-white-lotus'"""
+    if not url:
+        return ""
+    m = re.match(r"/(?:poster|backdrop)/(\d+)/\{profile\}/([^.{]+)", url)
+    return f"{m.group(1)}/{m.group(2)}" if m else ""
+
+
 def day_index(iso):
     """ISO dátum -> napok 1970 óta (0, ha nincs)."""
     if not iso:
@@ -186,6 +195,8 @@ def fetch_justwatch():
                     "genres": [g["shortName"] for g in (c.get("genres") or [])],
                     "imdb": ((c.get("scoring") or {}).get("imdbScore")) or 0,
                     "path": c.get("fullPath") or "",
+                    "poster": img_key(c.get("posterUrl")),
+                    "backdrop": img_key(((c.get("backdrops") or [{}])[0] or {}).get("backdropUrl")),
                     "rank": 10**9, "offers": {},
                 })
                 t["rank"] = min(t["rank"], pos)
@@ -224,7 +235,7 @@ def fetch_rtl():
     live = set(urls)
     fresh = 0
     for u in urls:
-        if u in cache:
+        if u in cache and "img" in cache[u]:
             continue
         try:
             p = S.get(u, timeout=30)
@@ -241,9 +252,10 @@ def fetch_rtl():
         title_tag = re.search(r"<title[^>]*>(.*?)</title>", h, re.S)
         raw = html.unescape(title_tag.group(1)) if title_tag else og_t
         name = raw.split("|")[0].strip() or og_t.split("|")[0].strip()
+        img = meta("og:image")
         premium = "premium" in (raw + og_t + og_d).lower()
         generic = og_d.startswith("Még több")
-        cache[u] = {"title": name, "desc": "" if generic else og_d, "premium": premium}
+        cache[u] = {"title": name, "desc": "" if generic else og_d, "premium": premium, "img": img}
         fresh += 1
         time.sleep(0.4)
     cache = {k: v for k, v in cache.items() if k in live}
@@ -289,6 +301,7 @@ def main():
         jw.append({"id": "rtl" + re.sub(r"\D", "", u.rsplit("p_", 1)[-1]), "type": "SHOW",
                    "title": v["title"], "orig": "", "year": 0, "desc": v["desc"],
                    "runtime": 0, "age": "", "genres": [], "imdb": 0, "path": "",
+                   "poster": "", "backdrop": "", "rtl_img": v.get("img", ""),
                    "rank": rtl_rank, "offers": {"rtl": offer}})
 
     jw.sort(key=lambda t: t["rank"])
@@ -306,12 +319,13 @@ def main():
         orig = t["orig"] if t["orig"] and norm(t["orig"]) != norm(t["title"]) else ""
         rows.append([t["id"], 1 if t["type"] == "SHOW" else 0, t["title"], orig,
                      t["year"], [gidx[g] for g in t["genres"]],
-                     round(t["imdb"] * 10) if t["imdb"] else 0, offers])
+                     round(t["imdb"] * 10) if t["imdb"] else 0,
+                     t["poster"] or (("rtl:" + t["rtl_img"]) if t.get("rtl_img") else ""), offers])
         desc = t["desc"]
         if len(desc) > 240:
             desc = desc[:240].rsplit(" ", 1)[0] + "…"
         extra[t["id"]] = [desc, {PLATFORMS[PIDX[c]][0]: o["url"] for c, o in t["offers"].items()},
-                          t["path"]]
+                          t["path"], t.get("backdrop", "")]
 
     # biztosíték: ha egy platform a tegnapinál sokkal kevesebb címet ad, nem írjuk felül az adatot
     counts = {}
@@ -338,7 +352,7 @@ def main():
         "today": int(now.timestamp() // 86400),
         "platforms": [{"code": c, "name": n} for c, n in PLATFORMS],
         "genres": genres,
-        "cols": ["id", "show", "title", "orig", "year", "genres", "imdb10", "offers[platform, flags(1 hu hang,2 hu felirat,4 nyelv ismert,8 ingyenes), vege_nap, kezdete_nap]"],
+        "cols": ["id", "show", "title", "orig", "year", "genres", "imdb10", "poster (JW id/slug vagy rtl:url)", "offers[platform, flags(1 hu hang,2 hu felirat,4 nyelv ismert,8 ingyenes), vege_nap, kezdete_nap]"],
         "titles": rows,
     }
     json.dump(catalog, open(os.path.join(DATA, "catalog.json"), "w", encoding="utf-8"),
