@@ -1,0 +1,14 @@
+{
+  "checked": "2026. szeptember",
+  "note": "Belépő csomagok havidíja forintban. Kézzel karbantartva, a szolgáltatók oldalai és hazai árösszesítők alapján.",
+  "plans": {
+    "nfx": { "price": 3190, "plan": "Alap csomag" },
+    "mxx": { "price": 3490, "plan": "Standard" },
+    "dnp": { "price": 2990, "plan": "Standard" },
+    "prv": { "price": 1900, "plan": "Prime" },
+    "sst": { "price": 2590, "plan": "Standard, reklámokkal" },
+    "atp": { "price": 2790, "plan": "Apple TV" },
+    "rtl": { "price": 2990, "plan": "Premium, reklámokkal" },
+    "mdk": { "price": 0, "plan": "ingyenes" }
+  }
+}

@@ -54,11 +54,46 @@ OFFER_FIELDS = ["monetizationType", "audioLanguages", "subtitleLanguages",
 
 
 def build_query(cf, of):
-    return ("query($f:[String!],$after:String){ popularTitles(country: HU, first:100, "
-            "after:$after, filter:{packages:$f}) { totalCount pageInfo{endCursor hasNextPage} "
+    return ("query($f:[String!],$filter:TitleFilter,$after:String){ popularTitles(country: HU, first:100, "
+            "after:$after, filter:$filter) { totalCount pageInfo{endCursor hasNextPage} "
             "edges { node { id objectType content(country: HU, language:\"hu\"){ "
             + " ".join(cf) + " } offers(country: HU, platform: WEB, filter:{packages:$f}) { "
             + " ".join(of) + " } } } } }")
+
+
+COUNT_Q = ("query($filter:TitleFilter){ popularTitles(country: HU, first:1, filter:$filter) "
+           "{ totalCount } }")
+LIMIT = 1900  # a JustWatch ennél mélyebbre nem lapoz
+THIS_YEAR = datetime.now(timezone.utc).year
+
+
+def count(filt):
+    d = jw_post(COUNT_Q, {"filter": filt})
+    return ((d.get("data") or {}).get("popularTitles") or {}).get("totalCount") or 0
+
+
+def slices(code):
+    """Szeletek, amelyek mindegyike LIMIT alatt van: típus, aztán évtartomány szerint."""
+    base = {"packages": [code]}
+    if count(base) <= LIMIT:
+        return [base]
+    out = []
+    stack = [dict(base, objectTypes=[t], releaseYear={"min": 1900, "max": THIS_YEAR + 1})
+             for t in ("MOVIE", "SHOW")]
+    while stack:
+        f = stack.pop()
+        n = count(f)
+        lo, hi = f["releaseYear"]["min"], f["releaseYear"]["max"]
+        if n <= LIMIT or lo >= hi:
+            if n:
+                out.append(f)
+            continue
+        mid = (lo + hi) // 2 if hi - lo > 60 else max(lo, hi - max(1, (hi - lo) // 3))
+        mid = min(max(mid, lo), hi - 1)
+        stack.append(dict(f, releaseYear={"min": lo, "max": mid}))
+        stack.append(dict(f, releaseYear={"min": mid + 1, "max": hi}))
+        time.sleep(0.2)
+    return out
 
 
 def jw_post(query, variables, tries=4):
@@ -78,7 +113,7 @@ def resolve_fields():
     """Kidobja azokat a mezőket, amelyeket a séma nem ismer."""
     cf, of = list(CONTENT_FIELDS), list(OFFER_FIELDS)
     for _ in range(12):
-        d = jw_post(build_query(cf, of), {"f": ["nfx"], "after": None})
+        d = jw_post(build_query(cf, of), {"f": ["nfx"], "filter": {"packages": ["nfx"]}, "after": None})
         errs = [e.get("message", "") for e in d.get("errors", [])]
         if not errs:
             return cf, of
@@ -112,9 +147,13 @@ def fetch_justwatch():
     q = build_query(cf, of)
     titles: dict[str, dict] = {}
     for code in JW_CODES:
-        after, rank, pages = None, 0, 0
+      rank, pages = 0, 0
+      parts = slices(code)
+      print(f"{code}: {len(parts)} szelet")
+      for filt in parts:
+        after, part_pages, pos = None, 0, 0
         while True:
-            d = jw_post(q, {"f": [code], "after": after})
+            d = jw_post(q, {"f": [code], "filter": filt, "after": after})
             pt = (d.get("data") or {}).get("popularTitles")
             if not pt:
                 print("üres oldal", code, d.get("errors"), file=sys.stderr)
@@ -127,6 +166,7 @@ def fetch_justwatch():
                 if not offers:
                     continue
                 rank += 1
+                pos += 1
                 t = titles.setdefault(n["id"], {
                     "id": n["id"], "type": n["objectType"],
                     "title": c.get("title") or "", "orig": c.get("originalTitle") or "",
@@ -139,7 +179,7 @@ def fetch_justwatch():
                     "path": c.get("fullPath") or "",
                     "rank": 10**9, "offers": {},
                 })
-                t["rank"] = min(t["rank"], rank)
+                t["rank"] = min(t["rank"], pos)
                 hu_a = any("hu" in (o.get("audioLanguages") or []) for o in offers)
                 hu_s = any("hu" in (o.get("subtitleLanguages") or []) for o in offers)
                 lang_known = any(o.get("audioLanguages") for o in offers)
@@ -155,11 +195,12 @@ def fetch_justwatch():
                     "url": offers[0].get("standardWebURL") or "",
                 }
             pages += 1
-            if not pt["pageInfo"]["hasNextPage"] or pages > 120:
+            part_pages += 1
+            if not pt["pageInfo"]["hasNextPage"] or part_pages >= LIMIT // 100:
                 break
             after = pt["pageInfo"]["endCursor"]
             time.sleep(0.35)
-        print(f"{code}: {rank} cím, {pages} oldal")
+      print(f"{code}: {rank} cím, {pages} oldal")
     return list(titles.values())
 
 
