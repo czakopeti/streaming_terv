@@ -1,9 +1,6 @@
 name: adatforras-proba
 
 on:
-  push:
-    branches: [main]
-    paths: ["probe/**", ".github/workflows/probe.yml"]
   workflow_dispatch:
 
 permissions:
