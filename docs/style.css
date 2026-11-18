@@ -173,7 +173,7 @@ img { display: block; max-width: 100%; }
 .jegy__honap { font-family: var(--display); font-weight: 800; font-size: 2.1rem; line-height: .9; }
 .jegy__datum { font-size: .8125rem; margin-top: .3rem; color: #4b625b; }
 .jegy__platform { font-family: var(--display); font-weight: 900; font-size: 2.35rem; line-height: .92; margin-top: .9rem; }
-.jegy__ar { font-weight: 650; margin-top: .3rem; font-variant-numeric: tabular-nums; }
+.jegy__ar { font-weight: 650; margin-top: .3rem; }
 .jegy__perf { position: relative; border-top: 2px dashed rgba(23, 48, 42, .32); margin: 1rem -.2rem .85rem; }
 .jegy__perf::before, .jegy__perf::after { content: ""; position: absolute; top: -1px; width: 1.15rem; height: 1.15rem; border-radius: 50%; background: var(--ej); transform: translateY(-50%); }
 .jegy__perf::before { left: -1.55rem; }
@@ -189,7 +189,7 @@ img { display: block; max-width: 100%; }
 .jegy--ingyen .jegy__platform { font-size: 1.8rem; }
 
 .osszeg { margin-top: .75rem; display: flex; flex-wrap: wrap; gap: .5rem 2.5rem; align-items: baseline; }
-.osszeg__fo { font-family: var(--display); font-weight: 800; font-size: clamp(2.2rem, 5vw, 3rem); line-height: 1; font-variant-numeric: tabular-nums; }
+.osszeg__fo { font-family: var(--display); font-weight: 800; font-size: clamp(2.2rem, 5vw, 3rem); line-height: 1; }
 .osszeg__mellek { color: #d9e3de; max-width: 38rem; }
 .osszeg__mellek strong { color: var(--arany); font-weight: 700; }
 .terv__gombok { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
