@@ -1,0 +1,367 @@
+{
+ "data": {
+  "packages": [
+   {
+    "packageId": 8,
+    "clearName": "Netflix",
+    "shortName": "nfx",
+    "technicalName": "netflix",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 119,
+    "clearName": "Amazon Prime Video",
+    "shortName": "prv",
+    "technicalName": "amazonprimevideo",
+    "monetizationTypes": [
+     "FLATRATE",
+     "FREE"
+    ]
+   },
+   {
+    "packageId": 350,
+    "clearName": "Apple TV",
+    "shortName": "atp",
+    "technicalName": "appletvplus",
+    "monetizationTypes": [
+     "FLATRATE",
+     "FREE"
+    ]
+   },
+   {
+    "packageId": 337,
+    "clearName": "Disney Plus",
+    "shortName": "dnp",
+    "technicalName": "disneyplus",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 2791,
+    "clearName": "JustWatch TV Beta",
+    "shortName": "jfb",
+    "technicalName": "justwatchtvbeta",
+    "monetizationTypes": [
+     "FREE"
+    ]
+   },
+   {
+    "packageId": 2,
+    "clearName": "Apple TV Store",
+    "shortName": "itu",
+    "technicalName": "itunes",
+    "monetizationTypes": [
+     "BUY",
+     "FLATRATE",
+     "FREE",
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 188,
+    "clearName": "YouTube Premium",
+    "shortName": "ytr",
+    "technicalName": "youtubered",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 190,
+    "clearName": "Curiosity Stream",
+    "shortName": "cts",
+    "technicalName": "curiositystream",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 475,
+    "clearName": "DOCSVILLE",
+    "shortName": "dsv",
+    "technicalName": "docsville",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 546,
+    "clearName": "WOW Presents Plus",
+    "shortName": "wow",
+    "technicalName": "wowpresentsplus",
+    "monetizationTypes": [
+     "FLATRATE",
+     "FREE"
+    ]
+   },
+   {
+    "packageId": 551,
+    "clearName": "Magellan TV",
+    "shortName": "mgl",
+    "technicalName": "magellantv",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 554,
+    "clearName": "BroadwayHD",
+    "shortName": "bhd",
+    "technicalName": "broadwayhd",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 559,
+    "clearName": "Filmzie",
+    "shortName": "fmz",
+    "technicalName": "filmzie",
+    "monetizationTypes": [
+     "ADS"
+    ]
+   },
+   {
+    "packageId": 444,
+    "clearName": "Dekkoo",
+    "shortName": "dkk",
+    "technicalName": "dekkoo",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 567,
+    "clearName": "True Story",
+    "shortName": "trs",
+    "technicalName": "truestory",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 315,
+    "clearName": "Hoichoi",
+    "shortName": "hoc",
+    "technicalName": "hoichoi",
+    "monetizationTypes": [
+     "FLATRATE",
+     "FREE"
+    ]
+   },
+   {
+    "packageId": 677,
+    "clearName": "Eventive",
+    "shortName": "eve",
+    "technicalName": "eventive",
+    "monetizationTypes": [
+     "FREE",
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 692,
+    "clearName": "Cultpix",
+    "shortName": "ctx",
+    "technicalName": "cultpix",
+    "monetizationTypes": [
+     "FLATRATE",
+     "FREE"
+    ]
+   },
+   {
+    "packageId": 701,
+    "clearName": "FILMBOX+ Stream",
+    "shortName": "flb",
+    "technicalName": "filmbox",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 309,
+    "clearName": "Sun Nxt",
+    "shortName": "snx",
+    "technicalName": "sunnxt",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 1773,
+    "clearName": "SkyShowtime",
+    "shortName": "sst",
+    "technicalName": "skyshowtime",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 283,
+    "clearName": "Crunchyroll",
+    "shortName": "cru",
+    "technicalName": "crunchyroll",
+    "monetizationTypes": [
+     "ADS",
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 538,
+    "clearName": "Plex",
+    "shortName": "plx",
+    "technicalName": "plex",
+    "monetizationTypes": [
+     "ADS",
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 35,
+    "clearName": "Rakuten TV",
+    "shortName": "wki",
+    "technicalName": "wuaki",
+    "monetizationTypes": [
+     "ADS",
+     "BUY",
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 223,
+    "clearName": "Hayu",
+    "shortName": "hay",
+    "technicalName": "hayu",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 1899,
+    "clearName": "HBO Max",
+    "shortName": "mxx",
+    "technicalName": "max",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 2330,
+    "clearName": "Jolt Film",
+    "shortName": "jfl",
+    "technicalName": "joltfilm",
+    "monetizationTypes": [
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 2478,
+    "clearName": "FOUND TV",
+    "shortName": "fod",
+    "technicalName": "foundtv",
+    "monetizationTypes": [
+     "ADS"
+    ]
+   },
+   {
+    "packageId": 11,
+    "clearName": "MUBI",
+    "shortName": "mbi",
+    "technicalName": "mubi",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 2555,
+    "clearName": "Bloodstream",
+    "shortName": "bsm",
+    "technicalName": "bloodstream",
+    "monetizationTypes": [
+     "BUY",
+     "FLATRATE",
+     "FREE",
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 2603,
+    "clearName": "KableOne",
+    "shortName": "kbo",
+    "technicalName": "kableone",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   },
+   {
+    "packageId": 2620,
+    "clearName": "CaixaForum+",
+    "shortName": "cfp",
+    "technicalName": "caixaforumplus",
+    "monetizationTypes": [
+     "FREE"
+    ]
+   },
+   {
+    "packageId": 2623,
+    "clearName": "Artiflix",
+    "shortName": "afx",
+    "technicalName": "artflix",
+    "monetizationTypes": [
+     "FLATRATE",
+     "FREE"
+    ]
+   },
+   {
+    "packageId": 10,
+    "clearName": "Amazon Video",
+    "shortName": "amz",
+    "technicalName": "amazon",
+    "monetizationTypes": [
+     "BUY",
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 2685,
+    "clearName": "Artify",
+    "shortName": "atf",
+    "technicalName": "artify",
+    "monetizationTypes": [
+     "FLATRATE",
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 2695,
+    "clearName": "MediaKlikk",
+    "shortName": "mdk",
+    "technicalName": "mediaklikk",
+    "monetizationTypes": [
+     "ADS"
+    ]
+   },
+   {
+    "packageId": 2765,
+    "clearName": "Pijama Films",
+    "shortName": "pij",
+    "technicalName": "pijamafilms",
+    "monetizationTypes": [
+     "RENT"
+    ]
+   },
+   {
+    "packageId": 2801,
+    "clearName": "Sky Showtime Amazon Channel",
+    "shortName": "sml",
+    "technicalName": "amazonskyshowtime",
+    "monetizationTypes": [
+     "FLATRATE"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,492 @@
+{
+ "generated": "2026-11-18T13:59:44Z",
+ "justwatch": {
+  "packages_status": 200,
+  "packages_count": 38,
+  "packages": [
+   "Netflix [nfx]",
+   "Amazon Prime Video [prv]",
+   "Apple TV [atp]",
+   "Disney Plus [dnp]",
+   "JustWatch TV Beta [jfb]",
+   "Apple TV Store [itu]",
+   "YouTube Premium [ytr]",
+   "Curiosity Stream [cts]",
+   "DOCSVILLE [dsv]",
+   "WOW Presents Plus [wow]",
+   "Magellan TV [mgl]",
+   "BroadwayHD [bhd]",
+   "Filmzie [fmz]",
+   "Dekkoo [dkk]",
+   "True Story [trs]",
+   "Hoichoi [hoc]",
+   "Eventive [eve]",
+   "Cultpix [ctx]",
+   "FILMBOX+ Stream [flb]",
+   "Sun Nxt [snx]",
+   "SkyShowtime [sst]",
+   "Crunchyroll [cru]",
+   "Plex [plx]",
+   "Rakuten TV [wki]",
+   "Hayu [hay]",
+   "HBO Max [mxx]",
+   "Jolt Film [jfl]",
+   "FOUND TV [fod]",
+   "MUBI [mbi]",
+   "Bloodstream [bsm]",
+   "KableOne [kbo]",
+   "CaixaForum+ [cfp]",
+   "Artiflix [afx]",
+   "Amazon Video [amz]",
+   "Artify [atf]",
+   "MediaKlikk [mdk]",
+   "Pijama Films [pij]",
+   "Sky Showtime Amazon Channel [sml]"
+  ],
+  "hungarian_relevant": [
+   "FILMBOX+ Stream [flb]",
+   "SkyShowtime [sst]",
+   "HBO Max [mxx]",
+   "MediaKlikk [mdk]"
+  ],
+  "titles_with_lang_status": 200,
+  "titles_with_lang_errors": [],
+  "lang_fields_supported": true,
+  "hu_total_titles": 41186,
+  "sample_titles": 40,
+  "sample_offers": 166,
+  "sample_offers_with_hu_audio": 81,
+  "titles_per_package": {
+   "Netflix": 7917,
+   "Amazon Prime Video": 1431,
+   "Apple TV": 341,
+   "Disney Plus": 2695,
+   "Apple TV Store": 10627,
+   "FILMBOX+ Stream": 567,
+   "SkyShowtime": 832,
+   "HBO Max": 2445,
+   "MediaKlikk": 22
+  }
+ },
+ "runner_location": {
+  "ip": "48.217.26.100",
+  "city": "Dulles Town Center",
+  "region": "Virginia",
+  "country": "US",
+  "loc": "39.0376,-77.4158",
+  "org": "AS8075 Microsoft Corporation",
+  "postal": "20164",
+  "timezone": "America/New_York",
+  "readme": "https://ipinfo.io/missingauth"
+ },
+ "rtl_plus": {
+  "tried": [
+   {
+    "url": "https://rtlplusz.hu",
+    "status": 200,
+    "final_url": "https://www.rtlplusz.hu",
+    "bytes": 929324,
+    "server": "envoy",
+    "content_type": "text/html; charset=utf-8",
+    "has_next_data": false,
+    "has_nuxt": false,
+    "json_ld": 2,
+    "api_hints": []
+   }
+  ],
+  "home_ok": true,
+  "robots_status": 200,
+  "sitemaps": [
+   {
+    "url": "https://www.rtlplusz.hu/sitemap.xml",
+    "status": 200,
+    "locs": 238,
+    "sample": [
+     "https://www.rtlplusz.hu/sitemap-1.xml",
+     "https://www.rtlplusz.hu/sitemap-2.xml",
+     "https://www.rtlplusz.hu/sitemap-3.xml",
+     "https://www.rtlplusz.hu/sitemap-4.xml",
+     "https://www.rtlplusz.hu/sitemap-5.xml",
+     "https://www.rtlplusz.hu/sitemap-6.xml",
+     "https://www.rtlplusz.hu/sitemap-7.xml",
+     "https://www.rtlplusz.hu/sitemap-8.xml"
+    ],
+    "children": [
+     {
+      "url": "https://www.rtlplusz.hu/sitemap-1.xml",
+      "status": 200,
+      "locs": 100,
+      "sample": [
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-504-resz-c_12980886",
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-503-resz-c_12980885",
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-502-resz-c_12980884",
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-501-resz-c_12980883",
+       "https://www.rtlplusz.hu/panelhosok-p_28422/1-evad-23-resz-c_13205882"
+      ]
+     },
+     {
+      "url": "https://www.rtlplusz.hu/sitemap-2.xml",
+      "status": 200,
+      "locs": 100,
+      "sample": [
+       "https://www.rtlplusz.hu/cobra-11-p_8143/20-evad-2-resz-c_13205131",
+       "https://www.rtlplusz.hu/cobra-11-p_8143/20-evad-3-resz-c_13205132",
+       "https://www.rtlplusz.hu/cobra-11-p_8143/20-evad-4-resz-c_13205133",
+       "https://www.rtlplusz.hu/cobra-11-p_8143/20-evad-6-resz-c_13205134",
+       "https://www.rtlplusz.hu/cobra-11-p_8143/20-evad-5-resz-c_13205135"
+      ]
+     },
+     {
+      "url": "https://www.rtlplusz.hu/sitemap-3.xml",
+      "status": 200,
+      "locs": 100,
+      "sample": [
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-451-resz-c_12983203",
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-450-resz-c_12983202",
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-449-resz-c_12983201",
+       "https://www.rtlplusz.hu/houdini-p_28290/1-resz-c_13203937",
+       "https://www.rtlplusz.hu/houdini-p_28290/2-resz-c_13203938"
+      ]
+     },
+     {
+      "url": "https://www.rtlplusz.hu/sitemap-4.xml",
+      "status": 200,
+      "locs": 100,
+      "sample": [
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-433-resz-c_12983178",
+       "https://www.rtlplusz.hu/golkiralysag-p_23215/3-evad-2-resz-c_13160801",
+       "https://www.rtlplusz.hu/golkiralysag-p_23215/3-evad-3-resz-c_13161727",
+       "https://www.rtlplusz.hu/golkiralysag-p_23215/3-evad-4-resz-c_13162591",
+       "https://www.rtlplusz.hu/golkiralysag-p_23215/3-evad-5-resz-c_13163641"
+      ]
+     },
+     {
+      "url": "https://www.rtlplusz.hu/sitemap-5.xml",
+      "status": 200,
+      "locs": 100,
+      "sample": [
+       "https://www.rtlplusz.hu/fokusz-p_7718/fokusz-2026-10-28-c_13203415",
+       "https://www.rtlplusz.hu/hirado-p_7724/26-10-28-rtl-hirado-c_13203409",
+       "https://www.rtlplusz.hu/bajnokok-ligaja-p_26188/golvonal-2026-10-28-c_13203365",
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-420-resz-c_12973686",
+       "https://www.rtlplusz.hu/baratok-kozt-p_7360/baratok-kozt-419-resz-c_12973564"
+      ]
+     },
+     {
+      "url": "https://www.rtlplusz.hu/sitemap-6.xml",
+      "status": 200,
+      "locs": 100,
+      "sample": [
+       "https://www.rtlplusz.hu/sikoly-setany-p_28460/1-evad-39-resz-a-szivelyes-verfarkas-c_13200763",
+       "https://www.rtlplusz.hu/sikoly-setany-p_28460/1-evad-40-resz-brian-az-agy-c_13200764",
+       "https://www.rtlplusz.hu/sikoly-setany-p_28460/1-evad-41-resz-gondolatolvasas-c_13200765",
+       "https://www.rtlplusz.hu/sikoly-setany-p_28460/1-evad-42-resz-sikolyok-jatszmaja-c_13200766",
+       "https://www.rtlplusz.hu/sikoly-setany-p_28460/1-evad-43-resz-szivos-nyar-c_13200767"
+      ]
+     }
+    ]
+   },
+   {
+    "url": "https://www.rtlplusz.hu/sitemap-program.xml",
+    "status": 200,
+    "locs": 449,
+    "sample": [
+     "https://www.rtlplusz.hu/kagylo-es-sult-krumpli-p_28501",
+     "https://www.rtlplusz.hu/kameleon-p_12095",
+     "https://www.rtlplusz.hu/alarcos-enekes-p_16217",
+     "https://www.rtlplusz.hu/kalandozz-d-nagy-orsival-p_27350",
+     "https://www.rtlplusz.hu/metamorfozis-p_28509",
+     "https://www.rtlplusz.hu/az-arulok-gyilkossag-a-kastelyban-p_24843",
+     "https://www.rtlplusz.hu/donal-csaladi-receptjei-p_28454",
+     "https://www.rtlplusz.hu/zuckerberg-a-metaverzum-kiralya-p_28478"
+    ]
+   },
+   {
+    "url": "https://www.rtlplusz.hu/sitemap-service.xml",
+    "status": 200,
+    "locs": 36,
+    "sample": [
+     "https://www.rtlplusz.hu/rtl-klub-extended-telekom",
+     "https://www.rtlplusz.hu/rtl_klub",
+     "https://www.rtlplusz.hu/rtl_ii",
+     "https://www.rtlplusz.hu/cool",
+     "https://www.rtlplusz.hu/rtl_gold",
+     "https://www.rtlplusz.hu/rtlhu_rtl_plus",
+     "https://www.rtlplusz.hu/rtlhu_film_plus",
+     "https://www.rtlplusz.hu/rtlhu_sorozat_plus"
+    ]
+   },
+   {
+    "url": "https://www.rtlplusz.hu/sitemap-static-pages.xml",
+    "status": 200,
+    "locs": 43,
+    "sample": [
+     "https://www.rtlplusz.hu/adatkezeles",
+     "https://www.rtlplusz.hu/jogi-nyilatkozat",
+     "https://www.rtlplusz.hu/altalanos-felhasznalasi-feltetelek",
+     "https://www.rtlplusz.hu/accessibility-declaration",
+     "https://www.rtlplusz.hu/action-plan",
+     "https://www.rtlplusz.hu/minden-musor/@",
+     "https://www.rtlplusz.hu/minden-musor/a",
+     "https://www.rtlplusz.hu/minden-musor/%C3%A1"
+    ]
+   }
+  ]
+ },
+ "tv2_play": {
+  "tried": [
+   {
+    "url": "https://tv2play.hu",
+    "status": 200,
+    "final_url": "https://tv2play.hu/",
+    "bytes": 6032,
+    "server": "nginx",
+    "content_type": "text/html",
+    "has_next_data": false,
+    "has_nuxt": false,
+    "json_ld": 0,
+    "api_hints": []
+   }
+  ],
+  "home_ok": true,
+  "robots_status": 200,
+  "sitemaps": [
+   {
+    "url": "https://tv2play.hu/sitemap.xml",
+    "status": 200,
+    "locs": 21,
+    "sample": [
+     "https://tv2play.hu/sitemap_video1.xml",
+     "https://tv2play.hu/sitemap_video2.xml",
+     "https://tv2play.hu/sitemap_video3.xml",
+     "https://tv2play.hu/sitemap_video4.xml",
+     "https://tv2play.hu/sitemap_video5.xml",
+     "https://tv2play.hu/sitemap_video6.xml",
+     "https://tv2play.hu/sitemap_video7.xml",
+     "https://tv2play.hu/sitemap_video8.xml"
+    ],
+    "children": [
+     {
+      "url": "https://tv2play.hu/sitemap_video1.xml",
+      "status": 200,
+      "locs": 15000,
+      "sample": [
+       "https://tv2play.hu/ujratervezes/teljesen_atalakult_az_otthonuk_anita_nem_birta_konnyek_nelkul",
+       "https://tv2play.hu/exatlon/2.evad_48.resz",
+       "https://tv2play.hu/joban_rosszban/1960.adas_1.resz",
+       "https://tv2play.hu/mokka/vavra_bence_nem_bankodik_szerintem_varakozason_felul_teljesitettem_",
+       "https://tv2play.hu/titkok_halojaban/titkok_halojaban_ii_evad_69_resz"
+      ]
+     },
+     {
+      "url": "https://tv2play.hu/sitemap_video2.xml",
+      "status": 200,
+      "locs": 15000,
+      "sample": [
+       "https://tv2play.hu/hirado/hirado_reggel_adas_2026_november_5_csutortok",
+       "https://tv2play.hu/a_nagy_duett/hoppa-madai-vivien-kockahasat-villantott",
+       "https://tv2play.hu/mokka/dramai_az_aszalyhelyzet_nemeth_lajosek_fociztak_a_velencei_toban",
+       "https://tv2play.hu/egy_per_egy/egyre-tobb-borasz-kacsint-kulfoldre",
+       "https://tv2play.hu/mokka/muri-eniko-szeretnek-mar-arrol-nyilatkozni-hogy-en-milyen-anya-vagyok"
+      ]
+     },
+     {
+      "url": "https://tv2play.hu/sitemap_video3.xml",
+      "status": 200,
+      "locs": 15000,
+      "sample": [
+       "https://tv2play.hu/exatlon/somhegyi_krisztian_higgadt_es_okos_kuzdelemre_keszul_dominikan",
+       "https://tv2play.hu/aktiv/megerkeztek-a-liverpool-sztarfocistai-budapestre",
+       "https://tv2play.hu/azsia_expressz/kecskes_eniko_bevallotta_en_nem_sokszor_lovagoltam_az_eletemben_",
+       "https://tv2play.hu/sztarban_sztar_leszek/megtamadtak-a-mestereket-most-vesztettuk-el-a-zsurit",
+       "https://tv2play.hu/a_nagy_o/13_elszallt_a_romantika_laura_nem_orult_toth_david_vallomasanak"
+      ]
+     },
+     {
+      "url": "https://tv2play.hu/sitemap_video4.xml",
+      "status": 200,
+      "locs": 15000,
+      "sample": [
+       "https://tv2play.hu/mokka/760_elelmiszer_ara_csokkent_nagyon_hatasos_eddig_az_arresstop",
+       "https://tv2play.hu/vadorok/vadorok_8_resz",
+       "https://tv2play.hu/star_academy/laci-es-arnold-is-eraval-bujna-agyba",
+       "https://tv2play.hu/fem3_cafe/van-kulonbseg-az-inzulinrezisztencia-es-a-cukorbetegseg-kozott",
+       "https://tv2play.hu/kincsvadaszok/koporso_a_kincsvadaszokban_fejes_tamas_szerint_van_benne_valaki_pentek"
+      ]
+     },
+     {
+      "url": "https://tv2play.hu/sitemap_video5.xml",
+      "status": 200,
+      "locs": 15000,
+      "sample": [
+       "https://tv2play.hu/osszetort_eletek/osszetort_eletek_82_resz",
+       "https://tv2play.hu/joban_rosszban/2088.adas_1.resz",
+       "https://tv2play.hu/vegtelen_szerelem/vegtelen_szerelem_i_evad_107_resz",
+       "https://tv2play.hu/la_liga/mumusat_legyozve_lepne_feljebb_a_tabellan_a_pamplonai_garda",
+       "https://tv2play.hu/exatlon/1.evad_65.resz"
+      ]
+     },
+     {
+      "url": "https://tv2play.hu/sitemap_video6.xml",
+      "status": 200,
+      "locs": 15000,
+      "sample": [
+       "https://tv2play.hu/dancing/megszolalt_a_jos_emilio_krausz_gabor_megnyerheti_a_dwts_t",
+       "https://tv2play.hu/joban_rosszban/szaraz-denes-ketszer-ugyanaz-a-csoda-nem-tortenik-meg",
+       "https://tv2play.hu/azsia_expressz/gyermeki_orom_kristof_teljesen_beleelte_magat_az_eloadasba",
+       "https://tv2play.hu/exatlon/teaser_exatlon_0113",
+       "https://tv2play.hu/sztarban_sztar/lanyai_segitettek_a_rappelesben_szekeres_adrient"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "filmio": {
+  "tried": [
+   {
+    "url": "https://filmio.hu",
+    "error": "SSLError(MaxRetryError(\"HTTPSConnectionPool(host='filmio.hu', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate "
+   }
+  ]
+ },
+ "mediaklikk": {
+  "tried": [
+   {
+    "url": "https://mediaklikk.hu",
+    "status": 200,
+    "final_url": "https://mediaklikk.hu/",
+    "bytes": 97873,
+    "server": null,
+    "content_type": "text/html",
+    "has_next_data": false,
+    "has_nuxt": false,
+    "json_ld": 1,
+    "api_hints": [
+     "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css?ver=6.9",
+     "https://api.w.org/",
+     "https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500italic,500,700,900&s",
+     "https://watchdogeventgateapi.mtva.hu",
+     "https://watchdogselfserviceapi.mtva.hu"
+    ]
+   }
+  ],
+  "home_ok": true,
+  "robots_status": 200,
+  "sitemaps": [
+   {
+    "url": "https://mediaklikk.hu/sitemap.xml",
+    "status": 200,
+    "locs": 26,
+    "sample": [
+     "http://mediaklikk.hu/sitemap-misc.xml",
+     "http://mediaklikk.hu/video-sitemap24.xml",
+     "http://mediaklikk.hu/video-sitemap23.xml",
+     "http://mediaklikk.hu/video-sitemap22.xml",
+     "http://mediaklikk.hu/video-sitemap21.xml",
+     "http://mediaklikk.hu/video-sitemap20.xml",
+     "http://mediaklikk.hu/video-sitemap19.xml",
+     "http://mediaklikk.hu/video-sitemap18.xml"
+    ],
+    "children": [
+     {
+      "url": "http://mediaklikk.hu/sitemap-misc.xml",
+      "status": 404,
+      "locs": 0,
+      "sample": []
+     },
+     {
+      "url": "http://mediaklikk.hu/video-sitemap24.xml",
+      "status": 200,
+      "locs": 1000,
+      "sample": [
+       "https://mediaklikk.hu/video/magyarorszag-finom-13-resz-tyukhusleves-tonkolykorpas-kifli/",
+       "https://mediaklikk.hu/video/2024/09/17/gor-nagy-miklos-margitsziget",
+       "https://mediaklikk.hu/video/2024/09/17/arvizvedelmi-keszulodes-a-margitszigeten",
+       "https://mediaklikk.hu/csaladbarat-extravideok/video/2024/09/17/vendegunk-janza-kata",
+       "https://mediaklikk.hu/csaladbarat-extravideok/video/2024/09/17/borocz-zsofia-szilvas-morzsapite"
+      ]
+     },
+     {
+      "url": "http://mediaklikk.hu/video-sitemap23.xml",
+      "status": 200,
+      "locs": 1000,
+      "sample": [
+       "https://mediaklikk.hu/video/evangelium-2024-07-28-i-adas/",
+       "https://mediaklikk.hu/video/2024/07/28/nyar-24-2024-julius-28",
+       "https://mediaklikk.hu/video/olimpia-parizs-vivas/",
+       "https://mediaklikk.hu/video/mma-portre-amikor-rajzolunk-almodunk-portrefilm-szunyoghy-andras-grafikusmuveszrol/",
+       "https://mediaklikk.hu/video/olimpia-parizs-uszas/"
+      ]
+     },
+     {
+      "url": "http://mediaklikk.hu/video-sitemap22.xml",
+      "status": 200,
+      "locs": 1000,
+      "sample": [
+       "https://mediaklikk.hu/video/2024/05/27/a-rak-cukorbetegseg-es-elhizas-megfekezese",
+       "https://mediaklikk.hu/video/2024/05/27/vendegunk-vasary-tamas",
+       "https://mediaklikk.hu/video/2024/05/27/vendegunk-benedekkfy-katalin",
+       "https://mediaklikk.hu/video/almok-almodoi-irinyi-janos/",
+       "https://mediaklikk.hu/video/2024/05/22/herkules-muzsak-dala"
+      ]
+     },
+     {
+      "url": "http://mediaklikk.hu/video-sitemap21.xml",
+      "status": 200,
+      "locs": 1000,
+      "sample": [
+       "https://mediaklikk.hu/fomenu-4-evad/video/2024/03/16/ecetes-lilahagymas-babsalata",
+       "https://mediaklikk.hu/fomenu-4-evad/video/2024/03/14/eszterhazy-rostelyos-zsemlegomboccal",
+       "https://mediaklikk.hu/video/fomenu-reform/",
+       "https://mediaklikk.hu/video/vers-mindenkinek-radnoti-miklos-hetedik-ecloga-papp-janos/",
+       "https://mediaklikk.hu/video/2024/03/15/9-eves-a-petofi-tv"
+      ]
+     },
+     {
+      "url": "http://mediaklikk.hu/video-sitemap20.xml",
+      "status": 200,
+      "locs": 1000,
+      "sample": [
+       "https://mediaklikk.hu/csinaljukafesztivalt-3-evad/video/2023/12/27/budapest-bar-medley-extra-produkcio",
+       "https://mediaklikk.hu/csinaljukafesztivalt-3-evad/video/2023/12/27/pocsolyaba-leptem-6-valogato",
+       "https://mediaklikk.hu/csinaljukafesztivalt-3-evad/video/2023/12/27/vastag-csaba-kisfilm",
+       "https://mediaklikk.hu/csinaljukafesztivalt-3-evad/video/2023/12/27/palinka-dal-6-valogato",
+       "https://mediaklikk.hu/csinaljukafesztivalt-3-evad/video/2023/12/27/vastag-tamas-kisfilm"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "nava_mtva_archivum": {
+  "tried": [
+   {
+    "url": "https://nava.hu",
+    "status": 200,
+    "final_url": "https://nava.hu/",
+    "bytes": 171640,
+    "server": "Apache",
+    "content_type": "text/html; charset=UTF-8",
+    "has_next_data": false,
+    "has_nuxt": false,
+    "json_ld": 0,
+    "api_hints": [
+     "https://api.w.org/",
+     "https://fonts.googleapis.com/css?family=Ek+Mukta:300,400,500,700&subset=latin-ext,latin",
+     "https://fonts.googleapis.com/css?family=Yantramanav:300,400,500,700&subset=latin-ext,lat"
+    ]
+   }
+  ],
+  "home_ok": true,
+  "robots_status": 200,
+  "sitemaps": [
+   {
+    "url": "https://nava.hu/sitemap.xml",
+    "status": 404,
+    "locs": 0,
+    "sample": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,6632 @@
+{
+ "data": {
+  "popularTitles": {
+   "totalCount": 41186,
+   "edges": [
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Gengsztervilág",
+       "originalReleaseYear": 2025,
+       "externalIds": {
+        "imdbId": "tt35717988",
+        "tmdbId": "247718"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/gengsztervilag/12e9e904-d7dc-3f84-b362-7287cf837b90/seasons/1/episodes/stick-or-twist-episode-1/2f8f3980-e88f-3a01-b726-dfedb196a30b",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/gengsztervilag/12e9e904-d7dc-3f84-b362-7287cf837b90/seasons/1/episodes/stick-or-twist-episode-1/2f8f3980-e88f-3a01-b726-dfedb196a30b",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/gengsztervilag/12e9e904-d7dc-3f84-b362-7287cf837b90/seasons/1/episodes/stick-or-twist-episode-1/2f8f3980-e88f-3a01-b726-dfedb196a30b",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6c164b71-8ceb-4b19-957f-79a1b6c5c4a8",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6c164b71-8ceb-4b19-957f-79a1b6c5c4a8",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "MOVIE",
+      "content": {
+       "title": "The 90s Club",
+       "originalReleaseYear": 2022,
+       "externalIds": {
+        "imdbId": "tt18225078",
+        "tmdbId": "950237"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FREE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "JustWatch TV Beta",
+         "shortName": "jfb"
+        },
+        "standardWebURL": null,
+        "audioLanguages": [
+         "en"
+        ],
+        "subtitleLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FREE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "JustWatch TV Beta",
+         "shortName": "jfb"
+        },
+        "standardWebURL": null,
+        "audioLanguages": [
+         "en"
+        ],
+        "subtitleLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "ADS",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Plex",
+         "shortName": "plx"
+        },
+        "standardWebURL": "https://watch.plex.tv/movie/the-90s-club-2022?autoplay=1&utm_content=620edd82fd571b132a23bc6d&utm_medium=deeplink&utm_source=justWatch-v2-catalog",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "ADS",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Plex",
+         "shortName": "plx"
+        },
+        "standardWebURL": "https://watch.plex.tv/movie/the-90s-club-2022?autoplay=1&utm_content=620edd82fd571b132a23bc6d&utm_medium=deeplink&utm_source=justWatch-v2-catalog",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Vízióküldetés",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt23112594",
+        "tmdbId": "213375"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Disney Plus",
+         "shortName": "dnp"
+        },
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-8744ec55-8d14-4631-99b4-c889a2d6013f",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "es-419",
+         "fr",
+         "hu",
+         "it",
+         "ja",
+         "pl",
+         "pt-BR",
+         "ro",
+         "sk",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "es",
+         "es-419",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "pt-BR",
+         "ro",
+         "sk",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Disney Plus",
+         "shortName": "dnp"
+        },
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-8744ec55-8d14-4631-99b4-c889a2d6013f",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "es-419",
+         "fr",
+         "hu",
+         "it",
+         "ja",
+         "pl",
+         "pt-BR",
+         "ro",
+         "sk",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "es",
+         "es-419",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "pt-BR",
+         "ro",
+         "sk",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Disney Plus",
+         "shortName": "dnp"
+        },
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-8744ec55-8d14-4631-99b4-c889a2d6013f",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "es-419",
+         "fr",
+         "hu",
+         "it",
+         "ja",
+         "pl",
+         "pt-BR",
+         "ro",
+         "sk",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "es",
+         "es-419",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "pt-BR",
+         "ro",
+         "sk",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Tulsa királya",
+       "originalReleaseYear": 2022,
+       "externalIds": {
+        "imdbId": "tt16358384",
+        "tmdbId": "153312"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/tulsa-king/3fc7cab5-5bf1-332a-9313-ef777fc7238d/seasons/1/episodes/go-west-old-man-episode-1/9a7a4df0-eef1-3970-a969-ec30bd81915a",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/tulsa-king/3fc7cab5-5bf1-332a-9313-ef777fc7238d/seasons/1/episodes/go-west-old-man-episode-1/9a7a4df0-eef1-3970-a969-ec30bd81915a",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/tulsa-king/3fc7cab5-5bf1-332a-9313-ef777fc7238d/seasons/1/episodes/go-west-old-man-episode-1/9a7a4df0-eef1-3970-a969-ec30bd81915a",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0d3569c7-ba4a-45a9-ae7d-9e3216ca26c3",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0d3569c7-ba4a-45a9-ae7d-9e3216ca26c3",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.75f077ed-e5d2-480e-a41b-cc43b6e8fe66",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": "2026-11-30T22:59:00Z"
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.75f077ed-e5d2-480e-a41b-cc43b6e8fe66",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": "2026-11-30T22:59:00Z"
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.75f077ed-e5d2-480e-a41b-cc43b6e8fe66",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": "2026-11-30T22:59:00Z"
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "A Gyűrűk Ura: A hatalom gyűrűi",
+       "originalReleaseYear": 2022,
+       "externalIds": {
+        "imdbId": "tt7631058",
+        "tmdbId": "84773"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eedf35c9-fa32-4c9f-8516-bfa78ab759de",
+        "audioLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eedf35c9-fa32-4c9f-8516-bfa78ab759de",
+        "audioLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.eedf35c9-fa32-4c9f-8516-bfa78ab759de",
+        "audioLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Reacher",
+       "originalReleaseYear": 2022,
+       "externalIds": {
+        "imdbId": "tt9288030",
+        "tmdbId": "108978"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.41f71162-2344-4089-accf-5ce0e9c12535",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.41f71162-2344-4089-accf-5ce0e9c12535",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.41f71162-2344-4089-accf-5ce0e9c12535",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1fff81b4-011f-4ba2-a685-486cb4a25f3b",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1fff81b4-011f-4ba2-a685-486cb4a25f3b",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Lupin",
+       "originalReleaseYear": 2021,
+       "externalIds": {
+        "imdbId": "tt2531336",
+        "tmdbId": "96677"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/80994082",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/80994082",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Crystal Lake",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt23148340",
+        "tmdbId": "213562"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/c31994ae-1c53-4238-92ba-aed2c60e6288?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/c31994ae-1c53-4238-92ba-aed2c60e6288?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/c31994ae-1c53-4238-92ba-aed2c60e6288?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "A végső lista",
+       "originalReleaseYear": 2022,
+       "externalIds": {
+        "imdbId": "tt11743610",
+        "tmdbId": "120911"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0c17249c-bd78-474d-9fe7-91edf9b71dfa",
+        "audioLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0c17249c-bd78-474d-9fe7-91edf9b71dfa",
+        "audioLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0c17249c-bd78-474d-9fe7-91edf9b71dfa",
+        "audioLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "ms",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Az újonc",
+       "originalReleaseYear": 2018,
+       "externalIds": {
+        "imdbId": "tt7587890",
+        "tmdbId": "79744"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81666165",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81666165",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Disney Plus",
+         "shortName": "dnp"
+        },
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-1138ee62-b9d9-4561-8094-3f7cda4bbd22",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "es-419",
+         "fr",
+         "fr-CA",
+         "hu",
+         "it",
+         "pl",
+         "pt-BR",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "es-419",
+         "fi",
+         "fr",
+         "he",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "pt-BR",
+         "ro",
+         "sv",
+         "tr"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Disney Plus",
+         "shortName": "dnp"
+        },
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-1138ee62-b9d9-4561-8094-3f7cda4bbd22",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "es-419",
+         "fr",
+         "fr-CA",
+         "hu",
+         "it",
+         "pl",
+         "pt-BR",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "es-419",
+         "fi",
+         "fr",
+         "he",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "pt-BR",
+         "ro",
+         "sv",
+         "tr"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Nocturne",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt26598805",
+        "tmdbId": "292741"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/lazar-jojj-ki/umc.cmc.1satwmkrp3g3mrytncw1u9qay?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0175401001&showId=umc.cmc.4cfsq1juke72zutv5xp0pw3rj",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pt",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/lazar-jojj-ki/umc.cmc.1satwmkrp3g3mrytncw1u9qay?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0175401001&showId=umc.cmc.4cfsq1juke72zutv5xp0pw3rj",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pt",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/lazar-jojj-ki/umc.cmc.1satwmkrp3g3mrytncw1u9qay?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0175401001&showId=umc.cmc.4cfsq1juke72zutv5xp0pw3rj",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pt",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FREE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/lazar-jojj-ki/umc.cmc.1satwmkrp3g3mrytncw1u9qay?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0175401001&showId=umc.cmc.4cfsq1juke72zutv5xp0pw3rj",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pt",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FREE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/lazar-jojj-ki/umc.cmc.1satwmkrp3g3mrytncw1u9qay?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0175401001&showId=umc.cmc.4cfsq1juke72zutv5xp0pw3rj",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pt",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FREE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/lazar-jojj-ki/umc.cmc.1satwmkrp3g3mrytncw1u9qay?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0175401001&showId=umc.cmc.4cfsq1juke72zutv5xp0pw3rj",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pt",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV Amazon Channel",
+         "shortName": "avl"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e5ef7cce-7a5f-4c5f-ad4b-805d4dccd25f",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pt",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "nn",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "MOVIE",
+      "content": {
+       "title": "Bosszúállók: Doctor Doom ébredése",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt21357150",
+        "tmdbId": "1003596"
+       }
+      },
+      "offers": []
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Dexter: Feltámadás",
+       "originalReleaseYear": 2025,
+       "externalIds": {
+        "imdbId": "tt33043892",
+        "tmdbId": "259909"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/dexter-feltamadas/d9292b0d-1d79-3b83-958a-459c953305e9/seasons/1/episodes/otucaj-srca-episode-1/1d240e59-5795-349d-90cc-f01e3bce44f3",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/dexter-feltamadas/d9292b0d-1d79-3b83-958a-459c953305e9/seasons/1/episodes/otucaj-srca-episode-1/1d240e59-5795-349d-90cc-f01e3bce44f3",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/dexter-feltamadas/d9292b0d-1d79-3b83-958a-459c953305e9/seasons/1/episodes/otucaj-srca-episode-1/1d240e59-5795-349d-90cc-f01e3bce44f3",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8500885e-a8bf-420a-bb55-eb33708aacee",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8500885e-a8bf-420a-bb55-eb33708aacee",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0c96a78b-c67d-4f26-9539-e0b68302afe5",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0c96a78b-c67d-4f26-9539-e0b68302afe5",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0c96a78b-c67d-4f26-9539-e0b68302afe5",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Fekete galamb",
+       "originalReleaseYear": 2024,
+       "externalIds": {
+        "imdbId": "tt27995113",
+        "tmdbId": "225385"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81682935",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81682935",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Utolsó befutók",
+       "originalReleaseYear": 2022,
+       "externalIds": {
+        "imdbId": "tt33097212",
+        "tmdbId": "95480"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-kudarc-ragados/umc.cmc.72legmwolm5ytctyq637r6x0?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0006401001&showId=umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-kudarc-ragados/umc.cmc.72legmwolm5ytctyq637r6x0?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0006401001&showId=umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-kudarc-ragados/umc.cmc.72legmwolm5ytctyq637r6x0?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0006401001&showId=umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV Amazon Channel",
+         "shortName": "avl"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6bfbde87-5fff-4b2d-9358-81c4dfeddf30",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "nn",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FREE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-kudarc-ragados/umc.cmc.72legmwolm5ytctyq637r6x0?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0006401001&showId=umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FREE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-kudarc-ragados/umc.cmc.72legmwolm5ytctyq637r6x0?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0006401001&showId=umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FREE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-kudarc-ragados/umc.cmc.72legmwolm5ytctyq637r6x0?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0006401001&showId=umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "MOVIE",
+      "content": {
+       "title": "Hogyan tudnék élni nélküled?",
+       "originalReleaseYear": 2024,
+       "externalIds": {
+        "imdbId": "tt29344974",
+        "tmdbId": "1283816"
+       }
+      },
+      "offers": []
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Carrie",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt11540908",
+        "tmdbId": "288673"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.66ebe2ae-822e-489e-a61b-df0daa550051",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.66ebe2ae-822e-489e-a61b-df0daa550051",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.66ebe2ae-822e-489e-a61b-df0daa550051",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "MOVIE",
+      "content": {
+       "title": "Pókember: Vadonatúj nap",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt22084616",
+        "tmdbId": "969681"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "RENT",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "sk",
+         "ta",
+         "te",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "lt",
+         "lv",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "sk",
+         "ta",
+         "te",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "lt",
+         "lv",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "sk",
+         "ta",
+         "te",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "lt",
+         "lv",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/pokember-vadonatuj-nap/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/pokember-vadonatuj-nap/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/pokember-vadonatuj-nap/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/pokember-vadonatuj-nap",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "pl",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/pokember-vadonatuj-nap",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "pl",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "sk",
+         "ta",
+         "te",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "lt",
+         "lv",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": "2027-05-16T21:59:59Z"
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/pokember-vadonatuj-nap/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/pokember-vadonatuj-nap/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/pokember-vadonatuj-nap/umc.cmc.j7nnkr546ksfwf7f9aaihqsr?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6793590242",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "sk",
+         "ta",
+         "te",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "lt",
+         "lv",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": "2027-05-16T21:59:59Z"
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7bb04e11-fe7f-4528-bd0e-84d1312f15c5",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "sk",
+         "ta",
+         "te",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "id",
+         "is",
+         "it",
+         "ja",
+         "lt",
+         "lv",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": "2027-05-16T21:59:59Z"
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/pokember-vadonatuj-nap",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "pl",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/pokember-vadonatuj-nap",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "pl",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/pokember-vadonatuj-nap",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "pl",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Úriemberek",
+       "originalReleaseYear": 2024,
+       "externalIds": {
+        "imdbId": "tt13210838",
+        "tmdbId": "236235"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81437051",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81437051",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Marshals: Egy Yellowstone történet",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt36849871",
+        "tmdbId": "290856"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/marshals/45b6ade1-b30e-3e23-8972-89364e325f4b/seasons/1/episodes/piya-wiconi-episode-1/8659d7da-6a50-33e8-9201-7d4794835dd5",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/marshals/45b6ade1-b30e-3e23-8972-89364e325f4b/seasons/1/episodes/piya-wiconi-episode-1/8659d7da-6a50-33e8-9201-7d4794835dd5",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/marshals/45b6ade1-b30e-3e23-8972-89364e325f4b/seasons/1/episodes/piya-wiconi-episode-1/8659d7da-6a50-33e8-9201-7d4794835dd5",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.54fb7edf-c2f1-4cca-bc05-7383afd8aa1e",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.54fb7edf-c2f1-4cca-bc05-7383afd8aa1e",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.65b81ec7-f3e9-4273-8f55-06c6c5da3699",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": "2026-11-30T22:59:00Z"
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.65b81ec7-f3e9-4273-8f55-06c6c5da3699",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": "2026-11-30T22:59:00Z"
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.65b81ec7-f3e9-4273-8f55-06c6c5da3699",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": "2026-11-30T22:59:00Z"
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Campus Drivers",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt39943756",
+        "tmdbId": "303044"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1161e29b-ac7f-4694-bd26-5719013f1f94",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1161e29b-ac7f-4694-bd26-5719013f1f94",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1161e29b-ac7f-4694-bd26-5719013f1f94",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Special Ops: Lioness",
+       "originalReleaseYear": 2023,
+       "externalIds": {
+        "imdbId": "tt13111078",
+        "tmdbId": "113962"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/lioness/09d1d10e-b7df-31f0-ace6-484ae47bebb7/seasons/1/episodes/sacrificial-soldiers-episode-1/553943e2-fa92-35ab-a0fc-8bbb84978e5b",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/lioness/09d1d10e-b7df-31f0-ace6-484ae47bebb7/seasons/1/episodes/sacrificial-soldiers-episode-1/553943e2-fa92-35ab-a0fc-8bbb84978e5b",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/lioness/09d1d10e-b7df-31f0-ace6-484ae47bebb7/seasons/1/episodes/sacrificial-soldiers-episode-1/553943e2-fa92-35ab-a0fc-8bbb84978e5b",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.16bd6c2f-e64c-4e28-a404-ddda10c8d5ad",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.16bd6c2f-e64c-4e28-a404-ddda10c8d5ad",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nb",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ba591d7b-c25a-49c5-813b-83a117b777f6",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ba591d7b-c25a-49c5-813b-83a117b777f6",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.ba591d7b-c25a-49c5-813b-83a117b777f6",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "A siló",
+       "originalReleaseYear": 2023,
+       "externalIds": {
+        "imdbId": "tt14688458",
+        "tmdbId": "125988"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-felszabadulas-napja/umc.cmc.4v3gat04y129mm0smdu6ea3dh?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0026501001&showId=umc.cmc.3yksgc857px0k0rqe5zd4jice",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-felszabadulas-napja/umc.cmc.4v3gat04y129mm0smdu6ea3dh?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0026501001&showId=umc.cmc.3yksgc857px0k0rqe5zd4jice",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV",
+         "shortName": "atp"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/episode/a-felszabadulas-napja/umc.cmc.4v3gat04y129mm0smdu6ea3dh?at=1000l3V2&ct=app_tvplus&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.4000%3AA0026501001&showId=umc.cmc.3yksgc857px0k0rqe5zd4jice",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV Amazon Channel",
+         "shortName": "avl"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.70f6c0ef-d26b-49f2-804f-3672af2330b4",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "et",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "ms",
+         "nl",
+         "nn",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sk",
+         "sl",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "uk",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Navy SEALS - BUDS Class 234",
+       "originalReleaseYear": 2000,
+       "externalIds": {
+        "imdbId": "tt0426761",
+        "tmdbId": "59890"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FREE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "JustWatch TV Beta",
+         "shortName": "jfb"
+        },
+        "standardWebURL": null,
+        "audioLanguages": [
+         "en"
+        ],
+        "subtitleLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FREE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "JustWatch TV Beta",
+         "shortName": "jfb"
+        },
+        "standardWebURL": null,
+        "audioLanguages": [
+         "en"
+        ],
+        "subtitleLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "ADS",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Plex",
+         "shortName": "plx"
+        },
+        "standardWebURL": "https://watch.plex.tv/show/navy-seals-buds-class-234-1/season/1/episode/1?autoplay=1&utm_content=5d9c149a4eefaa001f65cc12&utm_medium=deeplink&utm_source=justWatch-v2-catalog",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "ADS",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Plex",
+         "shortName": "plx"
+        },
+        "standardWebURL": "https://watch.plex.tv/show/navy-seals-buds-class-234-1/season/1/episode/1?autoplay=1&utm_content=5d9c149a4eefaa001f65cc12&utm_medium=deeplink&utm_source=justWatch-v2-catalog",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "A diplomata",
+       "originalReleaseYear": 2023,
+       "externalIds": {
+        "imdbId": "tt17491088",
+        "tmdbId": "203857"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81288983",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81288983",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "MOVIE",
+      "content": {
+       "title": "Kutya csillagkép",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt21285562",
+        "tmdbId": "1384216"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "RENT",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/the-dog-stars/umc.cmc.2blpg7vz01d47zem5eib14xjy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813244539",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "el",
+         "et",
+         "he",
+         "hr",
+         "is",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "tr",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/the-dog-stars/umc.cmc.2blpg7vz01d47zem5eib14xjy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813244539",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "el",
+         "et",
+         "he",
+         "hr",
+         "is",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "tr",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/the-dog-stars/umc.cmc.2blpg7vz01d47zem5eib14xjy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813244539",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "el",
+         "et",
+         "he",
+         "hr",
+         "is",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "tr",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/kutya-csillagkep",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "RENT",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/kutya-csillagkep",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/the-dog-stars/umc.cmc.2blpg7vz01d47zem5eib14xjy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813244539",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "el",
+         "et",
+         "he",
+         "hr",
+         "is",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "tr",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/the-dog-stars/umc.cmc.2blpg7vz01d47zem5eib14xjy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813244539",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "el",
+         "et",
+         "he",
+         "hr",
+         "is",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "tr",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Apple TV Store",
+         "shortName": "itu"
+        },
+        "standardWebURL": "https://tv.apple.com/hu/movie/the-dog-stars/umc.cmc.2blpg7vz01d47zem5eib14xjy?at=1000l3V2&ct=app_tv&itscg=30200&itsct=justwatch_tv&playableId=tvs.sbd.9001%3A6813244539",
+        "audioLanguages": [
+         "en",
+         "hu"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "bg",
+         "el",
+         "et",
+         "he",
+         "hr",
+         "is",
+         "ja",
+         "ko",
+         "lt",
+         "lv",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sr",
+         "sv",
+         "tr",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/kutya-csillagkep",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/kutya-csillagkep",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Rakuten TV",
+         "shortName": "wki"
+        },
+        "standardWebURL": "https://www.rakuten.tv/hu/movies/kutya-csillagkep",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "uk"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hu",
+         "it",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "uk"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "A test",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt8014982",
+        "tmdbId": "291507"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81983578",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81983578",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "MOVIE",
+      "content": {
+       "title": "Verity",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt32261958",
+        "tmdbId": "1283515"
+       }
+      },
+      "offers": []
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "X-akták",
+       "originalReleaseYear": 1993,
+       "externalIds": {
+        "imdbId": "tt0106179",
+        "tmdbId": "4087"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0cae8806-15ec-599d-c5cf-164489610fbc",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "he",
+         "hu",
+         "id",
+         "it",
+         "ko",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0cae8806-15ec-599d-c5cf-164489610fbc",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "it",
+         "pl",
+         "pt",
+         "ru",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "he",
+         "hu",
+         "id",
+         "it",
+         "ko",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Disney Plus",
+         "shortName": "dnp"
+        },
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-d6a7aec6-72d2-46bb-b337-2cb412df64c8",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "es-419",
+         "fr",
+         "hu",
+         "it",
+         "ja",
+         "pl",
+         "pt-BR",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "es-419",
+         "fi",
+         "fr",
+         "he",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "pt-BR",
+         "ro",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Disney Plus",
+         "shortName": "dnp"
+        },
+        "standardWebURL": "https://www.disneyplus.com/browse/entity-d6a7aec6-72d2-46bb-b337-2cb412df64c8",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "es-419",
+         "fr",
+         "hu",
+         "it",
+         "ja",
+         "pl",
+         "pt-BR",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "es-419",
+         "fi",
+         "fr",
+         "he",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "ko",
+         "ms",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "pt-BR",
+         "ro",
+         "sv",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Sterling Point",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt35618070",
+        "tmdbId": "283297"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c93c6f76-4d62-4965-95f7-887e061c13a8",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c93c6f76-4d62-4965-95f7-887e061c13a8",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c93c6f76-4d62-4965-95f7-887e061c13a8",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Az aranykor",
+       "originalReleaseYear": 2022,
+       "externalIds": {
+        "imdbId": "tt4406178",
+        "tmdbId": "81723"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/d598abd3-d30a-4f46-83a5-4c70b8048908?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl",
+         "sk"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": "2027-01-24T22:59:00Z"
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/d598abd3-d30a-4f46-83a5-4c70b8048908?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl",
+         "sk"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": "2027-01-24T22:59:00Z"
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/d598abd3-d30a-4f46-83a5-4c70b8048908?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl",
+         "sk"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sk",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": "2027-01-24T22:59:00Z"
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0673326e-d47a-48bf-9fdf-1f9c9da94698",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "BUY",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Video",
+         "shortName": "amz"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0673326e-d47a-48bf-9fdf-1f9c9da94698",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Avatár: Hét menedék",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt35854736",
+        "tmdbId": "284833"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/avatar-het-menedek/44e57b69-fbfa-3a17-8d6f-a3ed87cf9e25/seasons/1/episodes/i-horisonten-ind-i-stormen-episode-1/d1a62d2e-349a-3f1a-b733-cd034a451096",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "SkyShowtime",
+         "shortName": "sst"
+        },
+        "standardWebURL": "https://www.skyshowtime.com/hu/stream/tv/avatar-het-menedek/44e57b69-fbfa-3a17-8d6f-a3ed87cf9e25/seasons/1/episodes/i-horisonten-ind-i-stormen-episode-1/d1a62d2e-349a-3f1a-b733-cd034a451096",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.339dd90d-671b-4150-a360-999bc2201b1e",
+        "audioLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Sky Showtime Amazon Channel",
+         "shortName": "sml"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.339dd90d-671b-4150-a360-999bc2201b1e",
+        "audioLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv"
+        ],
+        "subtitleLanguages": [
+         "cs",
+         "da",
+         "en",
+         "es",
+         "fi",
+         "hr",
+         "hu",
+         "nl",
+         "no",
+         "pl",
+         "pt",
+         "ro",
+         "sv"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "MOVIE",
+      "content": {
+       "title": "The Paradise",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": null,
+        "tmdbId": "1376856"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/82134615",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/82134615",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Édentől keletre",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt21097264",
+        "tmdbId": "258165"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81611854",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81611854",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Bármit, csak ezt ne",
+       "originalReleaseYear": 2024,
+       "externalIds": {
+        "imdbId": "tt26933824",
+        "tmdbId": "250923"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81591296",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81591296",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Balaraw: A vér szigete",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt39751377",
+        "tmdbId": "313699"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81704898",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81704898",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "A mentalista",
+       "originalReleaseYear": 2008,
+       "externalIds": {
+        "imdbId": "tt1196946",
+        "tmdbId": "5920"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/70155590",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/70155590",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.df50e4a1-2a2f-4886-953e-e9793658df1d",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ko",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "tr",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.df50e4a1-2a2f-4886-953e-e9793658df1d",
+        "audioLanguages": [
+         "de",
+         "en",
+         "es",
+         "fr",
+         "it",
+         "ja",
+         "pl",
+         "pt"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ko",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "ru",
+         "sv",
+         "tr",
+         "vi",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/a4dae3b3-c9cd-436e-88b0-90b75ea91a55?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/a4dae3b3-c9cd-436e-88b0-90b75ea91a55?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "en",
+         "es",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Jaga: A sötét erdő titka",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt39980704",
+        "tmdbId": "314360"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/808ddfa0-1a29-4685-89b5-74155cf9b0bd?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/808ddfa0-1a29-4685-89b5-74155cf9b0bd?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "HBO Max",
+         "shortName": "mxx"
+        },
+        "standardWebURL": "https://play.hbomax.com/video/watch/808ddfa0-1a29-4685-89b5-74155cf9b0bd?utm_source=universal_search",
+        "audioLanguages": [
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hu",
+         "pl"
+        ],
+        "subtitleLanguages": [
+         "bg",
+         "cs",
+         "da",
+         "de",
+         "en",
+         "es",
+         "fi",
+         "fr",
+         "hr",
+         "hu",
+         "mk",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sl",
+         "sv"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Off-Campus",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt33546863",
+        "tmdbId": "273240"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b95803f3-7c04-4580-9246-09e960bae736",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b95803f3-7c04-4580-9246-09e960bae736",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "_4K",
+        "package": {
+         "clearName": "Amazon Prime Video",
+         "shortName": "prv"
+        },
+        "standardWebURL": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b95803f3-7c04-4580-9246-09e960bae736",
+        "audioLanguages": [
+         "ar",
+         "cs",
+         "de",
+         "en",
+         "es",
+         "fr",
+         "hi",
+         "hu",
+         "it",
+         "ja",
+         "kn",
+         "ml",
+         "pl",
+         "pt",
+         "ta",
+         "te",
+         "th",
+         "tr"
+        ],
+        "subtitleLanguages": [
+         "ar",
+         "ca",
+         "cs",
+         "da",
+         "de",
+         "el",
+         "en",
+         "es",
+         "eu",
+         "fi",
+         "fr",
+         "gl",
+         "he",
+         "hi",
+         "hu",
+         "id",
+         "it",
+         "ja",
+         "kn",
+         "ko",
+         "ml",
+         "ms",
+         "nb",
+         "nl",
+         "pl",
+         "pt",
+         "ro",
+         "sv",
+         "ta",
+         "te",
+         "th",
+         "tr",
+         "zh"
+        ],
+        "availableToTime": null
+       }
+      ]
+     }
+    },
+    {
+     "node": {
+      "objectType": "SHOW",
+      "content": {
+       "title": "Mélytengeri rémálom",
+       "originalReleaseYear": 2026,
+       "externalIds": {
+        "imdbId": "tt35934755",
+        "tmdbId": "285322"
+       }
+      },
+      "offers": [
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "SD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81652677",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       },
+       {
+        "monetizationType": "FLATRATE",
+        "presentationType": "HD",
+        "package": {
+         "clearName": "Netflix",
+         "shortName": "nfx"
+        },
+        "standardWebURL": "https://www.netflix.com/title/81652677",
+        "audioLanguages": [],
+        "subtitleLanguages": [],
+        "availableToTime": null
+       }
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

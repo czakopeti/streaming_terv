@@ -1,0 +1,1428 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="hu"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="hu"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="hu"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="hu"> <!--<![endif]-->
+<head><meta charset="UTF-8">
+ <!--        OG RENDER       -->
+<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://cdn.cms.mtv.hu/wp-content/uploads/sites/4/2025/08/redesign_placeholder1.jpg"/>
+<meta name="twitter:image" content="https://cdn.cms.mtv.hu/wp-content/uploads/sites/4/2025/08/redesign_placeholder1.jpg">
+<meta property="og:site_name" content="MÃ©diaKlikk"/>
+<meta property="og:type" content="page"/>
+<meta property="og:url" content="https://mediaklikk.hu/"/>
+<meta property="fb:app_id" content="843502755717087"/>
+<!--    END OF OG RENDER    -->
+
+	<link rel="shortcut" href="https://cdn.cms.mtv.hu/wp-content/plugins/hms-mediaklikk/common/styles/images/M_mediaklikk_logo_favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="https://cdn.cms.mtv.hu/wp-content/plugins/hms-mediaklikk/common/styles/images/M_mediaklikk_logo_favicon.png" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta charset="UTF-8" />
+		<link rel="alternate" type="application/rss+xml" title="MÃ©diaKlikk RSS2 Feed" href="https://mediaklikk.hu/feed/" />
+	<link rel="pingback" href="https://mediaklikk.hu/xmlrpc.php" />
+	<title>MÃ©diaKlikk</title>
+		<script id="tmpl-bob-player" type="text/x-handlebars-template">
+    <div id="bob_player" class="BobPlayerOuterContainer hideBar {{theme}}Theme {{#live}}Live{{/live}}">
+        <div class="BobPlayerInnerContainer">
+            {{#isValid}}
+                <div class="BobPlayerStatusBar">
+                    <input id="bobap_play_back_bar" class="BobPlayerPlayBackBar {{#live}}Live{{/live}}" type="range" min="0"
+                           {{#live}} max="100" value="100"{{/live}}
+                           {{^live}} max="{{length}}" value="0"{{/live}}
+                    >
+                </div>
+                <div class="BobPlayerTrackTime">
+                    {{#live}}
+                        <div class="BobPlayerBegin"></div>
+                    {{/live}}
+
+                    {{^live}}
+                        <div id="bobap_play_back_counter" class="BobPlayerActual">00:00</div>
+                        <span>/</span>
+                        <div class="BobPlayerLength">{{formattedLength}}</div>
+                    {{/live}}
+                </div>
+                <div class="BobPlayer {{#isMobile}}MobileExtra{{/isMobile}}">
+                    <div class="BobPlayerLeft">
+                        <div class="BobPlayerLogo Channel{{channel}}"></div>
+                        <div id="bob_player_info_outer" class="BobPlayerInfoOuterContainer"></div>
+                    </div>
+                    <div class="BobPlayerCenter">
+                        <div class="BobPlayerJumpTo BobPlayerPrevious {{^previous}}Inactive{{/previous}}"
+                             {{#previous}}
+                                onclick="bobPlayer.startPlaying({
+                                    {{^listId}}channel: {{channel}},{{/listId}}
+                                    live: false,
+                                    id: '{{id}}',
+                                    {{#trackMode}}
+                                    beginDate: '{{beginDate}}',
+                                    endDate: '{{endDate}}',
+                                    {{/trackMode}}
+                                    type: '{{type}}'
+                                    {{#listId}},listId: '{{listId}}'{{/listId}}
+                                });"
+                             {{/previous}}>
+                        </div>
+                        {{^live}}
+                            <div id="bobap_back_stepper" class="BobPlayerStepper" data-value="-10">10</div>
+                        {{/live}}
+                        <div class="BobPlayerPlay" id="bobap_play">
+                            <svg class="progress-ring" width="100" height="100">
+                                <circle class="progress-ring__circle" stroke="blue" stroke-width="4" fill="transparent" r="30" cx="30" cy="30"/>
+                            </svg>
+                        </div>
+                        {{^live}}
+                            <div id="bobap_forvard_stepper" class="BobPlayerStepper" data-value="10">10</div>
+                        {{/live}}
+                        <!-- NEXT button: channel param required when stream is live! -->
+                        <div id="bobap_next" class="BobPlayerJumpTo BobPlayerNext {{^next}}Inactive{{/next}}"
+                             {{#next}}
+                                onclick="bobPlayer.startPlaying({
+                                    {{^listId}}channel: {{channel}},{{/listId}}
+                                    live: false,
+                                    id: '{{id}}',
+                                    {{#trackMode}}
+                                    beginDate: '{{beginDate}}',
+                                    endDate: '{{endDate}}',
+                                    {{/trackMode}}
+                                    type: '{{type}}',
+                                    isAdultContent: {{#isAdultContent}}true{{/isAdultContent}}{{^isAdultContent}}false{{/isAdultContent}}
+                                    {{#listId}},listId: '{{listId}}'{{/listId}}
+                                    {{#channelId}},channelId: '{{channelId}}'{{/channelId}}
+                                });"
+                             {{/next}}>
+                        </div>
+                    </div>
+                    <div class="BobPlayerRight">
+                        {{#live}}<div class="BobPlayerLiveIcon"><span>ÃlÅ</span></div>{{/live}}
+                        {{^live}}
+                            {{^isPodcast}}
+                                <div class="BobPlayerTodIcon" onclick="bobPlayer.startPlaying({channel: {{channel}}});">Vissza az Ã©lÅ adÃ¡shoz</div>
+                            {{/isPodcast}}
+                        {{/live}}
+                        <div class="BobPlayerControls">
+                            <div id="bobap_mute" class="BobPlayerMuteIcon {{#mute}}Active{{/mute}}"></div>
+                            <div class="BobPlayerVolume">
+                                <input id="bobap_volume" class="BobPlayerVolumeInput" type="range" min="0" max="100" value="{{volume}}">
+                            </div>
+                            <div class="BobPlayerHiddenMenuIcon" title="OpciÃ³k">&#8942;</div>
+                            <div class="BobPlayerSubHiddenMenuIcon ShareIcon" title="MegosztÃ¡s">
+                                <span>&#10174;</span>
+                                <div class="SubHiddenMenuOptions" data-type="share">
+                                    <div class="SubHiddenMenuOptionLabel">MegosztÃ¡s</div>
+                                    <div class="ShareOption UrlCopy">
+                                        <div class="UrlCopyElement UrlCopyLabel">
+                                            <div class="title">Link</div>
+                                        </div>
+                                        <div class="HiddenUrlCopyElement UrlCopySample"></div>
+                                        <div class="HiddenUrlCopyElement UrlCopyButton">
+                                            MÃ¡solÃ¡s
+                                            <span>VÃ¡gÃ³lapra mÃ¡solva</span>
+                                        </div>
+                                    </div>
+                                    <a class="ShareOption" target="_blank" href="" data-type="facebook"><div class="title">Facebook</div></a>
+                                    <a class="ShareOption" target="_blank" href="" data-type="x"><div class="title">X</div></a>
+                                    <a class="ShareOption" target="_blank" href="" data-type="viber"><div class="title">Viber</div></a>
+                                    <a class="ShareOption" target="_blank" href="" data-type="whatsapp"><div class="title">Whatsapp</div></a>
+                                    <a class="ShareOption" target="_blank" href="" data-type="gmail"><div class="title">Gmail</div></a>
+                                    <a class="ShareOption" target="_blank" href="" data-type="email"><div class="title">E-mail</div></a>
+                                </div>
+                            </div>
+                            {{^live}}
+                                <div class="BobPlayerSubHiddenMenuIcon SpeedIcon" title="SebessÃ©g">
+                                    <span>&#9732;</span>
+                                    <div class="SubHiddenMenuOptions" data-type="speed">
+                                        <div class="SubHiddenMenuOptionLabel">SebessÃ©g</div>
+                                        <div class="SubHiddenMenuOption" data-value="0.25">0.25x</div>
+                                        <div class="SubHiddenMenuOption" data-value="0.5">0.5x</div>
+                                        <div class="SubHiddenMenuOption" data-value="0.75">0.75x</div>
+                                        <div class="SubHiddenMenuOption" data-value="1.00">1x</div>
+                                        <div class="SubHiddenMenuOption" data-value="1.25">1.25x</div>
+                                        <div class="SubHiddenMenuOption" data-value="1.50">1.5x</div>
+                                        <div class="SubHiddenMenuOption" data-value="1.75">1.75x</div>
+                                        <div class="SubHiddenMenuOption" data-value="2.00">2x</div>
+                                    </div>
+                                </div>
+                            {{/live}}
+                            <div class="BobPlayerSubHiddenMenuIcon SleepIcon" title="AlvÃ³ mÃ³d">
+                                <span>&#9790;</span>
+                                <div class="SubHiddenMenuOptions" data-type="sleep">
+                                    <div class="SubHiddenMenuOptionLabel">Automatikus leÃ¡llÃ­tÃ¡s</div>
+                                    <div class="SubHiddenMenuOption Active" data-value="0">Ki</div>
+                                    <div class="SubHiddenMenuOption" data-value="-1">EpizÃ³d vÃ©gÃ©n</div>
+                                    <div class="SubHiddenMenuOption" data-value="5">5 perc</div>
+                                    <div class="SubHiddenMenuOption" data-value="10">10 perc</div>
+                                    <div class="SubHiddenMenuOption" data-value="15">15 perc</div>
+                                    <div class="SubHiddenMenuOption" data-value="30">30 perc</div>
+                                    <div class="SubHiddenMenuOption" data-value="45">45 perc</div>
+                                    <div class="SubHiddenMenuOption" data-value="60">60 perc</div>
+                                    <div class="SubHiddenMenuOption" data-value="90">90 perc</div>
+                                </div>
+                            </div>
+                            <div class="BobPlayerSubHiddenMenuIcon InfoIcon" title="InformÃ¡ciÃ³">
+                                <span>&#9432;</span>
+                                <div class="SubHiddenMenuOptions" data-type="info">
+                                    <div class="ExtraInfo">
+                                        <div class="ExtraInfoLabel">TovÃ¡bbi informÃ¡ciÃ³</div>
+                                        <div class="ExtraInfoTitle"></div>
+                                        <div class="ExtraInfoBeginDate"></div>
+                                        <div class="ExtraInfoDescription"></div>
+                                    </div>
+                                    <div class="ForwardToContainer">
+                                        <div class="ForwardTo">
+                                            TovÃ¡bb a mÅ±sorra
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="BobPlayerSubHiddenMenuIcon CloseIcon" title="OpciÃ³k bezÃ¡rÃ¡sa">&#10005;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="BobPlayerXClose" id="bobap_closer">
+                    <span>BezÃ¡rÃ¡s</span>
+                </div>
+            {{/isValid}}
+
+            {{^isValid}}
+            <!-- A lejÃ¡tszÃ¡s nem tud elkezdÅdni -->
+                <div class="BobPlayerXClose" id="bobap_closer">
+                    <span>BezÃ¡rÃ¡s</span>
+                </div>
+                <div class="BobPlayerStatusBar">
+                    <input class="BobPlayerPlayBackBar Live" type="range" min="0" max="100" value="100">
+                </div>
+                <div class="BobPlayer">
+                    <div class="BobPlayerLeft">
+                        <div class="BobPlayerLogo Channel{{channel}}"></div>
+                        <div class="BobPlayerErrorMessage">A kivÃ¡lasztott hanganyag mÃ¡r nem Ã©rhetÅ el!</div>
+                    </div>
+                    <div class="BobPlayerRight">
+                        <div class="BobPlayerTodIcon" onclick="BobPlayerManager.startPlaying();">Vissza az Ã©lÅ adÃ¡shoz</div>
+                    </div>
+                </div>
+            {{/isValid}}
+
+        </div>
+    </div>
+</script><script id="tmpl-bob-player-info" type="text/x-handlebars-template">
+    <div id="bob_player_info_inner" class="BobPlayerInfo">
+        <div class="BobPlayerProgram">
+            {{#live}}
+                {{#PROGRAMME}}
+                    <div class="AudioProgramTitle">{{Title}}</div>
+                {{/PROGRAMME}}
+                {{#RADIO_AUDIO}}
+                    <div class="AudioProgramTitle">{{Title}}</div>
+                {{/RADIO_AUDIO}}
+                {{#live}}<div class="BobPlayerLiveIcon"><span>ÃlÅ</span></div>{{/live}}
+            {{/live}}
+            {{^live}}
+                {{^trackMode}}
+                    {{#PROGRAMME}}
+                        <div class="AudioProgramTitle">{{Title}}</div>
+                    {{/PROGRAMME}}
+                    {{#RADIO_AUDIO}}
+                        <div class="AudioProgramTitle">{{Title}}</div>
+                    {{/RADIO_AUDIO}}
+                    {{#PLAY_LIST}}
+                        <div class="AudioProgramTitle">{{Title}}</div>
+                    {{/PLAY_LIST}}
+                    {{#USER_PLAY_LIST}}
+                        <div class="AudioProgramTitle">{{Title}}</div>
+                    {{/USER_PLAY_LIST}}
+                    {{#PODCAST}}
+                        <div class="AudioProgramTitle">{{Title}}</div>
+                    {{/PODCAST}}
+                {{/trackMode}}
+            {{/live}}
+        </div>
+
+        {{#TRACK}}
+        <div class="BobPlayerTrackInfoInnerContainer {{#live}}{{#TRACK}}Exists{{/TRACK}}{{/live}}">
+            {{#live}}
+                {{#TRACK}}
+                    <div class="BobPlayerArtist">{{artist}}</div>
+                    <span class="BobPlayerSeparator"></span>
+                    <div class="BobPlayerTitle">{{title}}</div>
+                {{/TRACK}}
+            {{/live}}
+            {{^live}}
+                {{#trackMode}}
+                    {{#TRACK}}
+                        <div class="BobPlayerArtist">{{artist}}</div>
+                        <span class="BobPlayerSeparator"></span>
+                        <div class="BobPlayerTitle">{{title}}</div>
+                    {{/TRACK}}
+                {{/trackMode}}
+            {{/live}}
+        </div>
+        {{/TRACK}}
+
+        {{#next}}
+            <div class="NextAudioProgramTitle">
+                <span class="next">KÃ¶vetkezik</span>
+                {{#artist}}
+                    {{artist}}
+                    <span class="separator"></span>
+                {{/artist}}
+                {{title}}
+            </div>
+        {{/next}}
+
+        {{^live}}
+            <div class="BobPlayerDateInterval">
+                <div class="BobPlayerFrom">{{beginDate}}</div>
+                {{#endDate}}<span>-</span>{{/endDate}}
+                <div class="BobPlayerTo">{{endDate}}</div>
+            </div>
+        {{/live}}
+    </div>
+</script><meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//player.mediaklikk.hu' />
+<link rel='dns-prefetch' href='//gahu.hit.gemius.pl' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='hms_adult_content_popup_css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-adult-content-warning/common/styles/adult_content_popup.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='socials_style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-multisite/common/style/socials_style.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hms_program_data_admin_style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-program-data-generator/common/style/admin.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ttimeLine-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/styles/ttimeLine.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='virtuozok-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/styles/virtuozok.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hms-covereditor-frontend-css' href='https://mediaklikk.hu/wp-content/plugins/hms-cover-layout-editor/common/style/hms-covereditor-frontend.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hms_global_user_handler_frontend_css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-user-handler/common/style/style.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hms_poolls_css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-polls/hms-polls.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='youtube-inserter-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-youtube-inserter/common/style/youtube-inserter.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='owl_theme_css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-multisite/common/style/owl.theme.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='owl_carousel_css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-multisite/common/style/owl.carousel.css?ver=6.9' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://mediaklikk.hu/wp-includes/css/dist/block-library/style.min.css?ver=6.9' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+/*wp_block_styles_on_demand_placeholder:6afdaf581971a*/
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel='stylesheet' id='accessibility-frontendGlobal-css' href='https://mediaklikk.hu/wp-content/plugins/hms-accessibility/css/globalAccessibility.css?ver=1792055001' type='text/css' media='all' />
+<link rel='stylesheet' id='accessibility-frontendSiteSpecific-css' href='https://mediaklikk.hu/wp-content/plugins/hms-accessibility/scss/mediaklikk2024-wcag.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='dal_2016_owlcarousel-css' href='https://mediaklikk.hu/wp-content/plugins/hms-dal2016/common/styles/owl.carousel.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='dal_2016_owltheme-css' href='https://mediaklikk.hu/wp-content/plugins/hms-dal2016/common/styles/owl.theme.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='fiftysix-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-fiftysix/common/styles/fiftysix.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hms_ia_admin_style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-instant-articles/common/style/hms_ia_admin_style.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='user_profile_widget_css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-keycloak-oauth/common/style/user_profile_widget.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hms-oauth-css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-keycloak-oauth/common/style/oauth.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='owlcarousel-css' href='https://mediaklikk.hu/wp-content/plugins/hms-mediaklikk/common/styles/owl.carousel.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='owltheme-css' href='https://mediaklikk.hu/wp-content/plugins/hms-mediaklikk/common/styles/owl.theme.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='lightbox-frontend-flavor-css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/admin/lightbox/css.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css-css' href='https://mediaklikk.hu/wp-content/plugins/hms.ngsdatafeed/common/script/vendor/slick.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='portfolio-widget-css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/portfolio/css.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-css' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='toldi-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/styles/toldi.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='rozmaring-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/styles/rozmaring.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='font-css' href='https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/styles/fontz.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='trackListCss-css' href='https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/trackList/TrackList.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hms-vr-recommender-css' href='https://mediaklikk.hu/wp-content/plugins/hms-video-recommender/assets/css/frontend/hms-vr-recommender.css?ver=1.0.19' type='text/css' media='all' />
+<link rel='stylesheet' id='hms-vr-vod-endpage-tab-css' href='https://mediaklikk.hu/wp-content/plugins/hms-video-recommender/assets/css/frontend/hms-vr-vod-endpage-tab.css?ver=1.0.19' type='text/css' media='all' />
+<link rel='stylesheet' id='datatables-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms.ngsdatafeed/common/style/jquery.dataTables.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ngsdatafeed-main-css' href='https://mediaklikk.hu/wp-content/plugins/hms.ngsdatafeed/common/style/ngsdatafeed.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ngsdatafeed-eb-css' href='https://mediaklikk.hu/wp-content/plugins/hms.ngsdatafeed/common/style/eb2016.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ep_general_styles-css' href='https://mediaklikk.hu/wp-content/plugins/elasticpress/dist/css/general-styles.css?ver=66295efe92a630617c00' type='text/css' media='all' />
+<link rel='stylesheet' id='global-grid-css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/globalGrid/globalGrid.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='bottom-bar-audio-player-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/bottomBarAudioPlayer/common/styles/base.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='lss_menetrend_css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/LiveStreamSelector/../../common/styles/liveStreamSelectorMenetrend.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='BreakingWidget-css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/breaking/css.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='global-flyer-widget-video-js-css' href='https://cdnjs.cloudflare.com/ajax/libs/video.js/8.10.0/video-js.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='auto-play-widget-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/styles/autoPlayWidget.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='teleteka-extra-html-elements-admin-ui-css-css' href='https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css?ver=1.11.4' type='text/css' media='' />
+<link rel='stylesheet' id='contentGallerySlider-css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/styles/contentGallerySlider.css?ver=1792055001' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-global-css' href='https://mediaklikk.hu/wp-content/themes/ultimatum/assets/css/theme.global.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://mediaklikk.hu/wp-content/themes/ultimatum/assets/css/font-awesome.min.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ult_core_template_77-css' href='https://mediaklikk.hu/wp-content/uploads/sites/4/ultimatum/template_77.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='bobap-base-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/styles/base.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='bobap-style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/styles/themes/default.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='jumper_external_style-css' href='https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/jumper/common/styles/externalStyle.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hms_global_widgets_css-css' href='https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/styles/hms_global_widgets.css?ver=1793867683' type='text/css' media='all' />
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/resizable.min.js?ver=1.13.3" id="jquery-ui-resizable-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.3" id="jquery-ui-draggable-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/controlgroup.min.js?ver=1.13.3" id="jquery-ui-controlgroup-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/checkboxradio.min.js?ver=1.13.3" id="jquery-ui-checkboxradio-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/button.min.js?ver=1.13.3" id="jquery-ui-button-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/dialog.min.js?ver=1.13.3" id="jquery-ui-dialog-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/sortable.min.js?ver=1.13.3" id="jquery-ui-sortable-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-program-data-generator/common/script/admin.js?ver=6.9" id="hms_program_data_admin_script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js"></script>
+<script type="text/javascript" id="jquery-ui-datepicker-js-after">
+/* <![CDATA[ */
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Bez\u00e1r\u00e1s","currentText":"Ma","monthNames":["janu\u00e1r","febru\u00e1r","m\u00e1rcius","\u00e1prilis","m\u00e1jus","j\u00fanius","j\u00falius","augusztus","szeptember","okt\u00f3ber","november","december"],"monthNamesShort":["jan","febr","m\u00e1rc","\u00e1pr","m\u00e1j","j\u00fan","j\u00fal","aug","szept","okt","nov","dec"],"nextText":"K\u00f6vetkez\u0151","prevText":"El\u0151z\u0151","dayNames":["vas\u00e1rnap","h\u00e9tf\u0151","kedd","szerda","cs\u00fct\u00f6rt\u00f6k","p\u00e9ntek","szombat"],"dayNamesShort":["vas","h\u00e9t","ked","sze","cs\u00fc","p\u00e9n","szo"],"dayNamesMin":["v","h","K","s","c","p","s"],"dateFormat":"yy-mm-dd","firstDay":1,"isRTL":false});});
+//# sourceURL=jquery-ui-datepicker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/scripts/common.js?ver=6.9" id="common-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/scripts/nowplay.js?ver=6.9" id="nowplay-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/guideContent.js?ver=6.9" id="guide-content-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/scripts/jquery.custom-scrollbar.min.js?ver=6.9" id="jquery.custom-scrollbar.min-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/scripts/timeLine.js?ver=6.9" id="timeLine-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/scripts/ttimeLine.js?ver=6.9" id="ttimeLine-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/listWithImageOrTag/listWithImageOrTag.js?ver=6.9" id="listwithimageortag-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/multiplerowGrid/script.js?ver=6.9" id="multiple-row-grid-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-article-extension/common/script/hms-article-extension.js?ver=1.0.1" id="hms-art-show-gallery-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-cover-layout-editor/common/script/hms-covereditor-options-handler.js?ver=6.9" id="hms_covereditor_options_handler-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-user-handler/common/script/userManagement.js?ver=6.9" id="user-management-js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-user-handler/common/script/regulationManagement.js?ver=6.9" id="regulation-management-js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-user-handler/common/script/strength.js?ver=6.9" id="hms_global_user_handler_password_str-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-polls/hms-polls.js?ver=6.9" id="hms_poolls_js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-youtube-inserter/common/script/youtube-inserter.js?ver=6.9" id="youtube-inserter-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/vendor/jquery.xml2json.js?ver=6.9" id="jquery-xml2json-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/vendor/mustache.min.js?ver=6.9" id="mustache-min-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/extends.js?ver=6.9" id="extends-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-multisite/common/script/owl.carousel.hms.js?ver=6.9" id="owlscript-js"></script>
+<script type="text/javascript" id="multisite-common-frontend-js-extra">
+/* <![CDATA[ */
+var googleTagManager = {"Mediaklikk|mediaklikk.hu":"GTM-5ZPKNXW"};
+//# sourceURL=multisite-common-frontend-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-multisite/common/script/frontend-common.js?ver=6.9" id="multisite-common-frontend-js"></script>
+<script type="text/javascript" id="accessibility-frontend-application-js-before">
+/* <![CDATA[ */
+window.hmsA11yTypeLabels = {"post":"cikk","gallery":"gal\u00e9ria","video":"vide\u00f3","video_recommender":"vide\u00f3","hms_playlist":"vide\u00f3s lej\u00e1tsz\u00e1si lista","hms_playlist\/aod":"hanganyag-lista","radio-audio":"hanganyag","audio":"hanganyag","pp_main":"percr\u0151l percre","pp_mini":"percr\u0151l percre","musor":"m\u0171sor","upcoming-event":"esem\u00e9ny","opinion":"v\u00e9lem\u00e9ny","expert_opinion":"v\u00e9lem\u00e9ny","sport_info":"sportinf\u00f3"};window.hmsA11ySrOnlyStyle = "position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important";window.hmsA11yTypeLabel = function (postType, playlistType) {var m = window.hmsA11yTypeLabels || {}, has = Object.prototype.hasOwnProperty, k = String(postType || '');if (playlistType && has.call(m, k + '/' + playlistType)) { return m[k + '/' + playlistType]; }return k.indexOf('/') === -1 && has.call(m, k) ? m[k] : '';};
+//# sourceURL=accessibility-frontend-application-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-accessibility/widgets/AccessibilityApplication.js?ver=6.9" id="accessibility-frontend-application-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-dal2016/common/scripts/adal2016.js?ver=6.9" id="dal_2016_gallery-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-user-handler/common/script//objectCookie.js?ver=6.9" id="hms-guh-object-cookie-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-mediaklikk/common/scripts/common.js?ver=6.9" id="hms-mediaklikk-common-script-js"></script>
+<script type="text/javascript" src="https://player.mediaklikk.hu/playernew/js/mtva-player.js?ver=6.9" id="player_script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/triNowPlayList/nowplaylist_frontend.js?ver=6.9" id="hms-tri-nowplaylist-frontend-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/trackList/TrackList.js?ver=6.9" id="trackListJs-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms.ngsdatafeed/common/script/jquery.dataTables.min.js?ver=6.9" id="datatables-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms.ngsdatafeed/common/script/ngsdatafeed.js?ver=6.9" id="ngsdatafeed-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms.ngsdatafeed/common/script/chart.js?ver=6.9" id="chart-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/programGuide/ProgramGuide.js?ver=1793958183" id="programguide-js-js"></script>
+<script type="text/javascript" id="hms-oauth-js-extra">
+/* <![CDATA[ */
+var oauthConfig = {"watchdogEndpoint":"https://watchdogeventgateapi.mtva.hu","personalizationEndpoint":"https://watchdogselfserviceapi.mtva.hu","profilePageUrl":"/felhasznaloi-profil","logoutUrl":"","logoutInterfaceUrl":"https://auth.mediaklikk.hu/keycloak/logout.php","profileFallbackAvatarUrl":"https://cdn.cms.mtv.hu/wp-content/plugins/hms-keycloak-oauth/assets/img/i-user-round.svg","headerAvatarFallbackUrl":"http://cdn.cms.mtv.hu/wp-content/plugins/hms-keycloak-oauth/assets/img/i-user-round-yellow.svg","newsletterNonce":"08f33c69fa","newsletterRowVisible":"0","wdPaths":[]};
+//# sourceURL=hms-oauth-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-keycloak-oauth/assets/dist/core-fiok.js?ver=5b5105e814704f42c807ec89c762a811" id="hms-oauth-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/channelList/channelListWidget.js?ver=6.9" id="channellist-widget-js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/themes/ultimatum/assets/js/plugins/holder.js?ver=1.9.0" id="holder-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapDebug.js?ver=6.9" id="bobap-debug-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapDataManager.js?ver=6.9" id="bobap-data-manager-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapAbstract.js?ver=6.9" id="bobap-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapPlayebleTypes.js?ver=6.9" id="bobap-playable-types-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapNotificator.js?ver=6.9" id="bobap-notificator-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapDisplayManager.js?ver=6.9" id="bobap-display-manager-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapDisplayInfoManager.js?ver=6.9" id="bobap-display-info-manager-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapSettingsChecker.js?ver=6.9" id="bobap-settings-checker-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapInfoManager.js?ver=6.9" id="bobap-info-manager-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapObserver.js?ver=6.9" id="bobap-observer-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapControlManager.js?ver=6.9" id="bobap-control-manager-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/vendor/soundmanager2.min.js?ver=6.9" id="sound-manager-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapPlayingManager.js?ver=6.9" id="bobap-playing-manager-js"></script>
+<script type="text/javascript" src="//gahu.hit.gemius.pl/gplayer.js?ver=6.9" id="gemius-default-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobapGemius.js?ver=6.9" id="bobap-gemius-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/audio-player/common/scripts/bobAudioPlayer.js?ver=6.9" id="bob-audio-player-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-bob-audio-player/jumper/common/scripts/integrateManager.js?ver=6.9" id="jumper_integrate_manager-js"></script>
+<script type="text/javascript" src="https://player.mediaklikk.hu/playernew/js/jwp8/jwplayer.js?ver=6.9" id="slick-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/hms-global-widgets.js?ver=1.0.1" id="hms-global-widgets-js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/lazy-load-images.js?ver=6.9" id="hms-global-widgets-lazy-load-js"></script>
+<link rel="https://api.w.org/" href="https://mediaklikk.hu/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mediaklikk.hu/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<!-- GEMIUS HEAD -->
+        <meta property="fb:pages" content="578272065579342"/>
+        	<script>window.grumi = { key: 'a64c297d-7a98-4f63-a46b-1b6e4219f5cb' };</script>
+	<script src="//rumcdn.geoedge.be/a64c297d-7a98-4f63-a46b-1b6e4219f5cb/grumi-ip.js" async></script>
+	        <script type="text/javascript">
+            var g_today = new Date();
+            var g_dd = g_today.getDate();
+            var g_mm = g_today.getMonth() + 1;
+            var g_yyyy = g_today.getFullYear();
+            if (g_dd < 10) {
+                g_dd = '0' + g_dd;
+            }
+            if (g_mm < 10) {
+                g_mm = '0' + g_mm;
+            }
+            g_today = g_yyyy + g_mm + g_dd;
+			document.write( `<script src="${location.protocol}//cdn.atmedia.hu/mediaklikk.hu.js?v=${ g_today }" type="text/javascript"><\/script>` );
+        </script>
+        <script>
+		var isTcDisabled;
+
+		<!-- Hotjar Tracking Code for www.mediaklikk.hu -->
+		const hotjar_script = (h, o, t, j, a, r) => {
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:424193,hjsv:5};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		}
+
+		window.addEventListener('load', () => {
+			__tcfapi('ping', 2, (pingReturn) => {
+				isTcDisabled = (pingReturn.displayStatus === 'disabled');
+			});
+
+			const callback = (tcData, success) => {
+				const dnt = Number(navigator.doNotTrack ?? !tcData.purpose.consents[1] ?? 1);
+				if (dnt !== 1 && ((tcData.eventStatus === 'tcloaded' && isTcDisabled)
+					|| (success && tcData.eventStatus === 'useractioncomplete'))) {
+					hotjar_script(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+				}
+			};
+			__tcfapi('addEventListener', 2, callback);
+		});
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+		fbq('consent', 'revoke');
+		fbq('init', '584995825034946'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=584995825034946&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+    <script type="text/javascript" charset="utf-8" src="https://mediaklikk.hu/wp-content/plugins/hms-goa3/common/script/googleAdverticum.js"></script><!-- SEO meta tags powered by SmartCrawl https://wpmudev.com/project/smartcrawl-wordpress-seo/ -->
+<link rel="canonical" href="https://mediaklikk.hu/" />
+<link rel='next' href='https://mediaklikk.hu/page/2/' />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Organization","@id":"https:\/\/mediaklikk.hu\/#schema-publishing-organization","url":"http:\/\/mediaklikk.hu","name":"M\u00e9diaKlikk","description":""},{"@type":"WebSite","@id":"http:\/\/mediaklikk.hu\/#schema-website","url":"http:\/\/mediaklikk.hu","name":"M\u00e9diaKlikk","encoding":"UTF-8","potentialAction":{"@type":"SearchAction","target":"http:\/\/mediaklikk.hu\/search\/{search_term_string}\/","query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","@id":"https:\/\/mediaklikk.hu\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebPage","@id":"http:\/\/mediaklikk.hu\/#schema-webpage","url":"http:\/\/mediaklikk.hu","name":"M\u00e9diaKlikk","inLanguage":"hu","isPartOf":{"@id":"http:\/\/mediaklikk.hu\/#schema-website"},"publisher":{"@id":"http:\/\/mediaklikk.hu\/#schema-publishing-organization"},"dateModified":"2026-11-18 14:58:12"}]}</script>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mediaklikk.hu/" />
+<meta property="og:title" content="MÃ©diaKlikk" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="MÃ©diaKlikk" />
+<!-- /SEO -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500italic,500,700,900&subset=latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+//<![CDATA[
+var pptheme = 'facebook';
+//]]>
+</script>	 
+<!-- StaticSocialMetaHandler -->
+<!-- End of StaticSocialMetaHandler --></head>
+<body class="home blog wp-theme-ultimatum mediaklikk2024 ut-tbs3-default ut-layout-cimlap-mediaklikk-kezdolap">
+<div class="clear"></div>
+<header class="headwrapper">
+<div class="ult-wrapper wrapper side-menu-wrapper" id="wrapper-7343">
+			<div class="29 " id="col-7343-1">
+			<div class="colwrapper"><div class="hidden widget widget_ultimatummenu inner-container"><a id="ultimatummenu-208-responsive" href="#ultimatummenu-208-resonsive-sidr"   class="sidr-toggler"><i class="fa fa-bars"></i></a>
+
+<div id="ultimatummenu-208-responsive-sidr" >
+<ul id="ultimatummenu-208-resonsive" class="menu"><li id="menu-item-7734155" class="desktop-hide menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7734155"><a href="#">MenÃ¼</a>
+<ul class="sub-menu">
+	<li id="menu-item-8659194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8659194"><a href="https://mediaklikk.hu/tv">TV</a></li>
+	<li id="menu-item-8659197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8659197"><a href="https://mediaklikk.hu/radio">RÃ¡diÃ³</a></li>
+	<li id="menu-item-8659200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8659200"><a href="https://mediaklikk.hu/sport">Sport</a></li>
+</ul>
+</li>
+<li id="menu-item-7734173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7734173"><a href="#">TovÃ¡bbi menÃ¼pontok</a>
+<ul class="sub-menu">
+	<li id="menu-item-7734176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7734176"><a href="https://mediaklikk.hu/musoraink">MÅ±soraink</a></li>
+	<li id="menu-item-7734179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7734179"><a href="https://mediaklikk.hu/musorujsag">MÅ±sorÃºjsÃ¡g</a></li>
+	<li id="menu-item-7734182" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7734182"><a href="https://mediaklikk.hu/felhasznaloi-profil/">Profil</a></li>
+</ul>
+</li>
+<li id="menu-item-7734188" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7734188"><a href="#">TovÃ¡bbi oldalaink</a>
+<ul class="sub-menu">
+	<li id="menu-item-7734191" class="portfolio hirado menu-item menu-item-type-custom menu-item-object-custom menu-item-7734191"><a target="_blank" href="https://hirado.hu/">HÃ­radÃ³</a></li>
+	<li id="menu-item-7734194" class="portfolio m4 menu-item menu-item-type-custom menu-item-object-custom menu-item-7734194"><a target="_blank" href="https://m4sport.hu/">M4 sport</a></li>
+	<li id="menu-item-7734197" class="portfolio nso menu-item menu-item-type-custom menu-item-object-custom menu-item-7734197"><a target="_blank" href="https://www.nemzetisport.hu/">Nemzeti sport</a></li>
+	<li id="menu-item-7734200" class="portfolio petofi menu-item menu-item-type-custom menu-item-object-custom menu-item-7734200"><a target="_blank" href="/petofi/">PetÅfi</a></li>
+	<li id="menu-item-7734203" class="portfolio ridikul menu-item menu-item-type-custom menu-item-object-custom menu-item-7734203"><a target="_blank" href="https://ridikul.hu/">RidikÃ¼l</a></li>
+</ul>
+</li>
+<li id="menu-item-7734185" class="social menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7734185"><a href="#">KÃ¶vessen minket</a>
+<ul class="sub-menu">
+	<li id="menu-item-7734206" class="icon-fb icon-social menu-item menu-item-type-custom menu-item-object-custom menu-item-7734206"><a target="_blank" href="https://www.facebook.com/Mediaklikk">facebook</a></li>
+</ul>
+</li>
+</ul></div>
+<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function() {
+		jQuery('#ultimatummenu-208-responsive').sidr({
+		    name: "ultimatummenu-208-responsive-sidr",
+		    		    side: "left" 
+		    		  });
+
+		});
+	//]]>
+</script>
+</div><div class="clearfix"></div></div>
+			</div>
+
+				</div>
+<div class="ult-wrapper wrapper header-wrapper" id="wrapper-7433">
+
+<div class="ult-container  container " id="container-7433">
+<div class="row">
+		<div class="ult-column col-md-4 " id="col-7433-1">
+			<div class="colwrapper"><div class="widget_text widget widget_custom_html inner-container"><div class="textwidget custom-html-widget"><div class="sidr-toggler"><i class="fa fa-bars"></i></div></div></div><div class="tablet-hide widget widget_ultimatummenu inner-container"><script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function($) {
+				ddsmoothmenu.init({
+			mainmenuid: "ultimatummenu-211-item",
+			orientation: 'h',
+			classname: 'ddsmoothmenuh',
+			contentsource: "markup"
+		})
+	});
+	//]]>
+</script>
+<style>.ddsmoothmenuh ul {float: left;}</style>
+<div class="ultimatum-nav">
+<div class=" ddsmoothmenuh" id="ultimatummenu-211-item">
+	<ul id="menu-mediaklikk-2024-redesign" class="menu"><li id="menu-item-8659218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8659218"><a href="https://mediaklikk.hu/tv">TV</a></li>
+<li id="menu-item-8659221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8659221"><a href="https://mediaklikk.hu/radio">RÃ¡diÃ³</a></li>
+<li id="menu-item-8112399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8112399"><a href="https://mediaklikk.hu/sport">Sport</a></li>
+</ul></div>
+</div>
+</div><div class="clearfix"></div></div>
+		</div>
+		<div class="ult-column col-md-4 " id="col-7433-2">
+			<div class="colwrapper"><div class="widget_text widget widget_custom_html inner-container"><div class="textwidget custom-html-widget"><a href="https://mediaklikk.hu" class="logo"></a></div></div></div>
+		</div>
+		<div class="ult-column col-md-4 " id="col-7433-3">
+			<div class="colwrapper"><div class="widget_text widget widget_custom_html inner-container"><div class="textwidget custom-html-widget"><div class="button-red live"><span>Ã©lÅ</span></div>
+</div></div><input type="button" id="accessibility_toggle"><div class="header-icon button-search widget widget_mediaklikk_header_search_widget inner-container">		<div class="header-search ">
+			<form method="GET" action="/talalati-lista"
+			      class="header_search_form_headers_244">
+				<div class="header_search_field" >
+					<input id="headers_244" name="search_mk" class="header_search_input"
+					       placeholder="KeresÃ©s" title="KeresÃ©s indÃ­tÃ¡sÃ¡hoz adjon meg legalÃ¡bb 3 karaktert!" type="text">
+                    				</div>
+                				<div class="search_error_msg" style="display: none;">KeresÃ©s indÃ­tÃ¡sÃ¡hoz adjon meg legalÃ¡bb 3 karaktert!</div>
+			</form>
+		</div>
+
+		<script>
+
+			//header keresÃ©s autocomplete
+			jQuery(document).ready(function () {
+
+				jQuery("#headers_244").keypress(function (event) {
+					if (event.which == 13) {
+						event.preventDefault();
+
+						if (jQuery('#headers_244').val().length < 3) {
+							jQuery('.search_error_msg').fadeIn(500);
+							jQuery('.search_error_msg').fadeOut(2500);
+
+						} else {
+							jQuery(".header_search_form_headers_244").submit();
+						}
+					}
+				});
+                jQuery(".header_search_form_headers_244 .searchSubmitIcon").on('click', function (event) {
+                    event.preventDefault();
+
+                    if (jQuery('#headers_244').val().length < 3) {
+                        jQuery('.search_error_msg').fadeIn(500);
+                        jQuery('.search_error_msg').fadeOut(2500);
+                    } else {
+                        jQuery(".header_search_form_headers_244").submit();
+                    }
+                });
+
+								jQuery('#headers_244').closest('.header-search').parent().on('click', function (event) {
+					var $searchInput = jQuery('#headers_244');
+
+					if (jQuery(event.target).closest('.header-search').length === 0 && $searchInput.is(':visible')) {
+						$searchInput.trigger('focus');
+					}
+				});
+
+				var $project = jQuery('#headers_244');
+
+				jQuery.getJSON("/iface/mediaklikk/allPrograms/allMusor.json",
+					function (data) {
+
+						var projects = data.sort();
+
+						$project.autocomplete({
+							minLength: 3,
+							delay: 500,
+							source: function (request, response) {
+								var term = jQuery.ui.autocomplete.escapeRegex(request.term)
+									, startsWithMatcher = new RegExp("^" + term, "i")
+									, startsWith = jQuery.grep(projects, function (value) {
+										return startsWithMatcher.test(value.label || value.value || value);
+									})
+									, containsMatcher = new RegExp(term, "i")
+									, contains = jQuery.grep(projects, function (value) {
+										return jQuery.inArray(value, startsWith) < 0 &&
+											containsMatcher.test(value.label || value.value || value);
+									});
+
+								response(startsWith.concat(contains).slice(0, 10));
+							},
+							focus: function (event, ui) {
+								//$project.val( ui.item.label );
+								return false;
+							}
+						});
+
+						$project.data("ui-autocomplete")._renderItem = function (ul, item) {
+
+							var $li = jQuery('<li class=musor_suggestion>'),
+								$img = jQuery('<div class=list_item_image></div>');
+
+							if (item.icon != '') {
+								$img.css({
+									backgroundImage: `url(https:${item.icon})`
+								})
+							}else{
+								jQuery($img).addClass('placeholder');
+							}
+
+							$li.attr('data-value', item.label);
+							$li.append('<a href=' + item.url + '>');
+							//$li.append('<div>' + item.desc + '</div>');
+
+							$li.find('a').append($img).append(item.label.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + jQuery.ui.autocomplete.escapeRegex(this.term) + ")(?![^<>]*>)(?![^&;]+;)", "gi"), "<strong>$1</strong>"));
+							return $li.appendTo(ul);
+						};
+					});
+			});
+		</script>
+		</div><div id="oauth_login" style="display:none"><a href="https://auth.mediaklikk.hu/keycloak/login.php" target="_top">BejelentkezÃ©s</a></div>
+<div id="hms-oauth-header-root"></div><div class="widget_text widget widget_custom_html inner-container"><div class="textwidget custom-html-widget">
+<script>
+//keresohoz tartozo js
+jQuery(".widget_mediaklikk_header_search_widget").click(function (e) {
+	jQuery(e.target).find(".header-search ").toggle();
+});
+</script></div></div></div>
+		</div>
+		</div></div>
+</div>
+<div class="ult-wrapper wrapper stream-wrapper hidden" id="wrapper-7436">
+
+<div class="ult-container  container " id="container-7436">
+<div class="row">
+		<div class="ult-column col-md-12 " id="col-7436-1">
+			<div class="colwrapper"><div id="main_6afdaf583860d" class="cover ajaxloader" data-url="/iface/cover/cover_2217.html" ><!-- Ajaxos behÃºzÃ¡s!  -->        </div>
+        </div>
+		</div>
+		</div></div>
+</div>
+</header>
+<main class="bodywrapper" id="bodywrapper">
+<div class="ult-wrapper wrapper " id="wrapper-7358">
+			<div class="29 " id="col-7358-1">
+			<div class="colwrapper"><!-- mediaklikk_2024 --><div class='mediaklikk_2024'>
+                    <script type="text/javascript">
+                        // theme loader script
+                        (function(d, themeCssUrl) {
+                            const linkToCss = d.querySelector("link[href='" + themeCssUrl + "']");
+                            
+                            if (linkToCss != null) {
+                                // css is loaded - exit
+                                return;
+                            }
+                            
+                            const linkParent = d.querySelector("head") ?? d;
+                            const newLink = d.createElement("link");
+                            newLink.setAttribute("rel", "stylesheet");
+                            newLink.setAttribute("href", themeCssUrl);
+                            
+                            linkParent.appendChild(newLink);
+                        })(document, "/wp-content/plugins/hms-mediaklikk/common/styles/redesign/mediaklikk2024.css");
+//# sourceURL=theme_selector_/_0
+                    </script>
+                    <!-- <link rel="stylesheet" href="/wp-content/plugins/hms-mediaklikk/common/styles/redesign/mediaklikk2024.css"> -->
+                <div id="mobileAppPopularier_overlay" style="display: none;">
+    <div id="mobileAppPopularier_container" class="mediaklikk2024">
+        <div class="innerContainer">
+            <div class="imageAndTextContainer">
+                <div id="MobilAppPopularier_image" style="background: url('https://cdn.cms.mtv.hu/wp-content/uploads/sites/4/2025/08/mediaklikk-logo.png'); background-size: 100%;"></div>
+                <div id="MobilAppPopularier_text">
+                    <p>
+                        TÃ¶ltse le ingyenes <br/>
+                        <b>MÃ©diaklikk</b> alkalmazÃ¡sunkat telefonjÃ¡ra Ã©s kÃ¶vesse nÃ¡lunk a legfrissebb Ã©s legfontosabb hÃ­reket itthonrÃ³l Ã©s a nagyvilÃ¡gbÃ³l!
+                    </p>
+                </div>
+            </div>
+            <div id="MobilAppPopularier_creator"></div>
+            <div id="MobileAppPopularier_links">
+                <a id="mobileAppPopularier_downloadIOS" href="https://apps.apple.com/hu/app/m%C3%A9diaklikk/id1155584370?l=hu" style="display: none;">LetÃ¶ltÃ©s</a>
+                <a id="mobileAppPopularier_downloadANDROID" href="https://play.google.com/store/apps/details?id=hu.mtva.mediaklikk" style="display: none;">LetÃ¶ltÃ©s</a>
+                <a href="javascript:void(0)" id="mobileAppPopularier_close">KÃ©sÅbb</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+jQuery(function () {
+    const storageKey = 'mobileAppPopularizer';
+    const overlay = jQuery('#mobileAppPopularier_overlay');
+    const closeBtn = jQuery('#mobileAppPopularier_close');
+    const iosBtn = jQuery('#mobileAppPopularier_downloadIOS');
+    const androidBtn = jQuery('#mobileAppPopularier_downloadANDROID');
+
+    // --- MentÃ©s kattintÃ¡sra ---
+    closeBtn.on('click', function () {
+        const ts = Math.floor(Date.now() / 1000);
+        localStorage.setItem(storageKey, ts);
+        overlay.hide();
+        jQuery('body').removeClass('overflowHidden');
+    });
+
+    // --- Default Ã©rtÃ©k, ha mÃ©g nincs ---
+    if (localStorage.getItem(storageKey) === null) {
+        localStorage.setItem(storageKey, 0);
+    }
+
+    const now = Math.floor(Date.now() / 1000);
+    const lastClose = parseInt(localStorage.getItem(storageKey), 10);
+    const hoursSinceClose = Math.floor((now - lastClose) / 3600);
+    const reappearThreshold = 24;
+    const shouldShowPopup = hoursSinceClose >= reappearThreshold;
+
+    let isIOS = ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(navigator.platform)
+        || (navigator.userAgent.includes("Mac") && "ontouchend" in document);
+    let isAndroid = navigator.userAgent.toLowerCase().includes("android");
+
+    
+    // --- DOM-ba helyezÃ©s ---
+    if (window.location.hostname === 'mediaklikk.hu') {
+        overlay.insertBefore('header');
+    }
+
+    // --- MegjelenÃ­tÃ©s ---
+    if (shouldShowPopup && (isIOS || isAndroid)) {
+        if (isIOS) iosBtn.show();
+        if (isAndroid) androidBtn.show();
+
+        overlay.show();
+        jQuery('body').addClass('overflowHidden');
+    } else {
+        overlay.hide();
+        jQuery('body').removeClass('overflowHidden');
+    }
+});
+</script>
+</div><div id="main_6afdaf583d409" class="cover ajaxloader" data-url="/iface/cover/cover_2213.html" ><!-- Ajaxos behÃºzÃ¡s!  -->        </div>
+        <div class="personal_interests_modal widget widget_user_profile_widget inner-container"><div class="hms-oauth-profile-root" data-render-mode="interests-only"></div></div></div>
+			</div>
+
+				</div>
+</main>
+<footer class="footwrapper">
+<div class="ult-wrapper wrapper " id="wrapper-7349">
+			<div class="29 " id="col-7349-1">
+			<div class="colwrapper"><div class="widget widget_hms_adult_content_popup_widget inner-container">        <script>
+            /* jQuery(document).ready(function () {
+                jQuery('body').css('overflow', 'hidden');
+                jQuery('body').on('scroll mousewheel touchmove', function (e) {
+                    e.preventDefault();
+                });
+            }); */
+
+            function OldEnough() {
+                const $popup = jQuery('.agelimit_warning_popup_wrapper');
+                $popup.addClass("agelimit_hidden_popup");
+                jQuery('body').off('scroll mousewheel touchmove');
+                jQuery('body').css('overflow', 'scroll');
+                jQuery('[data-agelimit="18"]').removeAttr('data-agelimit');
+
+                let settings = $popup.attr("data-aodplaysettings") || "";
+
+                if (settings.length > 0) {
+                    settings = JSON.parse(settings);
+                    settings.isAdultContent = false;
+                    bobPlayer.startPlaying(settings);
+                    $popup.removeAttr("data-aodplaysettings");
+                }
+
+                if (bobPlayer) {
+                    bobPlayer.adultContentAllowed = true;
+                }
+
+                // eltÃ¡roljuk sessionStorage-ba, hogy engedÃ©lyezte
+                sessionStorage.setItem("adultContentAllowed", "true");
+                if (bobPlayer) {
+                    bobPlayer.adultContentAllowed = true;
+                }
+            }
+
+            function YoungerThanEighteen() {
+                const $popup = jQuery('.agelimit_warning_popup_wrapper');
+                $popup.addClass("agelimit_hidden_popup");
+                let settings = $popup.attr("data-aodplaysettings") || "";
+                if (settings.length > 0) {
+                    bobPlayer.stopPlaying();
+                    jQuery('.play_button[data-class="bobExtraPlayButton"]').removeClass("stop");
+                    $popup.removeAttr("data-aodplaysettings");
+                    return;
+                }
+
+                                if (window.history.length > 1 && document.referrer !== '') {
+                    window.history.back();
+                } else {
+                    window.location.replace('https://mediaklikk.hu');
+                }
+                            }
+
+            if (typeof HmsGoa3 !== 'undefined') {
+                HmsGoa3.adverticumInit = function () {};
+            }
+
+            jQuery(document).ready(function () {
+                const initially_hidden = "1";
+                const allowed = sessionStorage.getItem("adultContentAllowed") === "true" && !new URLSearchParams(location.search).has("debug");
+
+                if (initially_hidden || allowed || (bobPlayer && bobPlayer?.adultContentAllowed === true)) {
+                    return; 
+                }
+
+                jQuery('.agelimit_warning_popup_wrapper')?.removeClass("agelimit_hidden_popup");
+            });
+        </script>
+
+        <style>
+            .agelimit_hidden_popup {
+                display: none;
+            }
+        </style>
+
+        <div class="agelimit_warning_popup_wrapper agelimit_hidden_popup">
+            <div class="agelimit_warning_popup">
+                <div class="eighteen_icon_wrapper">
+                    <img src="https://cdn.cms.mtv.hu/wp-content/plugins/hms-adult-content-warning/common/styles/IMG/plus_eighteen.png">
+                </div>
+                <div class="warning_text_wrapper">
+                    <h1>Csak felnÅtteknek!</h1>
+                    <p>Az oldal alkalmas kiskorÃºak fizikai, szellemi vagy erkÃ¶lcsi fejlÅdÃ©sÃ©nek kedvezÅtlen
+                        befolyÃ¡solÃ¡sÃ¡ra.</p>
+                    <p>Tartalma a 2010. Ã©vi CLXXXV. mÃ©diaszolgÃ¡ltatÃ¡sokrÃ³l Ã©s a tÃ¶megkommunikÃ¡ciÃ³rÃ³l szÃ³lÃ³ tÃ¶rvÃ©ny Ã¡ltal
+                        rÃ¶gzÃ­tett besorolÃ¡s szerinti V. vagy VI. kategÃ³riÃ¡ba tartozik.</p>
+                    <div class="actions">
+                        <button type="button" class="btn-primary btn-large btn-ico animate-all-200"
+                                onclick="OldEnough()">ElmÃºltam 18 Ã©ves
+                        </button>
+                        <button type="button" class="btn-primary btn-large btn-ico animate-all-200 btn-red"
+                                onclick="YoungerThanEighteen()">Nem mÃºltam el 18 Ã©ves
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div><div class="widget_text widget widget_custom_html inner-container"><div class="textwidget custom-html-widget"><a href="/" class="footer-logo"></a></div></div><div class="menu-3 widget widget_ultimatummenu inner-container"><div class="ultimatum-nav">
+	<div class="horizontal-menu" style="float:left">
+	 	<ul id="menu-footer-menu-3" class="menu"><li id="menu-item-7378955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7378955"><a href="https://mediaklikk.hu/felhasznalasi-feltetelek/">FelhasznÃ¡lÃ¡si feltÃ©telek</a></li>
+<li id="menu-item-7378958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7378958"><a href="http://www.mtva.hu/kozonsegszolgalat/gyakori-kerdesek">Gyakori kÃ©rdÃ©sek</a></li>
+<li id="menu-item-7378961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7378961"><a href="mailto:ugyelet@mtva.hu">Ãrjon nekÃ¼nk</a></li>
+<li id="menu-item-7378967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7378967"><a href="http://www.mtva.hu/hu/kozonsegszolgalat">KÃ¶zÃ¶nsÃ©gszolgÃ¡lat</a></li>
+<li id="menu-item-7378970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7378970"><a href="https://mediaklikk.hu/impresszum/">Impresszum</a></li>
+<li id="menu-item-7378976" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7378976"><a href="https://mediaklikk.hu/akadalymentesitesi-nyilatkozat">AkadÃ¡lymentesÃ­tÃ©si nyilatkozat</a></li>
+<li id="menu-item-8258271" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8258271"><a target="_blank" href="https://mtva.hu/jogi-es-adatvedelmi-nyilatkozat/">MTVA &#8211; Jogi Ã©s adatvÃ©delmi nyilatkozat</a></li>
+</ul>	</div>
+</div></div><div class="clearfix"></div><div class="widget_text widget widget_custom_html inner-container"><div class="textwidget custom-html-widget"><hr></div></div><div class="menu-1 widget widget_ultimatummenu inner-container"><div class="ultimatum-nav">
+	<div class="horizontal-menu" style="float:left">
+	 	<ul id="menu-footer-menu-1" class="menu"><li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="http://www.mtva.hu/">MTVA</a></li>
+<li id="menu-item-943334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-943334"><a href="http://www.dunamsz.hu/">Duna MÃ©diaszolgÃ¡ltatÃ³ Zrt.</a></li>
+<li id="menu-item-943336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-943336"><a href="http://media-akademia.hu/">KÃ¶zszolgÃ¡lati MÃ©diaakadÃ©mia AlapÃ­tvÃ¡ny</a></li>
+<li id="menu-item-8786730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8786730"><a href="https://archivum.mtva.hu/">MTVA ArchÃ­vum</a></li>
+</ul>	</div>
+</div></div><div class="clearfix"></div><!-- mediaklikk_2024 --><div class='mediaklikk_2024'>
+                    <script type="text/javascript">
+                        // theme loader script
+                        (function(d, themeCssUrl) {
+                            const linkToCss = d.querySelector("link[href='" + themeCssUrl + "']");
+                            
+                            if (linkToCss != null) {
+                                // css is loaded - exit
+                                return;
+                            }
+                            
+                            const linkParent = d.querySelector("head") ?? d;
+                            const newLink = d.createElement("link");
+                            newLink.setAttribute("rel", "stylesheet");
+                            newLink.setAttribute("href", themeCssUrl);
+                            
+                            linkParent.appendChild(newLink);
+                        })(document, "/wp-content/plugins/hms-mediaklikk/common/styles/redesign/mediaklikk2024.css");
+//# sourceURL=theme_selector_/_1
+                    </script>
+                    <!-- <link rel="stylesheet" href="/wp-content/plugins/hms-mediaklikk/common/styles/redesign/mediaklikk2024.css"> -->
+                </div><!-- GEMIUS WIDGET --><!-- IS POST, ID: 10474983 TYPE: post, slug: lehet-sirni-kovacs-aron-szerint-nem-gyengeseg-felvallalni-ha-nehezsegekkel-kuzdunk --><!-- IS POST Cat: 71, duna --><!-- SRC DEFAULT --><script type='text/javascript'>
+    if(window.self !== window.top) {
+         window.__tcfapi = window.parent.__tcfapi;
+    }
+
+    var isTcDisabled;
+    
+    const gemius_code = (id, tcData) => {
+        <!--//--><![CDATA[//><!--
+        window.pp_gemius_identifier = id;
+        window.pp_gemius_dnt = Number(navigator.doNotTrack ?? !tcData.vendor.consents['328'] ?? 1);
+        // lines below shouldn't be edited
+        function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+        gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+        (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+            gt.setAttribute('defer','defer'); gt.src=l+'://gahu.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+        //--><!]]>
+    }
+    
+    window.addEventListener('load', () => {
+        __tcfapi('ping', 2, (pingReturn) => {
+            isTcDisabled = (pingReturn.displayStatus === 'disabled');
+        });
+    
+        const callback = (tcData, success) => {
+            if ((tcData.eventStatus === 'tcloaded' && isTcDisabled)
+                || (success && tcData.eventStatus === 'useractioncomplete') || (success && tcData.eventStatus === 'tcloaded' && tcData.tcString?.length))
+                gemius_code('coJFLUbKYUG1migTjSSa2JXjTDOF0Cyvt0Ktzd3BOnj.E7', tcData);
+        };
+        __tcfapi('addEventListener', 2, callback);
+    });
+</script></div>
+			</div>
+
+				</div>
+</footer>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/sites/4/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ultimatum/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<template id="tpl-recommender-modal">
+    <div class="hms-vrec-modal-backdrop" data-state="closed">
+        <div
+            class="hms-vrec-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="">
+            <button
+                type="button"
+                class="hms-vrec-modal-close js-modal-close"
+                aria-label="BezÃ¡rÃ¡s">
+                &times;
+            </button>
+
+            <div class="hms-vrec-modal-cover">
+                <img class="hms-vrec-modal-image js-modal-image" src="" alt="" />
+                <span class="hms-vrec-modal-typeico typeico" aria-hidden="true"></span>
+
+                <div class="hms-vrec-modal-chip js-modal-chip" aria-hidden="true" hidden></div>
+
+                <div class="hms-vrec-modal-title-deco">
+                    <h2 class="hms-vrec-modal-title js-modal-title"></h2>
+                    <p class="hms-vrec-modal-lead js-modal-lead" hidden></p>
+                </div>
+            </div>
+
+            <div class="hms-vrec-modal-body">
+                <ul class="hms-vrec-modal-tabs js-modal-tabs" role="list"></ul>
+                <p class="hms-vrec-modal-error js-modal-error" hidden role="alert">
+                    A videÃ³ ajÃ¡nlÃ³ nem Ã©rhetÅ el.                </p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="tpl-recommender-modal-tab">
+    <li class="hms-vrec-modal-tab">
+        <a href="" class="hms-vrec-modal-tab-link js-modal-tab-link">
+            <span class="hms-vrec-modal-tab-index js-modal-tab-index" aria-hidden="true"></span>
+            <img class="hms-vrec-modal-tab-thumb js-modal-tab-thumb" src="" alt="" />
+            <span class="hms-vrec-modal-tab-title js-modal-tab-title"></span>
+            <span class="hms-sr-only" style="position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important">, videÃ³</span>            <span class="hms-vrec-modal-tab-play" aria-hidden="true"></span>
+        </a>
+    </li>
+</template>
+<script id="tmpl-jumper-iframe" type="text/x-handlebars-template">
+    <iframe
+        id="jumper_iframe"
+        class="UnderLoading"
+        sandbox="
+            allow-scripts
+            allow-same-origin
+            allow-forms
+            allow-modals
+            allow-popups
+            allow-popups-to-escape-sandbox
+            allow-presentation
+            allow-pointer-lock
+            allow-orientation-lock
+            allow-downloads
+            allow-top-navigation
+            allow-top-navigation-by-user-activation
+            allow-storage-access-by-user-activation
+        "
+    ></iframe>
+</script><script id="tmpl-jumper-loader" type="text/x-handlebars-template">
+    <div id="jumper_loader" class="OuterContainer">
+        <div class="InnerContainer">
+            <span class="LoaderAnimation"></span>
+        </div>
+    </div>
+</script>        <script>
+            if (typeof integrateManager === "function") {
+                try {
+                    if(!inIframe()) {
+                        integrateManagerGlobal = integrateManager({
+    "iframe": "#tmpl-jumper-iframe",
+    "loader": "#tmpl-jumper-loader",
+    "undeletableSelectors": [
+        "#bob_player"
+    ]
+});
+                    }
+                } catch (e) {
+                    console.error('Jumper managing error - ', e);
+                }
+            } else {
+                console.error('Jumper managing error - Missing external script file!');
+            }
+        </script>
+        <link rel='stylesheet' id='mediaklikkfonts-css' href='https://mediaklikk.hu/wp-content/plugins/hms-mediaklikk/common/styles/mediaklikkfonts.css?ver=6.9' type='text/css' media='all' />
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/droppable.min.js?ver=1.13.3" id="jquery-ui-droppable-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.3" id="jquery-ui-menu-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="wp-a11y-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-08-30 18:39:06+0000","generator":"GlotPress\/4.0.0-alpha.9","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"hu"},"Notifications":["\u00c9rtes\u00edt\u00e9sek"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+//# sourceURL=wp-a11y-js-translations
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/dist/a11y.min.js?ver=cb460b4676c94bd228ed" id="wp-a11y-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.3" id="jquery-ui-autocomplete-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-cover-layout-editor/common/script/parallax.min.js" id="hms-covereditor-parallaxscroll-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-accessibility/widgets/toggle/js.js?ver=6.9" id="accessibility-toogle-script-js"></script>
+<script type="text/javascript" id="accessibility-toogle-script-js-after">
+/* <![CDATA[ */
+AccessibilityWidgetToggle.init(["MkAccessibility","MkAccessibility footer.footwrapper","MkAccessibility footer.footwrapper .ultimatum-nav ul li a"]);
+//# sourceURL=accessibility-toogle-script-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.3" id="jquery-effects-core-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.13.3" id="jquery-effects-slide-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-mediaklikk/common/scripts/waypoints.min.js?ver=6.9" id="waypointsScript-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-mediaklikk/widgets/programsAZ/programsAZ.js" id="programs-az-js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-video-recommender/assets/js/frontend/hms-vr-recommender-tile.js?ver=1.0.19" id="hms-vr-recommender-tile-js"></script>
+<script type="text/javascript" id="hms-vr-recommender-modal-js-extra">
+/* <![CDATA[ */
+var HmsVideoRecommenderThemeAncestors = [".deep-blue",".claret-white",".coral-color",".blue-white",".fomenu-fozoshow",".adal-2021",".toldi",".csaf-2",".rozmaring-2evad",".magyarorszagszepe2023",".tunderkert",".adal",".szakcsi_css",".csukas",".mediaklikk_2024",".fomenu-fozoshow-globalgrid",".mediaklikk_redesing_regi"];
+//# sourceURL=hms-vr-recommender-modal-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-video-recommender/assets/js/frontend/hms-vr-recommender-modal.js?ver=1.0.19" id="hms-vr-recommender-modal-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-video-recommender/assets/js/frontend/hms-vr-vod-endpage-tab.js?ver=1.0.19" id="hms-vr-vod-endpage-tab-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/liveBroadcast/liveBroadcast.js" id="liveBroadcast-js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms.ngsdatafeed/common/script/vendor/slick.min.js?ver=1" id="slick-js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/globalGrid/globalGrid.js?ver=6.9" id="global-grid-js-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/hmsBanner/hms-cover-banner.js?ver=6.9" id="hms-cover-banner-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/contentGallerySliderFrontend.js?ver=6.9" id="contentGallerySliderFrontendJS-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/LiveStreamSelector/../../common/scripts/liveStreamSelectorFrontend.js?ver=1792055001" id="LV_SS-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-tri-widgets/widgets/common/scripts/nowPlayMusic.js?ver=6.9" id="LSS_now_play-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/LiveStreamSelector/../../common/scripts/liveStreamSelectorMenetrendFrontend.js?ver=1.0" id="lss_menetrend-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/common/scripts/autoPlayWidget.js" id="auto-play-widget-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.3" id="jquery-ui-tabs-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-includes/js/jquery/ui/accordion.min.js?ver=1.13.3" id="jquery-ui-accordion-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/themes/ultimatum/assets/js/theme.global.tbs3.min.js?ver=2" id="theme-global-3-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/themes/ultimatum/assets/js/menus/ddsmoothmenu.js?ver=2.38" id="menu-ddsmooth-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-keycloak-oauth/assets/dist/header-fiok.js?ver=425f2be630fa66470fab19ef578a9866" id="hms-oauth-header-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-cover-layout-editor/common/script/hms-covereditor-frontend.js?ver=6.9" id="hms-covereditor-frontend-script-js"></script>
+<script type="text/javascript" src="https://mediaklikk.hu/wp-content/plugins/hms-keycloak-oauth/assets/dist/profile-fiok.js?ver=d250fba35e8554b81ef60815509495e2" id="hms-oauth-profile-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://mediaklikk.hu/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://mediaklikk.hu/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+        <script>
+            var bobapSetup = {
+    "DOM": {
+        "id": {
+            "player": "#bob_player",
+            "play": "#bobap_play",
+            "volume": "#bobap_volume",
+            "mute": "#bobap_mute",
+            "closer": "#bobap_closer",
+            "playBackBar": "#bobap_play_back_bar",
+            "playBackCounter": "#bobap_play_back_counter",
+            "style": "#bobap-style-css",
+            "next": "#bobap_next",
+            "previous": "#bobap_previous",
+            "backStepper": "#bobap_back_stapper",
+            "forwardStepper": "#bobap_forvard_stepper",
+            "infoOuter": "#bob_player_info_outer",
+            "infoInner": "#bob_player_info_inner",
+            "templates": {
+                "player": "#tmpl-bob-player",
+                "player_info": "#tmpl-bob-player-info"
+            }
+        },
+        "class": {
+            "playerInner": ".BobPlayer",
+            "stepper": ".BobPlayerStepper",
+            "hiddenMenuIcon": ".BobPlayerHiddenMenuIcon",
+            "subHiddenMenuIcon": ".BobPlayerSubHiddenMenuIcon span",
+            "subHiddenMenuOptions": ".SubHiddenMenuOptions",
+            "subHiddenMenuOption": ".SubHiddenMenuOption",
+            "shareIcon": ".ShareIcon",
+            "sleepIcon": ".SleepIcon",
+            "infoIcon": ".InfoIcon",
+            "closeIcon": ".CloseIcon",
+            "extraInfoTitle": ".ExtraInfoTitle",
+            "extraInfoBeginDate": ".ExtraInfoBeginDate",
+            "extraInfoDescription": ".ExtraInfoDescription",
+            "forwardTo": ".ForwardTo",
+            "logo": ".BobPlayerLogo",
+            "shareOption": ".ShareOption",
+            "urlCopyIcon": ".UrlCopy",
+            "urlCopySample": ".UrlCopySample",
+            "urlCopyButton": ".UrlCopyButton"
+        },
+        "attr": {
+            "extraPlays": "[data-class=\"bobExtraPlayButton\"]"
+        }
+    },
+    "channels": {
+        "6": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/mr-stream.connectmedia.hu\/4736\/mr1.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/kossuth",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr1",
+            "name": "Kossuth",
+            "theme": "Kossuth",
+            "broadcastDays": 60
+        },
+        "9": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/mr-stream.connectmedia.hu\/4748\/mr7.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/danko",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr7",
+            "name": "Dank\u00f3",
+            "theme": "Danko",
+            "broadcastDays": 60
+        },
+        "12": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/mr-stream.connectmedia.hu\/4741\/mr3.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/bartok",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr3",
+            "name": "Bart\u00f3k",
+            "theme": "Bartok",
+            "broadcastDays": 30
+        },
+        "15": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/mr-stream.connectmedia.hu\/4746\/mr5.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/parlamentiradio",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr5",
+            "name": "Parlamenti",
+            "theme": "Parlamenti",
+            "broadcastDays": 60
+        },
+        "18": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/mr-stream.connectmedia.hu\/4744\/mr4.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/nemzetisegiradio",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr4",
+            "name": "Nemzetis\u00e9gi",
+            "theme": "Nemzetisegi",
+            "broadcastDays": 60
+        },
+        "21": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/mr-stream.connectmedia.hu\/4738\/mr2.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/petofi",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr2",
+            "name": "Pet\u0151fi",
+            "theme": "Petofi",
+            "broadcastDays": 0
+        },
+        "29": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/dunaworld",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr8",
+            "name": "Duna World",
+            "theme": "Duna-world",
+            "broadcastDays": 60
+        },
+        "43": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/mr-stream.connectmedia.hu\/4691\/mr9.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/szakcsi",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr9",
+            "name": "Szakcsi",
+            "theme": "Szakcsi",
+            "broadcastDays": 60
+        },
+        "47": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/icast.connectmedia.hu\/4657\/mr11.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/nemzetisportradio",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr11",
+            "name": "Nemzeti Sportr\u00e1di\u00f3",
+            "theme": "Nsr",
+            "broadcastDays": 60
+        },
+        "50": {
+            "is_live_enabled": true,
+            "is_back_play_enabled": true,
+            "style": "default",
+            "primary_live_url": "https:\/\/mr-stream.connectmedia.hu\/4611\/mr10.mp3",
+            "secondary_live_url": "",
+            "live_page_url": "https:\/\/mediaklikk.hu\/csukas",
+            "measure_gemius": true,
+            "styleUrl": "https:\/\/mediaklikk.hu\/wp-content\/plugins\/hms-bob-audio-player\/audio-player\/common\/styles\/themes\/default.css",
+            "shortName": "mr10",
+            "name": "Csuk\u00e1s",
+            "theme": "Csukas",
+            "broadcastDays": 60
+        }
+    },
+    "gemius": {
+        "liveId": "bQqQ.UuuW4_WZFYtgmFXtKcVXfZIZEdoEVzGqKCiLPn.t7",
+        "vodId": "15Y6PyMx72prwD819wR2DsdS7J8w5AQYJaTLVp4KBp3.Q7",
+        "referer": "mediaklikk.hu"
+    }
+};
+
+            var bobPlayer;
+            var bobapIsDebug;
+            var bobAudioPlayer;
+
+            jQuery(document).ready(() => {
+                if(!!window?.AudioPlayerManager) {
+                    return;
+                }
+
+                bobPlayer = new BobapNotificator(bobapSetup);
+
+                bobapIsDebug = BobapDebug.isDebug;
+
+                if(!inIframe()) {
+                    bobAudioPlayer = new BobAudioPlayer(bobapSetup);
+                }
+            });
+        </script>
+        
+			<div class="pollsVideoBox" style="display: none" >
+			  <div class="pollsVideoBoxCell" >
+				<div class="pollsVideoBoxContent" >
+					<div class="pollsVideoBoxClose" ></div>
+					<div class="pollsVideoContener" ></div>
+				</div>
+			  </div>
+			  <div></div>
+			</div>
+				<script type="text/javascript">//<![CDATA[
+jQuery('body')
+	  .delay(500)
+	  .queue( 
+	  	function(next){ 
+	    	jQuery(this).css('padding-right', '1px'); 
+	  	}
+	  ); 
+//]]></script>
+
+</body>
+</html>
+
+<!-- Dynamic page generated in 1.011 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2026-11-18 14:59:52 -->
+
+<!-- super cache -->

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /favicon*.ico$
+Disallow: /tcf/*
+Disallow: /embed/*
+Sitemap: https://www.rtlplusz.hu/sitemap.xml
+Sitemap: https://www.rtlplusz.hu/sitemap-program.xml
+Sitemap: https://www.rtlplusz.hu/sitemap-service.xml
+Sitemap: https://www.rtlplusz.hu/sitemap-static-pages.xml
