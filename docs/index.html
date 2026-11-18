@@ -2,113 +2,132 @@
 <html lang="hu">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sorjában – egyszerre egy streaming-előfizetés</title>
-<meta name="description" content="Írd fel, mit néznél meg a Netflixen, HBO Max-en, Disney+-on vagy RTL+-on. Megmondjuk, melyik hónapban melyikre fizess elő, hogy semmi ne kerüljön le, mielőtt megnéznéd.">
+<meta name="description" content="Írd be, mit néznél meg a Netflixen, HBO Max-en, Disney+-on vagy RTL+-on. Megmutatjuk, melyik hónapban melyikre fizess elő, hogy semmi ne kerüljön le, mielőtt megnéznéd.">
 <meta property="og:title" content="Sorjában – egyszerre egy előfizetés">
 <meta property="og:description" content="Havi beosztás a streaming-előfizetéseidhez: melyik hónapban melyik szolgáltatás, mennyiért, és mikor kell lemondani.">
 <meta property="og:locale" content="hu_HU">
-<meta name="theme-color" content="#1d3a33">
+<meta name="theme-color" content="#132a22">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://images.justwatch.com">
 <link rel="preload" href="fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<a class="ugras" href="#kereso">Ugrás a keresőhöz</a>
+<a class="ugras" href="#q">Ugrás a keresőhöz</a>
 
-<header class="fej">
-  <div class="keret fej__sor">
-    <a class="logo" href="./" aria-label="Sorjában, kezdőlap">Sorjában</a>
-    <p class="fej__frissult" id="frissult" hidden></p>
+<header class="nyito">
+  <div class="fal" id="fal" aria-hidden="true"></div>
+  <div class="nyito__tartalom keret">
+    <div class="fej">
+      <a class="logo" href="./" aria-label="Sorjában, kezdőlap">Sorjában</a>
+      <p class="fej__frissult" id="frissult" hidden></p>
+    </div>
+    <h1>Egyszerre egy előfizetés.</h1>
+    <p class="nyito__szoveg">Írd be, mit néznél meg. Megmutatjuk, melyik hónapban melyik szolgáltatásra fizess elő, hogy mindenre jusson idő, és semmi ne kerüljön le előtte.</p>
+
+    <div class="kereso" role="search">
+      <label for="q" class="rejtett">Film vagy sorozat címe</label>
+      <svg class="kereso__ikon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Film vagy sorozat, például Andor"
+             role="combobox" aria-expanded="false" aria-controls="talalatok" aria-autocomplete="list">
+      <ul class="talalatok" id="talalatok" role="listbox" aria-label="Találatok" hidden></ul>
+    </div>
+    <p class="nyito__platformok" id="platformszam"></p>
   </div>
 </header>
 
 <main>
-  <section class="nyito" aria-labelledby="cim">
+  <section class="terv" aria-labelledby="terv-cim">
     <div class="keret">
-      <h1 id="cim">Egyszerre egy előfizetés.</h1>
-      <p class="nyito__szoveg">Írd fel, mit néznél meg. Megmondjuk, melyik hónapban melyik szolgáltatásra fizess elő, hogy mindenre jusson idő, és semmi ne kerüljön le előtte.</p>
+      <div class="terv__fej">
+        <h2 id="terv-cim">A terved</h2>
+        <p class="mondat" id="mondat">
+          Havonta nagyjából
+          <span class="lepteto" role="group" aria-label="Esték száma havonta">
+            <button type="button" id="estek-le" aria-label="Kevesebb este">−</button>
+            <output id="estek-ki" aria-live="polite">8</output>
+            <button type="button" id="estek-fel" aria-label="Több este">+</button>
+          </span>
+          estét nézek,
+          <button type="button" class="valto" id="csakmagyar" aria-pressed="false">csak magyar hanggal</button>
+          <span id="megvan-mondat">és már előfizetek erre:</span>
+          <span class="megvan" id="megvan" role="group" aria-labelledby="megvan-mondat"></span>
+        </p>
+        <p class="sugo">Egy filmet egy estének számolunk, egy sorozat-évadot négynek. Amire már előfizetsz, azt nem tesszük a tervbe.</p>
+      </div>
+      <p class="terv__felirat" id="terv-felirat">Egy pillanat, töltöm a kínálatot…</p>
     </div>
-
-    <div class="terv" aria-live="polite">
-      <div class="keret">
-        <p class="terv__felirat" id="terv-felirat">Egy pillanat, töltöm a kínálatot…</p>
+    <ol class="jegyek" id="jegyek" aria-label="Havi beosztás"></ol>
+    <div class="keret">
+      <div class="osszeg" id="osszeg"></div>
+      <div class="terv__gombok" id="terv-gombok" hidden>
+        <button type="button" class="gomb gomb--fo" id="naptar">Emlékeztetők a naptárba</button>
+        <button type="button" class="gomb gomb--masod" id="megosztas">Link a tervhez</button>
       </div>
-      <ol class="jegyek" id="jegyek" aria-label="Havi beosztás"></ol>
-      <div class="keret">
-        <div class="osszeg" id="osszeg"></div>
-        <div class="terv__gombok" id="terv-gombok" hidden>
-          <button type="button" class="gomb gomb--vilagos" id="naptar">Emlékeztetők a naptárba</button>
-          <button type="button" class="gomb gomb--szellem" id="megosztas">Link a tervhez</button>
-        </div>
-        <div class="kimarad" id="kimarad"></div>
-      </div>
+      <div class="kimarad" id="kimarad"></div>
     </div>
   </section>
 
-  <section class="lista-resz" id="kereso" aria-labelledby="kereso-cim">
-    <div class="keret racs">
-      <div class="racs__fo">
-        <h2 id="kereso-cim">Mit néznél meg?</h2>
-        <div class="kereso">
-          <label for="q" class="rejtett">Film vagy sorozat címe</label>
-          <input id="q" type="search" autocomplete="off" spellcheck="false"
-                 placeholder="Film vagy sorozat címe, például Fehér Lótusz"
-                 aria-controls="talalatok" aria-describedby="kereso-sugo">
-          <p class="sugo" id="kereso-sugo">Magyar és eredeti címre is keres, ékezet nélkül is.</p>
-          <ul class="talalatok" id="talalatok" aria-label="Találatok"></ul>
-        </div>
-
-        <h3 class="alcim" id="listam-cim">A listád</h3>
-        <ul class="sorok" id="listam" aria-labelledby="listam-cim"></ul>
-        <p class="ures" id="listam-ures">Még üres. Keress rá pár címre fent, és a terv rögtön átrendeződik.</p>
-      </div>
-
-      <aside class="racs__oldal beallitas" aria-labelledby="beall-cim">
-        <h2 id="beall-cim">Hogyan nézel?</h2>
-
-        <div class="mezo">
-          <label for="estek">Havonta ennyi estét szánsz rá: <output id="estek-ki" for="estek">8</output></label>
-          <input type="range" id="estek" min="2" max="30" step="1" value="8">
-          <p class="sugo">Egy filmet egy estének számolunk, egy sorozat-évadot négynek.</p>
-        </div>
-
-        <div class="mezo">
-          <label class="kapcsolo">
-            <input type="checkbox" id="csakmagyar">
-            <span>Csak magyar hanggal</span>
-          </label>
-          <p class="sugo">Gyereknek, vagy ha nem akarsz feliratot olvasni. A Netflix és a SkyShowtime nem adja meg a hangsávokat, ezeknél a platformon érdemes megnézni.</p>
-        </div>
-
-        <fieldset class="mezo">
-          <legend>Ezekre most is előfizetsz</legend>
-          <p class="sugo">Ezeket nem számoljuk bele a tervbe, a rajtuk lévő címeket bármikor megnézheted.</p>
-          <div class="pipak" id="megvan"></div>
-        </fieldset>
-      </aside>
+  <section class="sin-resz" id="lista-resz" aria-labelledby="lista-cim">
+    <div class="keret sin-fej">
+      <h2 id="lista-cim">A listád</h2>
+      <p class="sin-fej__info" id="lista-info"></p>
     </div>
+    <ul class="sin" id="listam" aria-labelledby="lista-cim"></ul>
+    <div class="keret"><p class="ures" id="listam-ures">Még üres. Keress rá fent pár címre, vagy válassz az alábbiakból, és a terv rögtön átrendeződik.</p></div>
   </section>
 
-  <section class="lekerul-resz" aria-labelledby="lekerul-cim">
-    <div class="keret">
+  <section class="sin-resz" aria-labelledby="lekerul-cim">
+    <div class="keret sin-fej">
       <h2 id="lekerul-cim">Hamarosan lekerül</h2>
-      <p class="bevezeto">Ami a következő hat hétben eltűnik valamelyik szolgáltatásról. A Netflix ezt nem jelzi előre, ezért ott nem látszik.</p>
-      <div class="szuro" id="lekerul-szuro" role="group" aria-label="Szolgáltató szűrése"></div>
-      <ul class="sorok" id="lekerul"></ul>
-      <button type="button" class="gomb gomb--szellem-sotet" id="lekerul-tobb" hidden>Mutass többet</button>
+      <p class="sin-fej__info">A következő hat hét. A Netflix ezt nem jelzi előre.</p>
     </div>
+    <div class="keret"><div class="szuro" id="lekerul-szuro" role="group" aria-label="Szolgáltató szűrése"></div></div>
+    <ul class="sin" id="lekerul"></ul>
+  </section>
+
+  <section class="sin-resz" aria-labelledby="uj-cim">
+    <div class="keret sin-fej">
+      <h2 id="uj-cim">Most került fel</h2>
+      <p class="sin-fej__info">Az elmúlt három hét újdonságai, népszerűség szerint.</p>
+    </div>
+    <ul class="sin" id="ujak"></ul>
   </section>
 </main>
 
 <footer class="lab">
   <div class="keret lab__racs">
-    <p>Az elérhetőségi adatok a <a href="https://www.justwatch.com/hu">JustWatch</a> magyar kínálatából, az RTL+ műsorai az <a href="https://www.rtlplusz.hu">RTL+</a> nyilvános műsorlistájából származnak, és naponta frissülnek. Az árak a belépő csomagok havidíjai, utoljára <span id="ar-datum">2026. szeptemberben</span> néztük át őket.</p>
+    <p class="logo logo--lab">Sorjában</p>
+    <p>Az elérhetőségi adatok és a plakátok a <a href="https://www.justwatch.com/hu">JustWatch</a> magyar kínálatából, az RTL+ műsorai az <a href="https://www.rtlplusz.hu">RTL+</a> nyilvános műsorlistájából származnak, és naponta frissülnek. Az árak a belépő csomagok havidíjai, utoljára <span id="ar-datum">2026. szeptemberben</span> néztük át őket.</p>
     <p>A Sorjában független oldal, egyik szolgáltatóval sem áll kapcsolatban. A listád csak a te böngésződben tárolódik.</p>
   </div>
 </footer>
+
+<div class="zsebterv" id="zsebterv" hidden>
+  <a href="#terv-cim" id="zsebterv-link"></a>
+</div>
+
+<dialog class="lap" id="lap" aria-labelledby="lap-cim">
+  <div class="lap__hatter" id="lap-hatter" aria-hidden="true"></div>
+  <button type="button" class="lap__bezar" id="lap-bezar" aria-label="Bezárás">×</button>
+  <div class="lap__test">
+    <div class="lap__plakat" id="lap-plakat"></div>
+    <div class="lap__info">
+      <h2 id="lap-cim"></h2>
+      <p class="lap__meta" id="lap-meta"></p>
+      <ul class="lap__hol" id="lap-hol"></ul>
+      <p class="lap__leiras" id="lap-leiras"></p>
+      <div class="lap__gombok">
+        <button type="button" class="gomb gomb--fo" id="lap-felir"></button>
+      </div>
+    </div>
+  </div>
+</dialog>
 
 <div class="uzenet" id="uzenet" role="status" aria-live="polite"></div>
 
