@@ -1,12 +1,8 @@
 name: napi-frissites
 
+# A napi frissítés szünetel (2026. november 18.). Kézzel indítható: Actions → napi-frissites → Run workflow.
 on:
-  schedule:
-    - cron: "23 3 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ["pipeline/**", ".github/workflows/frissites.yml"]
 
 permissions:
   contents: write
