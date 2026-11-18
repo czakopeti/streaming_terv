@@ -12,6 +12,6 @@ atp: 1 szelet
 atp: 341 cím, 4 oldal
 mdk: 1 szelet
 mdk: 22 cím, 1 oldal
-RTL+: 447 műsor, ebből 0 új
+RTL+: 447 műsor, ebből 447 új
 platformonként: {'nfx': 7910, 'mxx': 2437, 'prv': 1431, 'dnp': 2691, 'sst': 832, 'atp': 341, 'mdk': 22, 'rtl': 447} kérések: {'requests': 199, 'retries': 0}
 Kész: 15428 cím, 19 műfaj
