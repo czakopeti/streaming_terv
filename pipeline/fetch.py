@@ -253,6 +253,13 @@ def fetch_rtl():
 
 
 # ---------------------------------------------------------------- összefésülés
+SHARDS = 32
+
+
+def shard_of(key):
+    return sum(ord(ch) for ch in key) % SHARDS
+
+
 def norm(s):
     s = s.lower()
     for a, b in zip("áéíóöőúüű", "aeiooouuu"):
@@ -299,8 +306,7 @@ def main():
         orig = t["orig"] if t["orig"] and norm(t["orig"]) != norm(t["title"]) else ""
         rows.append([t["id"], 1 if t["type"] == "SHOW" else 0, t["title"], orig,
                      t["year"], [gidx[g] for g in t["genres"]],
-                     round(t["imdb"] * 10) if t["imdb"] else 0,
-                     t["runtime"], t["age"], offers])
+                     round(t["imdb"] * 10) if t["imdb"] else 0, offers])
         desc = t["desc"]
         if len(desc) > 240:
             desc = desc[:240].rsplit(" ", 1)[0] + "…"
@@ -310,14 +316,14 @@ def main():
     # biztosíték: ha egy platform a tegnapinál sokkal kevesebb címet ad, nem írjuk felül az adatot
     counts = {}
     for r in rows:
-        for o in r[9]:
+        for o in r[-1]:
             counts[PLATFORMS[o[0]][0]] = counts.get(PLATFORMS[o[0]][0], 0) + 1
     print("platformonként:", counts, "kérések:", STATS)
     try:
         prev = json.load(open(os.path.join(DATA, "catalog.json"), encoding="utf-8"))
         prev_counts = {}
         for r in prev["titles"]:
-            for o in r[9]:
+            for o in r[-1]:
                 c = prev["platforms"][o[0]]["code"]
                 prev_counts[c] = prev_counts.get(c, 0) + 1
         bad = [c for c, n in prev_counts.items() if n >= 20 and counts.get(c, 0) < 0.6 * n]
@@ -332,14 +338,23 @@ def main():
         "today": int(now.timestamp() // 86400),
         "platforms": [{"code": c, "name": n} for c, n in PLATFORMS],
         "genres": genres,
-        "cols": ["id", "show", "title", "orig", "year", "genres", "imdb10",
-                 "runtime", "age", "offers[platform, flags(1 hu hang,2 hu felirat,4 nyelv ismert,8 ingyenes), vege_nap, kezdete_nap]"],
+        "cols": ["id", "show", "title", "orig", "year", "genres", "imdb10", "offers[platform, flags(1 hu hang,2 hu felirat,4 nyelv ismert,8 ingyenes), vege_nap, kezdete_nap]"],
         "titles": rows,
     }
     json.dump(catalog, open(os.path.join(DATA, "catalog.json"), "w", encoding="utf-8"),
               ensure_ascii=False, separators=(",", ":"))
-    json.dump(extra, open(os.path.join(DATA, "extra.json"), "w", encoding="utf-8"),
-              ensure_ascii=False, separators=(",", ":"))
+    # leírások 32 darabban, hogy egy cím megnyitásakor csak egy kis fájl töltődjön le
+    shard_dir = os.path.join(DATA, "extra")
+    os.makedirs(shard_dir, exist_ok=True)
+    shards = [{} for _ in range(SHARDS)]
+    for k, v in extra.items():
+        shards[shard_of(k)][k] = v
+    for i, part in enumerate(shards):
+        json.dump(part, open(os.path.join(shard_dir, f"{i:02d}.json"), "w", encoding="utf-8"),
+                  ensure_ascii=False, separators=(",", ":"))
+    old = os.path.join(DATA, "extra.json")
+    if os.path.exists(old):
+        os.remove(old)
     print(f"Kész: {len(rows)} cím, {len(genres)} műfaj")
 
 

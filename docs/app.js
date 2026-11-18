@@ -76,7 +76,8 @@
     PL = kat.platforms.map((p) => p.code);
     kat.platforms.forEach((p) => { NEV[p.code] = p.name; });
     kat.titles.forEach((r, i) => {
-      const [id, show, cim, eredeti, ev, mufajok, imdb, , , ajanlatok] = r;
+      const [id, show, cim, eredeti, ev, mufajok, imdb] = r;
+      const ajanlatok = r[r.length - 1];
       SOR.set(id, {
         id, show: !!show, cim, eredeti, ev, rang: i, imdb,
         mufaj: mufajok.map((g) => MUFAJ[kat.genres[g]]).filter(Boolean),
@@ -254,10 +255,13 @@
     }
 
     const km = [];
-    t.kimaradt.forEach((x) => {
-      const a = x.fizetos.reduce((m, y) => (y.vege > m.vege ? y : m));
-      km.push(`<p>A(z) <strong>${esc(x.c.cim)}</strong> ${ragos(a.vege)} lekerül (${esc(NEV[a.kod])}), addig nem fér bele a tervbe. Ha fontos, vegyél ki valamit a listádból, vagy szánj rá több estét.</p>`);
-    });
+    if (t.kimaradt.length) {
+      const nevek = t.kimaradt.map((x) => {
+        const a = x.fizetos.reduce((m, y) => (y.vege > m.vege ? y : m));
+        return `<strong>${esc(x.c.cim)}</strong> (${esc(NEV[a.kod])}, ${rovid(a.vege)})`;
+      });
+      km.push(`<p>${t.kimaradt.length > 1 ? "Ezek lekerülnek, mielőtt sorra kerülnének" : "Ez lekerül, mielőtt sorra kerülne"}: ${nevek.join(", ")}. Ha fontos, vegyél ki mást a listádból, vagy szánj rá több estét.</p>`);
+    }
     if (t.nemfer.length) {
       km.push(`<p>${t.nemfer.length} cím már nem fér bele egy évbe havi ${allapot.estek} estével.</p>`);
     }
@@ -326,8 +330,10 @@
     p.textContent = "Töltöm…";
     li.appendChild(p);
     try {
-      if (!EXTRA) EXTRA = await (await fetch("data/extra.json")).json();
-      const [leiras, linkek] = EXTRA[id] || ["", {}];
+      const darab = [...id].reduce((s, ch) => s + ch.charCodeAt(0), 0) % 32;
+      EXTRA = EXTRA || {};
+      if (!EXTRA[darab]) EXTRA[darab] = await (await fetch(`data/extra/${String(darab).padStart(2, "0")}.json`)).json();
+      const [leiras, linkek] = EXTRA[darab][id] || ["", {}];
       const l = Object.entries(linkek).filter(([, u]) => u)
         .map(([k, u]) => `<a href="${esc(u)}" rel="noopener" target="_blank">Megnyitom: ${esc(NEV[k])}</a>`).join(", ");
       p.innerHTML = `${leiras ? `<p>${esc(leiras)}</p>` : ""}${l ? `<p style="margin-top:.4rem">${l}</p>` : ""}` || "Ehhez nincs leírásunk.";
