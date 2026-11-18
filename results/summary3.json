@@ -1,0 +1,307 @@
+{
+ "netflix": {
+  "robots": "User-agent: *\nDisallow: /\n\nUser-agent: googlebot\nUser-agent: Googlebot-Video\nUser-agent: Applebot\nUser-agent: bingbot\nUser-agent: Baiduspider\nUser-agent: Baiduspider-mobile\nUser-agent: Baiduspider-video\nUser-agent: Baiduspider-image\nUser-agent: NaverBot\nUser-agent: Y!J-WSC\nUser-agent: YJ-WSC\nUser-agent: Yeti\nUser-agent: Yandex\nUser-agent: YandexBot\nUser-agent: YandexMobileBot\nUser-agent: YandexVideo\nUser-agent: YandexWebmaster\nUser-agent: YandexSitelinks\nUser-agent: SeznamBot\nUser-agent: facebookexternalhit\nUser-agent: GPTBot\nUser-agent: ChatGPT-User\nUser-agent: OAI-SearchBot\nUser-agent: Google-Extended\nUser-agent: ClaudeBot\nUser-agent: Claude-User\nUser-agent: Claude-SearchBot\nUser-agent: PerplexityBot\nAllow: /\n\nDisallow: /accountstatus\nDisallow: /AccountStatus\nDisallow: /aui/inbound\nDisallow: /authenticate\nDisallow: /autologin\nDisallow: /clearcookies\nDisallow: /companies\nDisallow: /editpayment\nDisallow: /emailunsubscribe\nDisallow: /error\nDisallow: /eula\nDisallow: /geooverride\nDisallow: /help\nDisallow: /imagelibrary\nDisallow: /learnmorelayer\nDisallow: /learnmorelayertv\nDisallow: /login\nDisallow: /loginhelp\nDisallow: /loginhelp/lookup\nDisallow: /loginhelpsucess\nDisallow: /LoginHelp\nDisallow: /password\nDisallow: /logout\nDisallow: /Logout\nDisallow: /mcd\nDisallow: /modernizr\nDisallow: /n/\nDisallow: /notamember\nDisallow: /notfound\nDisallow: /notices\nDisallow: /nrdapp\nDisallow: /optout\nDisallow: /overviewblockseeother\nDisallow: /popup/codewhatisthis\nDisallow: /popupdetails\nDisallow: /PopupDetails\nDisallow: /popupprivacypolicy\nDisallow: /privacypolicychanges\nDisallow: /registration\nDisallow: /rememberme\nDisallow: /signout\nDisallow: /signurl\nDisallow: /subscriptioncancel\nDisallow: /tastesurvey\nDisallow: /termsofusechanges\nDisallow: /tvsignup\nDisallow: /upcomingevents\nDisallow: /verifyidentity\nDisallow: /whysecure\n\nDisallow: /arabic\nDisallow: /Arabic\nDisallow: /chinese\nDisallow: /Chinese\nDisallow: /korean\nDisallow: /Korean\n\nDisallow: /airtel\nDisallow: /anan\nDisallow: /bouyguestelecom\nDisallow: /britishairways\nDisallow: /brutus\nDisallow: /comhem\nDisallow: /courts\nDisallow: /csl\nDisallow: /elisa\nDisallow: /entertain\nDisallow: /FireTV\nDisallow: /firetv\nDisallow: /freemonth\nDisallow: /kpn\nDisallow: /lg\nDisallow: /maxis\nDisallow: /Maxis\nDisallow: /meo\nDisallow: /Meo\nDisallow: /orangefrance\nDisallow: /Panasonic\nDisallow: /panasonic\nDisallow: /playstation\nDisallow: /proximus\nDisallow: /qantas\nDisallow: /samsung\nDisallow: /Sony\nDisallow: /sony\nDisallow: /talktalk\nDisallow: /tdc\nDisallow: /telenor\nDisallow: /telfort\nDisallow: /tim\nDisallow: /virginaustralia\nDisallow: /vodafone\nDisallow: /vodafonedemobilelaunch\nDisallow: /xboxone\nDisallow: /xfinity\nDisallow: /xs4all\nDisallow: /ziggo\n\nDisallow: /accountaccess\nDisallow: /AccountAccess\nDisallow: /BillingActivity\nDisallow: /browse\nDisallow: /browse/*\nAllow: /browse/genre/*\nDisallow: /CancelPlan\nDisallow: /ChangePlan\nDisallow: /changeplan\nDisallow: /deviceManagement\nDisallow: /DoNotTest\nDisallow: /EditProfiles\nDisallow:",
+  "checked": 40,
+  "hu_audio_found": 14,
+  "samples": [
+   {
+    "title": "Lupin",
+    "hu_audio": true,
+    "status": 200,
+    "final": "https://www.netflix.com/title/80994082",
+    "bytes": 1019773,
+    "label_blocks": [
+     [
+      "Audio",
+      "német – Audionarráció, német, angol – Audionarráció, angol, spanyol (Latin-Amerika) – Audionarráció, spanyol (Latin-Amerika), francia – Audionarráció, francia [Eredeti], magyar – Audionarráció, magyar"
+     ],
+     [
+      "Subtitles",
+      "angol, spanyol (Latin-Amerika), francia, magyar, kínai (hagyományos)"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\"},{\"__typename\":\"AudioTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"AudioTrack\",\"language\":\"francia\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"francia\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"francia\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"magyar\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28hagyom\\u00E1nyos\\x29\"}]"
+    ],
+    "mentions_magyar": 6
+   },
+   {
+    "title": "Az újonc",
+    "hu_audio": false,
+    "status": 404,
+    "final": "https://www.netflix.com/hu/title/81666165",
+    "bytes": 79856,
+    "label_blocks": [],
+    "json_lang": [],
+    "mentions_magyar": 0
+   },
+   {
+    "title": "Fekete galamb",
+    "hu_audio": true,
+    "status": 200,
+    "final": "https://www.netflix.com/title/81682935",
+    "bytes": 993073,
+    "label_blocks": [
+     [
+      "Audio",
+      "német – Audionarráció, német, angol (Egyesült Királyság) – Audionarráció, angol (Egyesült Államok) [Eredeti], spanyol (Latin-Amerika) – Audionarráció, spanyol (Latin-Amerika), francia – Audionarráció, francia, magyar – Audionarráció, magyar"
+     ],
+     [
+      "Subtitles",
+      "angol, spanyol (Latin-Amerika), magyar, kínai (egyszerűsített), kínai (hagyományos)"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20\\x28Egyes\\u00FClt\\x20Kir\\u00E1lys\\u00E1g\\x29\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20\\x28Egyes\\u00FClt\\x20\\u00C1llamok\\x29\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"magyar\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28egyszer\\u0171s\\u00EDtett\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28hagyom\\u00E1nyos\\x29\"}]"
+    ],
+    "mentions_magyar": 6
+   },
+   {
+    "title": "Úriemberek",
+    "hu_audio": false,
+    "status": 200,
+    "final": "https://www.netflix.com/title/81437051",
+    "bytes": 914609,
+    "label_blocks": [],
+    "json_lang": [],
+    "mentions_magyar": 0
+   },
+   {
+    "title": "A diplomata",
+    "hu_audio": true,
+    "status": 200,
+    "final": "https://www.netflix.com/title/81288983",
+    "bytes": 1027490,
+    "label_blocks": [
+     [
+      "Audio",
+      "német – Audionarráció, német, angol – Audionarráció, angol [Eredeti], spanyol (Latin-Amerika) – Audionarráció, spanyol (Latin-Amerika), francia – Audionarráció, francia, magyar"
+     ],
+     [
+      "Subtitles",
+      "angol, spanyol (Latin-Amerika), magyar, kínai (egyszerűsített), kínai (hagyományos)"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"magyar\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28egyszer\\u0171s\\u00EDtett\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28hagyom\\u00E1nyos\\x29\"}]"
+    ],
+    "mentions_magyar": 4
+   },
+   {
+    "title": "A test",
+    "hu_audio": true,
+    "status": 200,
+    "final": "https://www.netflix.com/title/81983578",
+    "bytes": 939766,
+    "label_blocks": [
+     [
+      "Audio",
+      "német – Audionarráció, német, angol – Audionarráció, angol [Eredeti], spanyol (Latin-Amerika) – Audionarráció, spanyol (Latin-Amerika), francia – Audionarráció, francia, magyar – Audionarráció, magyar"
+     ],
+     [
+      "Subtitles",
+      "angol, spanyol (Latin-Amerika), magyar, kínai (egyszerűsített), kínai (hagyományos)"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"magyar\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28egyszer\\u0171s\\u00EDtett\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28hagyom\\u00E1nyos\\x29\"}]"
+    ],
+    "mentions_magyar": 6
+   },
+   {
+    "title": "The Paradise",
+    "hu_audio": false,
+    "status": 200,
+    "final": "https://www.netflix.com/title/82134615",
+    "bytes": 698138,
+    "label_blocks": [
+     [
+      "Audio",
+      "hindi, kannada, malajálam, tamil, telugu [Eredeti]"
+     ],
+     [
+      "Subtitles",
+      "angol, telugu"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"hindi\"},{\"__typename\":\"AudioTrack\",\"language\":\"kannada\"},{\"__typename\":\"AudioTrack\",\"language\":\"malaj\\u00E1lam\"},{\"__typename\":\"AudioTrack\",\"language\":\"tamil\"},{\"__typename\":\"AudioTrack\",\"language\":\"telugu\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"telugu\"}]"
+    ],
+    "mentions_magyar": 0
+   },
+   {
+    "title": "Édentől keletre",
+    "hu_audio": true,
+    "status": 200,
+    "final": "https://www.netflix.com/title/81611854",
+    "bytes": 942348,
+    "label_blocks": [
+     [
+      "Audio",
+      "német – Audionarráció, német, angol – Audionarráció, angol [Eredeti], spanyol (Latin-Amerika) – Audionarráció, spanyol (Latin-Amerika), francia – Audionarráció, francia, magyar – Audionarráció, magyar"
+     ],
+     [
+      "Subtitles",
+      "angol, spanyol (Latin-Amerika), magyar, kínai (egyszerűsített), kínai (hagyományos)"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"magyar\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28egyszer\\u0171s\\u00EDtett\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28hagyom\\u00E1nyos\\x29\"}]"
+    ],
+    "mentions_magyar": 6
+   },
+   {
+    "title": "Bármit, csak ezt ne",
+    "hu_audio": true,
+    "status": 200,
+    "final": "https://www.netflix.com/title/81591296",
+    "bytes": 1015198,
+    "label_blocks": [
+     [
+      "Audio",
+      "német – Audionarráció, német, angol – Audionarráció, angol [Eredeti], spanyol (Latin-Amerika) – Audionarráció, spanyol (Latin-Amerika), francia – Audionarráció, francia, magyar – Audionarráció, magyar"
+     ],
+     [
+      "Subtitles",
+      "angol, spanyol (Latin-Amerika), magyar, kínai (egyszerűsített), kínai (hagyományos)"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"magyar\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28egyszer\\u0171s\\u00EDtett\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28hagyom\\u00E1nyos\\x29\"}]"
+    ],
+    "mentions_magyar": 6
+   },
+   {
+    "title": "Balaraw: A vér szigete",
+    "hu_audio": false,
+    "status": 200,
+    "final": "https://www.netflix.com/title/81704898",
+    "bytes": 924747,
+    "label_blocks": [
+     [
+      "Audio",
+      "angol, spanyol (Latin-Amerika) – Audionarráció, spanyol (Latin-Amerika), filippínó – Audionarráció, filippínó [Eredeti], lengyel"
+     ],
+     [
+      "Subtitles",
+      "angol, spanyol (Latin-Amerika), filippínó, magyar, kínai (hagyományos)"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"angol\"},{\"__typename\":\"AudioTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"AudioTrack\",\"language\":\"filipp\\u00EDn\\u00F3\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"filipp\\u00EDn\\u00F3\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"filipp\\u00EDn\\u00F3\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"magyar\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28hagyom\\u00E1nyos\\x29\"}]"
+    ],
+    "mentions_magyar": 2
+   },
+   {
+    "title": "A mentalista",
+    "hu_audio": false,
+    "status": 200,
+    "final": "https://www.netflix.com/title/70155590",
+    "bytes": 695989,
+    "label_blocks": [],
+    "json_lang": [],
+    "mentions_magyar": 0
+   },
+   {
+    "title": "Mélytengeri rémálom",
+    "hu_audio": true,
+    "status": 200,
+    "final": "https://www.netflix.com/title/81652677",
+    "bytes": 934972,
+    "label_blocks": [
+     [
+      "Audio",
+      "német – Audionarráció, német, angol – Audionarráció, angol [Eredeti], spanyol (Latin-Amerika) – Audionarráció, spanyol (Latin-Amerika), francia – Audionarráció, francia, magyar – Audionarráció, magyar"
+     ],
+     [
+      "Subtitles",
+      "angol, spanyol (Latin-Amerika), magyar, kínai (egyszerűsített), kínai (hagyományos)"
+     ]
+    ],
+    "json_lang": [
+     "\"audioTracks\":[{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"n\\u00E9met\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20\\u2013\\x20Audionarr\\u00E1ci\\u00F3\"},{\"__typename\":\"AudioTrack\",\"language\":\"angol\\x20[Eredeti]",
+     "\"subtitles\":[{\"__typename\":\"TimedTextTrack\",\"language\":\"angol\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"spanyol\\x20\\x28Latin-Amerika\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"magyar\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28egyszer\\u0171s\\u00EDtett\\x29\"},{\"__typename\":\"TimedTextTrack\",\"language\":\"k\\u00EDnai\\x20\\x28hagyom\\u00E1nyos\\x29\"}]"
+    ],
+    "mentions_magyar": 6
+   }
+  ]
+ },
+ "skyshowtime": {
+  "robots": "User-agent: *\nDisallow: /widgets/\nDisallow: /deeplink/\nDisallow: /preview/\nSitemap: https://www.skyshowtime.com/sitemap.xml\n\nUser-agent: msnbot\nCrawl-delay: 10\n\nUser-agent: MauiBot (crawler.feedback+wc@gmail.com)\nDisallow: /\n\n",
+  "samples": [
+   {
+    "title": "Gengsztervilág",
+    "url": "https://www.skyshowtime.com/hu/stream/tv/gengsztervilag/12e9e904-d7dc-3f84-b362-7287cf837b90/seasons/1/episodes/stick-or-twist-episode-1/2f8f3980-e88f-3a01-b726-dfedb196a30b",
+    "status": 200,
+    "final": "https://www.skyshowtime.com/hu/stream/tv/gengsztervilag/12e9e904-d7dc-3f84-b362-7287cf837b90/seasons/1/episodes/stick-or-twist-episode-1/2f8f3980-e88f-3a01-b726-dfedb196a30b",
+    "bytes": 450590,
+    "magyar": 27,
+    "audio_hint": [
+     "\"languages\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"en-US\"",
+     "\"audio\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"hu-HU\"",
+     "\"languages\":{\"hu-HU\":{\"default\":true,\"hideLanguagePrefix\":true"
+    ]
+   },
+   {
+    "title": "Tulsa királya",
+    "url": "https://www.skyshowtime.com/hu/stream/tv/tulsa-king/3fc7cab5-5bf1-332a-9313-ef777fc7238d/seasons/1/episodes/go-west-old-man-episode-1/9a7a4df0-eef1-3970-a969-ec30bd81915a",
+    "status": 200,
+    "final": "https://www.skyshowtime.com/hu/stream/tv/tulsa-king/3fc7cab5-5bf1-332a-9313-ef777fc7238d/seasons/1/episodes/go-west-old-man-episode-1/9a7a4df0-eef1-3970-a969-ec30bd81915a",
+    "bytes": 484993,
+    "magyar": 27,
+    "audio_hint": [
+     "\"languages\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"en-US\"",
+     "\"audio\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"hu-HU\"",
+     "\"languages\":{\"hu-HU\":{\"default\":true,\"hideLanguagePrefix\":true"
+    ]
+   },
+   {
+    "title": "Dexter: Feltámadás",
+    "url": "https://www.skyshowtime.com/hu/stream/tv/dexter-feltamadas/d9292b0d-1d79-3b83-958a-459c953305e9/seasons/1/episodes/otucaj-srca-episode-1/1d240e59-5795-349d-90cc-f01e3bce44f3",
+    "status": 200,
+    "final": "https://www.skyshowtime.com/hu/stream/tv/dexter-feltamadas/d9292b0d-1d79-3b83-958a-459c953305e9/seasons/1/episodes/otucaj-srca-episode-1/1d240e59-5795-349d-90cc-f01e3bce44f3",
+    "bytes": 440720,
+    "magyar": 27,
+    "audio_hint": [
+     "\"languages\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"en-US\"",
+     "\"audio\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"hu-HU\"",
+     "\"languages\":{\"hu-HU\":{\"default\":true,\"hideLanguagePrefix\":true"
+    ]
+   },
+   {
+    "title": "Marshals: Egy Yellowstone történet",
+    "url": "https://www.skyshowtime.com/hu/stream/tv/marshals/45b6ade1-b30e-3e23-8972-89364e325f4b/seasons/1/episodes/piya-wiconi-episode-1/8659d7da-6a50-33e8-9201-7d4794835dd5",
+    "status": 200,
+    "final": "https://www.skyshowtime.com/hu/stream/tv/marshals/45b6ade1-b30e-3e23-8972-89364e325f4b/seasons/1/episodes/piya-wiconi-episode-1/8659d7da-6a50-33e8-9201-7d4794835dd5",
+    "bytes": 465971,
+    "magyar": 27,
+    "audio_hint": [
+     "\"languages\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"en-US\"",
+     "\"audio\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"hu-HU\"",
+     "\"languages\":{\"hu-HU\":{\"default\":true,\"hideLanguagePrefix\":true"
+    ]
+   },
+   {
+    "title": "Special Ops: Lioness",
+    "url": "https://www.skyshowtime.com/hu/stream/tv/lioness/09d1d10e-b7df-31f0-ace6-484ae47bebb7/seasons/1/episodes/sacrificial-soldiers-episode-1/553943e2-fa92-35ab-a0fc-8bbb84978e5b",
+    "status": 200,
+    "final": "https://www.skyshowtime.com/hu/stream/tv/lioness/09d1d10e-b7df-31f0-ace6-484ae47bebb7/seasons/1/episodes/sacrificial-soldiers-episode-1/553943e2-fa92-35ab-a0fc-8bbb84978e5b",
+    "bytes": 473406,
+    "magyar": 27,
+    "audio_hint": [
+     "\"languages\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"en-US\"",
+     "\"audio\":{\"__typename\":\"Languages\",\"defaultLanguage\":{\"__typename\":\"Language\",\"code\":\"hu-HU\"",
+     "\"languages\":{\"hu-HU\":{\"default\":true,\"hideLanguagePrefix\":true"
+    ]
+   }
+  ]
+ }
+}
