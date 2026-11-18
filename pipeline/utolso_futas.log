@@ -1,0 +1,17 @@
+nfx: 10 szelet
+nfx: 7910 cím, 85 oldal
+mxx: 2 szelet
+mxx: 2437 cím, 25 oldal
+dnp: 2 szelet
+dnp: 2691 cím, 28 oldal
+prv: 1 szelet
+prv: 1431 cím, 15 oldal
+sst: 1 szelet
+sst: 832 cím, 9 oldal
+atp: 1 szelet
+atp: 341 cím, 4 oldal
+mdk: 1 szelet
+mdk: 22 cím, 1 oldal
+RTL+: 447 műsor, ebből 0 új
+platformonként: {'nfx': 7910, 'mxx': 2437, 'prv': 1431, 'dnp': 2691, 'sst': 832, 'atp': 341, 'mdk': 22, 'rtl': 447} kérések: {'requests': 199, 'retries': 0}
+Kész: 15428 cím, 19 műfaj
