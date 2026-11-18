@@ -1,0 +1,36 @@
+name: napi-frissites
+
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["pipeline/**", ".github/workflows/frissites.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: frissites
+  cancel-in-progress: false
+
+jobs:
+  frissites:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python pipeline/fetch.py
+      - name: Adatok visszaírása
+        run: |
+          git config user.name "sorjaban-bot"
+          git config user.email "sorjaban-bot@users.noreply.github.com"
+          git add docs/data
+          git commit -m "Katalógus frissítés $(date -u +%Y-%m-%d) [skip ci]" || echo "nincs változás"
+          git pull --rebase -q
+          git push
