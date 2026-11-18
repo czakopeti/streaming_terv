@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - run: python probe/probe.py
+      - run: python probe/probe2.py
       - name: Eredmények visszaírása
         run: |
           git config user.name "probe-bot"
