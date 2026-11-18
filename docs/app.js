@@ -60,7 +60,10 @@
   function plakatHTML(c, meret) {
     const u = kep(c, meret);
     const tartalek = `<span class="nincs" style="--c: var(--j-${elsoPlatform(c)})">${esc(c.cim)}</span>`;
-    return u ? `<img src="${esc(u)}" alt="" loading="lazy" decoding="async" data-tartalek="${esc(c.cim)}" data-kod="${elsoPlatform(c)}">` : tartalek;
+    if (!u) return tartalek;
+    const img = `<img src="${esc(u)}" alt="" loading="lazy" decoding="async" data-tartalek="${esc(c.cim)}" data-kod="${elsoPlatform(c)}">`;
+    return c.plakat.startsWith("rtl:")
+      ? `<span class="fekvo" style="--c: var(--j-${elsoPlatform(c)})">${img}<b>${esc(c.cim)}</b></span>` : img;
   }
   // ha egy kép nem töltődik be, a cím jelenik meg a platform színén
   document.addEventListener("error", (e) => {
@@ -145,7 +148,7 @@
       marad.push({ c, egyseg: c.show ? 4 : 1, fizetos, utolso });
     });
 
-    const honapok = [];
+    let honapok = [];
     const kimaradt = [];
     for (let k = 0; k < MAX_HONAP && marad.length; k++) {
       const kezd = MA + k * IDOSZAK;
@@ -169,18 +172,46 @@
         if (!legjobb || pont > legjobb.pont || (pont === legjobb.pont && ar(kod) < ar(legjobb.kod))) legjobb = { kod, pont, fer };
       });
       if (!legjobb) break;
-      const elozo = honapok[honapok.length - 1];
-      const tetelek = legjobb.fer.map((x) => ({ c: x.t.c, vege: x.a.vege && x.a.vege <= vege ? x.a.vege : 0 }));
-      if (elozo && elozo.kod === legjobb.kod && elozo.vege === kezd - 1) { elozo.vege = vege; elozo.db += 1; elozo.tetelek.push(...tetelek); }
-      else honapok.push({ kod: legjobb.kod, kezd, vege, db: 1, tetelek });
+      honapok.push({ kod: legjobb.kod, db: 1, tetelek: legjobb.fer.map((x) => ({ c: x.t.c, veg: x.a.vege || 0 })) });
       const kesz = new Set(legjobb.fer.map((x) => x.t.c.id));
       marad = marad.filter((t) => !kesz.has(t.c.id));
     }
+    honapok = rendez(honapok);
     const ossz = honapok.reduce((s, h) => s + ar(h.kod) * h.db, 0);
     const hossz = honapok.reduce((s, h) => s + h.db, 0);
     const hasznalt = [...new Set(honapok.map((h) => h.kod))];
     const egyszerre = hasznalt.reduce((s, k) => s + ar(k), 0) * hossz;
     return { honapok, barmikor, kimaradt, nemfer: marad, ossz, hossz, hasznalt, egyszerre };
+  }
+
+  // dátumok kiosztása, és ha ugyanaz a szolgáltatás később újra előjön, odébb tesszük,
+  // hogy egy előfizetésben maradjon (feltéve, hogy így sem kerül le semmi előtte)
+  function datumoz(blokkok) {
+    let k = 0;
+    return blokkok.map((b) => { const kezd = MA + k * IDOSZAK; k += b.db; return { ...b, kezd, vege: MA + k * IDOSZAK - 1 }; });
+  }
+  const ervenyes = (blokkok) => datumoz(blokkok).every((b) => b.tetelek.every((t) => !t.veg || t.veg >= b.kezd));
+  function rendez(blokkok) {
+    let sor = blokkok.slice();
+    for (let kor = 0; kor < 20; kor++) {
+      let lepett = false;
+      for (let i = 2; i < sor.length && !lepett; i++) {
+        const j = sor.findIndex((b, x) => x < i - 1 && b.kod === sor[i].kod);
+        if (j < 0) continue;
+        const uj = sor.slice();
+        const [b] = uj.splice(i, 1);
+        uj.splice(j + 1, 0, b);
+        if (ervenyes(uj)) { sor = uj; lepett = true; }
+      }
+      if (!lepett) break;
+    }
+    const egyben = [];
+    sor.forEach((b) => {
+      const el = egyben[egyben.length - 1];
+      if (el && el.kod === b.kod) { el.db += b.db; el.tetelek.push(...b.tetelek); }
+      else egyben.push({ kod: b.kod, db: b.db, tetelek: b.tetelek.slice() });
+    });
+    return datumoz(egyben).map((b) => ({ ...b, tetelek: b.tetelek.map((t) => ({ c: t.c, vege: t.veg && t.veg <= b.vege ? t.veg : 0 })) }));
   }
 
   function peldaLista() {
@@ -223,8 +254,8 @@
     const arSzoveg = h.db > 1 ? `${h.db} hónap, ${ft(ar(h.kod) * h.db)}` : ft(ar(h.kod));
     const musor = h.tetelek.slice(0, 3).map((t) => plakatHTML(t.c, "s166")).join("");
     return `<li class="jegy" style="--c: var(--j-${h.kod}); --i: ${i}">
-      <div class="jegy__musor" aria-hidden="true">${musor}<span class="jegy__sorszam">${i + 1}.</span></div>
-      <div class="jegy__honap">${esc(fejlec)}</div>
+      <div class="jegy__musor" aria-hidden="true">${musor}</div>
+      <div class="jegy__sor"><div class="jegy__honap">${esc(fejlec)}</div><span class="jegy__sorszam">${i + 1}.</span></div>
       <div class="jegy__datum">${rovid(h.kezd, false)} – ${rovid(h.vege, false)}</div>
       <div class="jegy__platform">${esc(NEV[h.kod])}</div>
       <div class="jegy__ar">${arSzoveg}</div>
