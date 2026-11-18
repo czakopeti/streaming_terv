@@ -33,10 +33,13 @@
 
   /* ------------------------------------------------------------ segédek */
   const datum = (n) => new Date(n * NAP);
-  const rovid = (n) => { const d = datum(n); return `${HONAP_ROVID[d.getUTCMonth()]} ${d.getUTCDate()}.`; };
-  const ragos = (n) => { const d = datum(n); const nap = d.getUTCDate(); return `${HONAP_ROVID[d.getUTCMonth()]} ${nap}-${RAG[nap]}`; };
+  const EV = new Date().getFullYear();
+  const evvel = (d) => (d.getUTCFullYear() !== EV ? `${d.getUTCFullYear()}. ` : "");
+  const rovid = (n, ev = true) => { const d = datum(n); return `${ev ? evvel(d) : ""}${HONAP_ROVID[d.getUTCMonth()]} ${d.getUTCDate()}.`; };
+  const ragos = (n) => { const d = datum(n); const nap = d.getUTCDate(); return `${evvel(d)}${HONAP_ROVID[d.getUTCMonth()]} ${nap}-${RAG[nap]}`; };
+  const SZAM = ["", "egy", "két", "három", "négy", "öt", "hat", "hét", "nyolc"];
   const ig = (n) => { const d = datum(n); return `${HONAP_ROVID[d.getUTCMonth()]} ${d.getUTCDate()}-ig`; };
-  const ft = (x) => `${Math.round(x).toLocaleString("hu-HU").replace(/ |,/g, " ")} Ft`;
+  const ft = (x) => `${String(Math.round(x)).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0")}\u00a0Ft`;
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
   const ar = (kod) => (ARAK[kod] ? ARAK[kod].price : 0);
@@ -165,7 +168,7 @@
   }
 
   function peldaLista() {
-    const kell = { mxx: 3, nfx: 3, dnp: 2, sst: 2, rtl: 1 };
+    const kell = { mxx: 2, nfx: 2, dnp: 2, sst: 1, rtl: 1 };
     const ki = [];
     for (const c of SOR.values()) {
       const fiz = c.aj.filter((a) => ar(a.kod) > 0 && !a.ingyen);
@@ -192,7 +195,7 @@
     return `<li class="jegy" style="--c: var(--j-${h.kod}); --i: ${i}">
       <div class="jegy__fej">
         <div><div class="jegy__honap">${esc(fejlec)}</div>
-        <div class="jegy__datum">${rovid(h.kezd)} – ${rovid(h.vege)}</div></div>
+        <div class="jegy__datum">${rovid(h.kezd, false)} – ${rovid(h.vege, false)}</div></div>
         <div class="jegy__sorszam" aria-label="${i + 1}. hónap">${i + 1}.</div>
       </div>
       <div class="jegy__platform">${esc(NEV[h.kod])}</div>
@@ -242,7 +245,8 @@
     } else {
       let mellek;
       if (t.hasznalt.length > 1 && t.egyszerre > t.ossz) {
-        mellek = `Ha ${felsorol(t.hasznalt.map((k) => NEV[k]))} mindegyikére egyszerre fizetnél ugyanennyi ideig, <strong>${ft(t.egyszerre)}</strong> lenne. Így <strong>${ft(t.egyszerre - t.ossz)}</strong> marad nálad.`;
+        const db = SZAM[t.hasznalt.length] || t.hasznalt.length;
+        mellek = `Ha mind ${/^[aáeéiíoóöőuúüű]/.test(String(db)) ? "az" : "a"} ${db} szolgáltatásra (${t.hasznalt.map((k) => NEV[k]).join(", ")}) egyszerre fizetnél ugyanennyi ideig, <strong>${ft(t.egyszerre)}</strong> lenne. Így <strong>${ft(t.egyszerre - t.ossz)}</strong> marad nálad.`;
       } else {
         mellek = "Ehhez egyetlen szolgáltatás is elég.";
       }
@@ -334,7 +338,7 @@
 
   /* ------------------------------------------------------------ hamarosan lekerül */
   let lekerulSzuro = "";
-  let lekerulDb = 25;
+  let lekerulDb = 12;
   function rajzolLekerul() {
     const hat = MA + 42;
     const lista = [];
@@ -436,7 +440,7 @@
       } else if (rsz) {
         reszlet(rsz);
       } else if (sz) {
-        lekerulSzuro = sz.dataset.szuro; lekerulDb = 25; rajzolLekerul();
+        lekerulSzuro = sz.dataset.szuro; lekerulDb = 12; rajzolLekerul();
       }
     });
 
@@ -461,7 +465,7 @@
 
     $("#naptar").addEventListener("click", naptar);
     $("#megosztas").addEventListener("click", megoszt);
-    $("#lekerul-tobb").addEventListener("click", () => { lekerulDb += 25; rajzolLekerul(); });
+    $("#lekerul-tobb").addEventListener("click", () => { lekerulDb += 24; rajzolLekerul(); });
   }
 
   /* ------------------------------------------------------------ indulás */

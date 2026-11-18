@@ -25,12 +25,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - run: python pipeline/fetch.py
+      - run: python -u pipeline/fetch.py 2>&1 | tee pipeline/utolso_futas.log; test ${PIPESTATUS[0]} -eq 0
+        shell: bash
       - name: Adatok visszaírása
+        if: always()
         run: |
           git config user.name "sorjaban-bot"
           git config user.email "sorjaban-bot@users.noreply.github.com"
-          git add docs/data
+          git add docs/data pipeline/utolso_futas.log
           git commit -m "Katalógus frissítés $(date -u +%Y-%m-%d) [skip ci]" || echo "nincs változás"
           git pull --rebase -q
           git push

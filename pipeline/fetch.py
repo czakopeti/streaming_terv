@@ -92,20 +92,29 @@ def slices(code):
         mid = min(max(mid, lo), hi - 1)
         stack.append(dict(f, releaseYear={"min": lo, "max": mid}))
         stack.append(dict(f, releaseYear={"min": mid + 1, "max": hi}))
-        time.sleep(0.2)
     return out
 
 
-def jw_post(query, variables, tries=4):
+STATS = {"requests": 0, "retries": 0}
+
+
+def jw_post(query, variables, tries=7):
     for i in range(tries):
+        STATS["requests"] += 1
         try:
             r = S.post(JW, json={"query": query, "variables": variables}, timeout=40)
             if r.status_code == 200:
-                return r.json()
-            print("JW status", r.status_code, file=sys.stderr)
+                d = r.json()
+                if not d.get("errors") or d.get("data"):
+                    time.sleep(0.6)
+                    return d
+                print("JW hibaüzenet", d.get("errors")[:2])
+            else:
+                print("JW status", r.status_code, r.headers.get("retry-after"))
         except Exception as e:  # noqa: BLE001
-            print("JW hiba", e, file=sys.stderr)
-        time.sleep(2 + i * 3)
+            print("JW hiba", repr(e)[:200])
+        STATS["retries"] += 1
+        time.sleep(min(90, 5 * 2 ** i))
     return {"errors": [{"message": "no response"}]}
 
 
@@ -199,7 +208,6 @@ def fetch_justwatch():
             if not pt["pageInfo"]["hasNextPage"] or part_pages >= LIMIT // 100:
                 break
             after = pt["pageInfo"]["endCursor"]
-            time.sleep(0.35)
       print(f"{code}: {rank} cím, {pages} oldal")
     return list(titles.values())
 
@@ -298,6 +306,25 @@ def main():
             desc = desc[:240].rsplit(" ", 1)[0] + "…"
         extra[t["id"]] = [desc, {PLATFORMS[PIDX[c]][0]: o["url"] for c, o in t["offers"].items()},
                           t["path"]]
+
+    # biztosíték: ha egy platform a tegnapinál sokkal kevesebb címet ad, nem írjuk felül az adatot
+    counts = {}
+    for r in rows:
+        for o in r[9]:
+            counts[PLATFORMS[o[0]][0]] = counts.get(PLATFORMS[o[0]][0], 0) + 1
+    print("platformonként:", counts, "kérések:", STATS)
+    try:
+        prev = json.load(open(os.path.join(DATA, "catalog.json"), encoding="utf-8"))
+        prev_counts = {}
+        for r in prev["titles"]:
+            for o in r[9]:
+                c = prev["platforms"][o[0]]["code"]
+                prev_counts[c] = prev_counts.get(c, 0) + 1
+        bad = [c for c, n in prev_counts.items() if n >= 20 and counts.get(c, 0) < 0.6 * n]
+        if bad:
+            raise SystemExit(f"Hiányos letöltés ({', '.join(bad)}), a tegnapi adat marad.")
+    except (OSError, ValueError, KeyError):
+        pass
 
     now = datetime.now(timezone.utc)
     catalog = {
